@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Window>
+  <Visual>
+    <Image src="Textures\Backgrounds\2-level-select.jpg" useparentsize="true" />
+    <Text location="18%, 35%" text="SFX:" font="Fonts\Common.spritefont" color="255,255,255,255" />
+    <!--<Text location="18%, 45%" text="Music:" font="Fonts\Common.spritefont" color="255,255,255,255" />-->
+  </Visual>
+
+  <Checkbox name="showgrid" location="18%, 15%" size="35,35">
+    <Visual>
+      <Image Visibility="Checked" src="Textures\Buttons\enabled.png" size="35,35" />
+      <Image Visibility="Unchecked" src="Textures\Buttons\disabled.png" size="35,35" />
+      <Text font="Fonts\Common.spritefont" Text="Show Grid" location="60, 0" color="255,255,255,255" />
+    </Visual>
+  </Checkbox>
+
+  <Button name="sfxdown" location="30%, 35%" size="35,10%">
+    <Visual>
+      <Image src="Textures\Buttons\back-previous.png" VAlign="Middle" size="35,35" />
+    </Visual>
+  </Button>
+  <Label name="sfxval" location="35%, 35%" size="10%,10%">
+    <Visual>
+      <Text font="Fonts\Common.spritefont" VAlign="Middle" Align="Center" Text="{VALUE}" color="255,255,255,255" />
+    </Visual>
+  </Label>
+  <Button name="sfxup" location="45%, 35%" size="35,10%">
+    <Visual>
+      <Image src="Textures\Buttons\next.png" VAlign="Middle" size="35,35" />
+    </Visual>
+  </Button>
+
+  <!--<Button name="musicdown" location="30%, 45%" size="35,10%">
+    <Visual>
+      <Image src="Textures\Buttons\back-previous.png" VAlign="Middle" size="35,35" />
+    </Visual>
+  </Button>
+  <Label name="musicval" location="35%, 45%" size="10%,10%">
+    <Visual>
+      <Text font="Fonts\Common.spritefont" VAlign="Middle" Align="Center" Text="{VALUE}" color="255,255,255,255" />
+    </Visual>
+  </Label>
+  <Button name="musicup" location="45%, 45%" size="35,10%">
+    <Visual>
+      <Image src="Textures\Buttons\next.png" VAlign="Middle" size="35,35" />
+    </Visual>
+  </Button>-->
+  
+  <Checkbox name="mute" location="18%, 55%" size="35,35">
+    <Visual>
+      <Image Visibility="Checked" src="Textures\Buttons\enabled.png" size="35,35" />
+      <Image Visibility="Unchecked" src="Textures\Buttons\disabled.png" size="35,35" />
+      <Text font="Fonts\Common.spritefont" Text="Mute" location="60, 0" color="255,255,255,255" />
+    </Visual>
+  </Checkbox>
+</Window>

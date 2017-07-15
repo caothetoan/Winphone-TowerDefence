@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Window>
+  <Visual>
+    <Image src="Textures\Backgrounds\2-level-select.jpg" />
+  </Visual>
+  
+  <Slideshow name="slides" location="136,82">
+    <Visual>
+      <Image src="Textures\HelpScreens\Help1.jpg" />
+      <Image src="Textures\HelpScreens\Help2.jpg" />
+      <Image src="Textures\HelpScreens\Help3.jpg" />
+      <Image src="Textures\HelpScreens\Help4.jpg" />
+    </Visual>
+  </Slideshow>
+
+  <Button name="prev" Location="90, 222" Size="35,35">
+    <Visual>
+      <Image src="Textures\Buttons\back-previous.png" UseParentSize="true" />
+    </Visual>
+  </Button>
+
+  <Button name="next" Location="675, 222" Size="35,35">
+    <Visual>
+      <Image src="Textures\Buttons\next.png" UseParentSize="true" />
+    </Visual>
+  </Button>
+</Window>

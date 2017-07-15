@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Creep Id="landSlow" CanFly="false" Speed="0.5" Health="140" Worth="1" Texture="land-slow.png" DeathSoundId="23_Slow_Enemy_Death" SpawnSoundId="22_Slow_Enemy_Spawn">
+  <Resistance Type="Damage" TowerId="gun" TowerLevel="1" Multiplier="0.5" />
+</Creep>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Window>
+  <Visual>
+    <Image src="Textures\Backgrounds\2-level-select.jpg" />
+    <Text Font="Fonts\Common.spritefont" Text="{TEXT}" color="255,255,255,255" Location="15%, 5%" allowparentresize="true" />
+  </Visual>
+
+  <Templates>
+    <Template Name="scoreItemTemplate">
+      <Text Font="Fonts\Common.spritefont" color="255,255,255,255" Text="{VALUE}" allowparentresize="false" />
+    </Template>
+  </Templates>
+
+  <Label name="score1" Template="scoreItemTemplate" Location="15%, 20%" />
+  <Label name="score2" Template="scoreItemTemplate" Location="15%, 30%" />
+  <Label name="score3" Template="scoreItemTemplate" Location="15%, 40%" />
+  <Label name="score4" Template="scoreItemTemplate" Location="15%, 50%" />
+  <Label name="score5" Template="scoreItemTemplate" Location="15%, 60%" />
+</Window>

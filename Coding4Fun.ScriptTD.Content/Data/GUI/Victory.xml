@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window>
+  <Visual>
+    <Image src="Textures\Backgrounds\4-highscores.jpg" useparentsize="true" />
+    <Text text="You Are Victorious" align="Center" location="0,25%" size="800,0" allowparentresize="true" color="255,255,255,255" font="Fonts\Common.spritefont" />
+  </Visual>
+
+  <Button name="continue" size="800,480" location="0,0" text="Tap to Continue">
+    <Visual>
+      <Text align="Center" color="255,255,255,255" Font="Fonts\Common.spritefont" Text="{TEXT}" valign="Middle" />
+    </Visual>
+  </Button>
+</Window>

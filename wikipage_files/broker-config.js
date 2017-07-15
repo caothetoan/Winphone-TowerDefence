@@ -1,0 +1,1 @@
+COMSCORE.SiteRecruit.Broker.config={version:"4.6.3",testMode:false,cookie:{name:"msresearch",path:"/",domain:".codeplex.com",duration:90,rapidDuration:0,expireDate:""},prefixUrl:"",mapping:[{m:"//[\\w\\.-]+/",c:"inv_c_p26386365.js",f:.05,p:0}]};COMSCORE.SiteRecruit.Broker.run();

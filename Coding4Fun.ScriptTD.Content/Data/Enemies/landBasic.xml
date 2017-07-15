@@ -1,0 +1,3 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Creep Id="landBasic" CanFly="False" Speed="1" Health="100" Worth="1" Texture="land-basic.png" DeathSoundId="21_Basic_Land_Enemy_Death" SpawnSoundId="20_Basic_Land_Enemy_Spawn" />

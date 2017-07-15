@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Map MapId="mis01" FriendlyName="Mission 1" StartingCash="100" BackgroundTexture="Map1.jpg" NumLives="10" FocusColor="128,128,128,255" VictorySoundId="08_Victory" DefeatSoundId="09_Defeat_Loses_Level" WaveStartSoundId="07_Wave_Begin" MapStartSoundId="19_New_Map_Loads">
+  <SpecialCells>
+      <Cell CellId="spawn" Type="Entrance" X="0" Y="5" />
+      <Cell CellId="exit" Type="Exit" X="18" Y="5" />
+    </SpecialCells>
+    
+    <AllowedTowers>
+      <Tower Id="gun" MaxLevel="3" />
+    </AllowedTowers>
+    
+    <Waves>
+
+      <!-- 1 -->
+      <Wave WorthMod="2" HealthMod="1"> 
+        <Creep CreepId="landBasic" Entrance="spawn" Exit="exit" Number="10" TimeBetweenMs="1000" />
+      </Wave>
+
+      <!-- 2 -->
+      <Wave WorthMod="2" HealthMod="2">
+        <Creep CreepId="landSlow" Entrance="spawn" Exit="exit" Number="10" TimeBetweenMs="1000" />
+      </Wave>
+
+      <!-- 3 -->
+      <Wave WorthMod="2" HealthMod="2">
+        <Creep CreepId="landBasic" Entrance="spawn" Exit="exit" Number="10" TimeBetweenMs="1000" />
+      </Wave>
+
+      <!-- 4 -->
+      <Wave WorthMod="2" HealthMod="2">
+        <Creep CreepId="landFast" Entrance="spawn" Exit="exit" Number="10" TimeBetweenMs="1000" />
+      </Wave>
+
+      <!-- 5 -->
+      <Wave WorthMod="3" HealthMod="2">
+        <Creep CreepId="landBasic" Entrance="spawn" Exit="exit" Number="10" TimeBetweenMs="1000" />
+      </Wave>
+
+      <!-- 6 -->
+      <Wave WorthMod="3" HealthMod="3">
+        <Creep CreepId="landBasic" Entrance="spawn" Exit="exit" Number="10" TimeBetweenMs="1000" />
+      </Wave>
+
+      <!-- 7 -->
+      <Wave WorthMod="4" HealthMod="3">
+        <Creep CreepId="landBasic" Entrance="spawn" Exit="exit" Number="10" TimeBetweenMs="1000" />
+      </Wave>
+
+      <!-- 8 -->
+      <Wave WorthMod="4" HealthMod="3">
+        <Creep CreepId="landFast" Entrance="spawn" Exit="exit" Number="10" TimeBetweenMs="1000" />
+      </Wave>
+
+      <!-- 9 -->
+      <Wave WorthMod="3" HealthMod="4">
+        <Creep CreepId="landBasic" Entrance="spawn" Exit="exit" Number="10" TimeBetweenMs="1000" />
+      </Wave>
+      
+      <!-- 10 -->
+      <Wave WorthMod="3" HealthMod="5">
+        <Creep CreepId="landBasic" Entrance="spawn" Exit="exit" Number="5" TimeBetweenMs="3000" />
+        <Creep CreepId="landSlow" Entrance="spawn" Exit="exit" Number="5" TimeBetweenMs="3000" SpawnTimeOffset="1000" />
+        <Creep CreepId="landFast" Entrance="spawn" Exit="exit" Number="5" TimeBetweenMs="3000" SpawnTimeOffset="2000" />
+      </Wave>
+
+      <!-- 11 -->
+      <Wave WorthMod="5" HealthMod="1">
+        <Creep CreepId="flyerSlow" Entrance="spawn" Exit="exit" Number="10" TimeBetweenMs="2000" />
+      </Wave>
+
+      <!-- 12 -->
+      <Wave WorthMod="3" HealthMod="4">
+        <Creep CreepId="landBasic" Entrance="spawn" Exit="exit" Number="10" TimeBetweenMs="1000" />
+      </Wave>
+
+      <!-- 13 -->
+      <Wave WorthMod="3" HealthMod="4">
+        <Creep CreepId="landFast" Entrance="spawn" Exit="exit" Number="10" TimeBetweenMs="1000" />
+      </Wave>
+
+      <!-- 14 -->
+      <Wave WorthMod="4" HealthMod="5">
+        <Creep CreepId="landSlow" Entrance="spawn" Exit="exit" Number="10" TimeBetweenMs="1000" />
+      </Wave>
+
+      <!-- 15 -->
+      <Wave WorthMod="3" HealthMod="5">
+        <Creep CreepId="landBasic" Entrance="spawn" Exit="exit" Number="10" TimeBetweenMs="1000" />
+      </Wave>
+
+      <!-- 16 -->
+      <Wave WorthMod="3" HealthMod="1">
+        <Creep CreepId="flyerSlow" Entrance="spawn" Exit="exit" Number="10" TimeBetweenMs="1000" />
+      </Wave>
+
+      <!-- 17 -->
+      <Wave WorthMod="3" HealthMod="7">
+        <Creep CreepId="landBasic" Entrance="spawn" Exit="exit" Number="10" TimeBetweenMs="1000" />
+      </Wave>
+
+      <!-- 18 -->
+      <Wave WorthMod="3" HealthMod="7">
+        <Creep CreepId="landFast" Entrance="spawn" Exit="exit" Number="10" TimeBetweenMs="1000" />
+      </Wave>
+
+      <!-- 19 -->
+      <Wave WorthMod="3" HealthMod="9">
+        <Creep CreepId="landBasic" Entrance="spawn" Exit="exit" Number="10" TimeBetweenMs="1000" />
+      </Wave>
+
+      <!-- 20 -->
+      <Wave WorthMod="3" HealthMod="3">
+        <Creep CreepId="flyerSlow" Entrance="spawn" Exit="exit" Number="5" TimeBetweenMs="4000" />
+        <Creep CreepId="flyerFast" Entrance="spawn" Exit="exit" Number="5" TimeBetweenMs="4000" SpawnTimeOffset="1000" />
+        <Creep CreepId="flyerSlow" Entrance="spawn" Exit="exit" Number="5" TimeBetweenMs="4000" SpawnTimeOffset="2000" />
+        <Creep CreepId="flyerFast" Entrance="spawn" Exit="exit" Number="5" TimeBetweenMs="4000" SpawnTimeOffset="3000" />
+      </Wave>
+
+    </Waves>
+  </Map>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Map MapId="test01" FriendlyName="Test" StartingCash="50" BackgroundTexture="wasteland.png" NumLives="3" FocusColor="128,128,128,255" VictorySoundId="08_Victory" DefeatSoundId="09_Defeat_Loses_Level" WaveStartSoundId="07_Wave_Begin" MapStartSoundId="19_New_Map_Loads">
+
+  <SpecialCells>
+    <Cell CellId="spawn" Type="Entrance" X="0" Y="5" />
+    <Cell CellId="exit" Type="Exit" X="18" Y="5" />
+  </SpecialCells>
+
+  <AllowedTowers>
+    <Tower Id="gun" MaxLevel="2" />
+    <Tower Id="rocket" MaxLevel="1" />
+    <Tower Id="missile" MaxLevel="1" />
+    <Tower Id="laser" MaxLevel="1" />
+    <Tower Id="earthquake" MaxLevel="1" />
+  </AllowedTowers>
+
+  <Waves>
+
+    <Wave WorthMod="3" HealthMod="1">
+      <Creep CreepId="landBasic" Entrance="spawn" Exit="exit" Number="2" TimeBetweenMs="1000" />
+    </Wave>
+	
+	<Wave WorthMod="3" HealthMod="1">
+		<Creep CreepId="flyerFast" Entrance="spawn" Exit="exit" Number="2" TimeBetweenMs="1000"/>
+	</Wave>
+
+    <Wave WorthMod="3" HealthMod="1.5">
+      <Creep CreepId="landBasic" Entrance="spawn" Exit="exit" Number="1" TimeBetweenMs="3000" />
+      <Creep CreepId="landSlow" Entrance="spawn" Exit="exit" Number="1" TimeBetweenMs="3000" SpawnTimeOffset="1000" />
+      <Creep CreepId="landFast" Entrance="spawn" Exit="exit" Number="1" TimeBetweenMs="3000" SpawnTimeOffset="2000" />
+    </Wave>
+
+  </Waves>
+
+</Map>

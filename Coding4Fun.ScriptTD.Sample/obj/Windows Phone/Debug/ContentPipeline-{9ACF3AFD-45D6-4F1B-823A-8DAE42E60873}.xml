@@ -1,0 +1,1611 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Data\maps.xml</Source>
+      <Name>Data\maps</Name>
+      <Importer>MapListImporter</Importer>
+      <Processor>MapListProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Data\maps.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Maps\1_0.xml</Key>
+        <Value>2013-05-17T16:29:46.6788049+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Maps\2_0.xml</Key>
+        <Value>2013-05-17T16:29:47.973879+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Maps\3_0.xml</Key>
+        <Value>2013-05-17T16:29:49.3819595+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Maps\4_0.xml</Key>
+        <Value>2013-05-17T16:29:50.6850341+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Maps\5_0.xml</Key>
+        <Value>2013-05-17T16:29:52.2101213+07:00</Value>
+      </Dependency>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Data\Maps\1_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Data\Maps\2_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Data\Maps\3_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Data\Maps\4_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Data\Maps\5_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Data\GUI\Ingame.xml</Source>
+      <Name>Data\GUI\Ingame</Name>
+      <Importer>WindowImporter</Importer>
+      <Processor>WindowProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Data\GUI\Ingame.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Backgrounds\playscreen_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Fonts\Common_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\HUD-button-options_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\next-wave2_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\Enter_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\Exit_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\HUD-button-pause_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\HUD-button-play_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\X1_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\X2_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\X3_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Towers\HUD-tower-gun_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Towers\HUD-tower-gun-unavailable_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Towers\HUD-tower-rocket_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Towers\HUD-tower-rocket-unavailable_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Towers\HUD-tower-missile_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Towers\HUD-tower-missile-unavailable_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Towers\HUD-tower-laser_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Towers\HUD-tower-laser-unavailable_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Towers\HUD-tower-wave_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Towers\HUD-tower-wave-unavailable_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Data\GUI\MainMenu.xml</Source>
+      <Name>Data\GUI\MainMenu</Name>
+      <Importer>WindowImporter</Importer>
+      <Processor>WindowProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Data\GUI\MainMenu.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Backgrounds\1-main_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Fonts\Common_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Data\GUI\LevelSelect.xml</Source>
+      <Name>Data\GUI\LevelSelect</Name>
+      <Importer>WindowImporter</Importer>
+      <Processor>WindowProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Data\GUI\LevelSelect.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Backgrounds\2-level-select_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Fonts\Common_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\locked_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\back-previous_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\next_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Data\GUI\Loading.xml</Source>
+      <Name>Data\GUI\Loading</Name>
+      <Importer>WindowImporter</Importer>
+      <Processor>WindowProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Data\GUI\Loading.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Backgrounds\1-main_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Fonts\Common_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Data\GUI\TowerMenu.xml</Source>
+      <Name>Data\GUI\TowerMenu</Name>
+      <Importer>WindowImporter</Importer>
+      <Processor>WindowProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Data\GUI\TowerMenu.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\HUD-button-sell_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\HUD-button-upgrade_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Fonts\Common_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Data\GUI\Victory.xml</Source>
+      <Name>Data\GUI\Victory</Name>
+      <Importer>WindowImporter</Importer>
+      <Processor>WindowProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Data\GUI\Victory.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Backgrounds\4-highscores_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Fonts\Common_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Data\GUI\Defeat.xml</Source>
+      <Name>Data\GUI\Defeat</Name>
+      <Importer>WindowImporter</Importer>
+      <Processor>WindowProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Data\GUI\Defeat.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Backgrounds\3-loading_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Fonts\Common_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Data\GUI\HighScoreMapList.xml</Source>
+      <Name>Data\GUI\HighScoreMapList</Name>
+      <Importer>WindowImporter</Importer>
+      <Processor>WindowProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Data\GUI\HighScoreMapList.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Backgrounds\2-level-select_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Fonts\Common_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\back-previous_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\next_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Data\GUI\HighScoreMap.xml</Source>
+      <Name>Data\GUI\HighScoreMap</Name>
+      <Importer>WindowImporter</Importer>
+      <Processor>WindowProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Data\GUI\HighScoreMap.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Backgrounds\2-level-select_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Fonts\Common_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Data\GUI\Options.xml</Source>
+      <Name>Data\GUI\Options</Name>
+      <Importer>WindowImporter</Importer>
+      <Processor>WindowProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Data\GUI\Options.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Backgrounds\2-level-select_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Fonts\Common_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\enabled_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\disabled_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\back-previous_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\next_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Data\GUI\HelpScreen.xml</Source>
+      <Name>Data\GUI\HelpScreen</Name>
+      <Importer>WindowImporter</Importer>
+      <Processor>WindowProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Data\GUI\HelpScreen.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Backgrounds\2-level-select_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\HelpScreens\Help1_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\HelpScreens\Help2_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\HelpScreens\Help3_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\HelpScreens\Help4_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\back-previous_0.xnb</Request>
+      <Request>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\next_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Audio\SFX\01_Single_Machine_Gun_Cannon.wav</Source>
+      <Name>Audio\SFX\01_Single_Machine_Gun_Cannon</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Audio\SFX\01_Single_Machine_Gun_Cannon.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\SFX\02_Missile_Heatseeker.wav</Source>
+      <Name>Audio\SFX\02_Missile_Heatseeker</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Audio\SFX\02_Missile_Heatseeker.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\SFX\03_Missile_Fire_.wav</Source>
+      <Name>Audio\SFX\03_Missile_Fire_</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Audio\SFX\03_Missile_Fire_.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\SFX\04_Explosion.wav</Source>
+      <Name>Audio\SFX\04_Explosion</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Audio\SFX\04_Explosion.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\SFX\05_Laser_Firing.wav</Source>
+      <Name>Audio\SFX\05_Laser_Firing</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Audio\SFX\05_Laser_Firing.xnb</Output>
+      <Time>2011-11-20T13:17:30+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\SFX\06_Earthquake.wav</Source>
+      <Name>Audio\SFX\06_Earthquake</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Audio\SFX\06_Earthquake.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\SFX\10_Construction_Tower.wav</Source>
+      <Name>Audio\SFX\10_Construction_Tower</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Audio\SFX\10_Construction_Tower.xnb</Output>
+      <Time>2011-11-20T13:17:30+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\SFX\11_Sell_Tower.wav</Source>
+      <Name>Audio\SFX\11_Sell_Tower</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Audio\SFX\11_Sell_Tower.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\SFX\12_Construction_Tower_Upgrade.wav</Source>
+      <Name>Audio\SFX\12_Construction_Tower_Upgrade</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Audio\SFX\12_Construction_Tower_Upgrade.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\SFX\21_Basic_Land_Enemy_Death.wav</Source>
+      <Name>Audio\SFX\21_Basic_Land_Enemy_Death</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Audio\SFX\21_Basic_Land_Enemy_Death.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\SFX\23_Slow_Enemy_Death.wav</Source>
+      <Name>Audio\SFX\23_Slow_Enemy_Death</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Audio\SFX\23_Slow_Enemy_Death.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\SFX\25_Fast_Land_Enemy_Death.wav</Source>
+      <Name>Audio\SFX\25_Fast_Land_Enemy_Death</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Audio\SFX\25_Fast_Land_Enemy_Death.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\SFX\27_Slow_Flyer_Death.wav</Source>
+      <Name>Audio\SFX\27_Slow_Flyer_Death</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Audio\SFX\27_Slow_Flyer_Death.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\SFX\29_Fast_Flyer_Death.wav</Source>
+      <Name>Audio\SFX\29_Fast_Flyer_Death</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Audio\SFX\29_Fast_Flyer_Death.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\SFX\08_Victory.wav</Source>
+      <Name>Audio\SFX\08_Victory</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Audio\SFX\08_Victory.xnb</Output>
+      <Time>2011-11-20T13:17:30+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\SFX\09_Defeat_Loses_Level.wav</Source>
+      <Name>Audio\SFX\09_Defeat_Loses_Level</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Audio\SFX\09_Defeat_Loses_Level.xnb</Output>
+      <Time>2011-11-20T13:17:30+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\SFX\19_New_Map_Loads.wav</Source>
+      <Name>Audio\SFX\19_New_Map_Loads</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Audio\SFX\19_New_Map_Loads.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\SFX\07_Wave_Begin.wav</Source>
+      <Name>Audio\SFX\07_Wave_Begin</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Audio\SFX\07_Wave_Begin.xnb</Output>
+      <Time>2011-11-20T13:17:30+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\SFX\20_Basic_Land_Enemy_Spawn.wav</Source>
+      <Name>Audio\SFX\20_Basic_Land_Enemy_Spawn</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Audio\SFX\20_Basic_Land_Enemy_Spawn.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\SFX\22_Slow_Enemy_Spawn.wav</Source>
+      <Name>Audio\SFX\22_Slow_Enemy_Spawn</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Audio\SFX\22_Slow_Enemy_Spawn.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\SFX\24_Fast_Enemy_Spawn.wav</Source>
+      <Name>Audio\SFX\24_Fast_Enemy_Spawn</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Audio\SFX\24_Fast_Enemy_Spawn.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\SFX\26_Slow_Flyer_Spawn.wav</Source>
+      <Name>Audio\SFX\26_Slow_Flyer_Spawn</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Audio\SFX\26_Slow_Flyer_Spawn.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\SFX\28_Fast_Flyer_Spawn.wav</Source>
+      <Name>Audio\SFX\28_Fast_Flyer_Spawn</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Audio\SFX\28_Fast_Flyer_Spawn.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Data\Maps\1.xml</Source>
+      <Importer>MapImporter</Importer>
+      <Processor>MapProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Data\Maps\1_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Maps\Map1_0.xml</Key>
+        <Value>2013-05-17T16:29:44.406675+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landBasic_0.xml</Key>
+        <Value>2013-05-17T16:29:44.4686785+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landSlow_0.xml</Key>
+        <Value>2013-05-17T16:29:44.512681+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landFast_0.xml</Key>
+        <Value>2013-05-17T16:29:45.9787649+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\flyerSlow_0.xml</Key>
+        <Value>2013-05-17T16:29:46.0397684+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\flyerFast_0.xml</Key>
+        <Value>2013-05-17T16:29:46.0957716+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\gun_0.xml</Key>
+        <Value>2013-05-17T16:29:46.24278+07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Data\Maps\1.xml</Source>
+      <Importer>MapImporter</Importer>
+      <Processor>MapProcessor</Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Maps\1_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Maps\Map1_0.xml</Key>
+        <Value>2013-05-17T16:29:44.406675+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landBasic_0.xml</Key>
+        <Value>2013-05-17T16:29:44.4686785+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landSlow_0.xml</Key>
+        <Value>2013-05-17T16:29:44.512681+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landFast_0.xml</Key>
+        <Value>2013-05-17T16:29:45.9787649+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\flyerSlow_0.xml</Key>
+        <Value>2013-05-17T16:29:46.0397684+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\flyerFast_0.xml</Key>
+        <Value>2013-05-17T16:29:46.0957716+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\gun_0.xml</Key>
+        <Value>2013-05-17T16:29:46.24278+07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Textures\Maps\Map1.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Maps\Map1_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Data\Enemies\landBasic.xml</Source>
+      <Importer>EnemyImporter</Importer>
+      <Processor>EnemyProcessor</Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landBasic_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Creeps\land-basic_0.xml</Key>
+        <Value>2013-05-17T16:29:44.4546777+07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Textures\Creeps\land-basic.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Creeps\land-basic_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Data\Enemies\landSlow.xml</Source>
+      <Importer>EnemyImporter</Importer>
+      <Processor>EnemyProcessor</Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landSlow_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Creeps\land-slow_0.xml</Key>
+        <Value>2013-05-17T16:29:44.5066807+07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Textures\Creeps\land-slow.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Creeps\land-slow_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Data\Enemies\landFast.xml</Source>
+      <Importer>EnemyImporter</Importer>
+      <Processor>EnemyProcessor</Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landFast_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Creeps\land-fast_0.xml</Key>
+        <Value>2013-05-17T16:29:45.9737646+07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Textures\Creeps\land-fast.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Creeps\land-fast_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Data\Enemies\flyerSlow.xml</Source>
+      <Importer>EnemyImporter</Importer>
+      <Processor>EnemyProcessor</Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\flyerSlow_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Creeps\flyer-slow_0.xml</Key>
+        <Value>2013-05-17T16:29:46.0347681+07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Textures\Creeps\flyer-slow.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Creeps\flyer-slow_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Data\Enemies\flyerFast.xml</Source>
+      <Importer>EnemyImporter</Importer>
+      <Processor>EnemyProcessor</Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\flyerFast_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Creeps\flyer-fast_0.xml</Key>
+        <Value>2013-05-17T16:29:46.0917713+07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Textures\Creeps\flyer-fast.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Creeps\flyer-fast_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Data\Towers\gun.xml</Source>
+      <Importer>TowerImporter</Importer>
+      <Processor>TowerProcessor</Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\gun_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Towers\tower-gun_0.xml</Key>
+        <Value>2013-05-17T16:29:46.1607753+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Weapons\fx-small-round_0.xml</Key>
+        <Value>2013-05-17T16:29:46.1807764+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Towers\tower-gun1_0.xml</Key>
+        <Value>2013-05-17T16:29:46.1877768+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Towers\tower-gun2_0.xml</Key>
+        <Value>2013-05-17T16:29:46.2217788+07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Textures\Towers\tower-gun.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Towers\tower-gun_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Weapons\fx-small-round.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Weapons\fx-small-round_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Towers\tower-gun1.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Towers\tower-gun1_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Towers\tower-gun2.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Towers\tower-gun2_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Data\Maps\2.xml</Source>
+      <Importer>MapImporter</Importer>
+      <Processor>MapProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Data\Maps\2_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Maps\Map2_0.xml</Key>
+        <Value>2013-05-17T16:29:47.152832+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landBasic_0.xml</Key>
+        <Value>2013-05-17T16:29:44.4686785+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landSlow_0.xml</Key>
+        <Value>2013-05-17T16:29:44.512681+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landFast_0.xml</Key>
+        <Value>2013-05-17T16:29:45.9787649+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\flyerSlow_0.xml</Key>
+        <Value>2013-05-17T16:29:46.0397684+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\flyerFast_0.xml</Key>
+        <Value>2013-05-17T16:29:46.0957716+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\gun_0.xml</Key>
+        <Value>2013-05-17T16:29:46.24278+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\rocket_0.xml</Key>
+        <Value>2013-05-17T16:29:47.4678501+07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Data\Maps\2.xml</Source>
+      <Importer>MapImporter</Importer>
+      <Processor>MapProcessor</Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Maps\2_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Maps\Map2_0.xml</Key>
+        <Value>2013-05-17T16:29:47.152832+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landBasic_0.xml</Key>
+        <Value>2013-05-17T16:29:44.4686785+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landSlow_0.xml</Key>
+        <Value>2013-05-17T16:29:44.512681+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landFast_0.xml</Key>
+        <Value>2013-05-17T16:29:45.9787649+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\flyerSlow_0.xml</Key>
+        <Value>2013-05-17T16:29:46.0397684+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\flyerFast_0.xml</Key>
+        <Value>2013-05-17T16:29:46.0957716+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\gun_0.xml</Key>
+        <Value>2013-05-17T16:29:46.24278+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\rocket_0.xml</Key>
+        <Value>2013-05-17T16:29:47.4678501+07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Textures\Maps\Map2.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Maps\Map2_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Data\Towers\rocket.xml</Source>
+      <Importer>TowerImporter</Importer>
+      <Processor>TowerProcessor</Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\rocket_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Towers\tower-rocket_0.xml</Key>
+        <Value>2013-05-17T16:29:47.343843+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Weapons\fx-rocket_0.xml</Key>
+        <Value>2013-05-17T16:29:47.3488432+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\HitEffects\explosion_0.xml</Key>
+        <Value>2013-05-17T16:29:47.379845+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Towers\tower-rocket1_0.xml</Key>
+        <Value>2013-05-17T16:29:47.4078466+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Towers\tower-rocket2_0.xml</Key>
+        <Value>2013-05-17T16:29:47.4398485+07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Textures\Towers\tower-rocket.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Towers\tower-rocket_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Weapons\fx-rocket.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Weapons\fx-rocket_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\HitEffects\explosion.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\HitEffects\explosion_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Towers\tower-rocket1.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Towers\tower-rocket1_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Towers\tower-rocket2.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Towers\tower-rocket2_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Data\Maps\3.xml</Source>
+      <Importer>MapImporter</Importer>
+      <Processor>MapProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Data\Maps\3_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Maps\Map3_0.xml</Key>
+        <Value>2013-05-17T16:29:48.6959203+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landBasic_0.xml</Key>
+        <Value>2013-05-17T16:29:44.4686785+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landSlow_0.xml</Key>
+        <Value>2013-05-17T16:29:44.512681+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landFast_0.xml</Key>
+        <Value>2013-05-17T16:29:45.9787649+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\flyerSlow_0.xml</Key>
+        <Value>2013-05-17T16:29:46.0397684+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\flyerFast_0.xml</Key>
+        <Value>2013-05-17T16:29:46.0957716+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\gun_0.xml</Key>
+        <Value>2013-05-17T16:29:46.24278+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\rocket_0.xml</Key>
+        <Value>2013-05-17T16:29:47.4678501+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\missile_0.xml</Key>
+        <Value>2013-05-17T16:29:48.8949317+07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Data\Maps\3.xml</Source>
+      <Importer>MapImporter</Importer>
+      <Processor>MapProcessor</Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Maps\3_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Maps\Map3_0.xml</Key>
+        <Value>2013-05-17T16:29:48.6959203+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landBasic_0.xml</Key>
+        <Value>2013-05-17T16:29:44.4686785+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landSlow_0.xml</Key>
+        <Value>2013-05-17T16:29:44.512681+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landFast_0.xml</Key>
+        <Value>2013-05-17T16:29:45.9787649+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\flyerSlow_0.xml</Key>
+        <Value>2013-05-17T16:29:46.0397684+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\flyerFast_0.xml</Key>
+        <Value>2013-05-17T16:29:46.0957716+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\gun_0.xml</Key>
+        <Value>2013-05-17T16:29:46.24278+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\rocket_0.xml</Key>
+        <Value>2013-05-17T16:29:47.4678501+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\missile_0.xml</Key>
+        <Value>2013-05-17T16:29:48.8949317+07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Textures\Maps\Map3.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Maps\Map3_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Data\Towers\missile.xml</Source>
+      <Importer>TowerImporter</Importer>
+      <Processor>TowerProcessor</Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\missile_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Towers\tower-missile_0.xml</Key>
+        <Value>2013-05-17T16:29:48.8289279+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Weapons\fx-missile_0.xml</Key>
+        <Value>2013-05-17T16:29:48.8349282+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\HitEffects\explosion_0.xml</Key>
+        <Value>2013-05-17T16:29:47.379845+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Towers\tower-missile1_0.xml</Key>
+        <Value>2013-05-17T16:29:48.8519292+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Towers\tower-missile2_0.xml</Key>
+        <Value>2013-05-17T16:29:48.8639299+07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Textures\Towers\tower-missile.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Towers\tower-missile_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Weapons\fx-missile.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Weapons\fx-missile_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Towers\tower-missile1.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Towers\tower-missile1_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Towers\tower-missile2.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Towers\tower-missile2_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Data\Maps\4.xml</Source>
+      <Importer>MapImporter</Importer>
+      <Processor>MapProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Data\Maps\4_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Maps\Map4_0.xml</Key>
+        <Value>2013-05-17T16:29:49.8399857+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landBasic_0.xml</Key>
+        <Value>2013-05-17T16:29:44.4686785+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landSlow_0.xml</Key>
+        <Value>2013-05-17T16:29:44.512681+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landFast_0.xml</Key>
+        <Value>2013-05-17T16:29:45.9787649+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\flyerSlow_0.xml</Key>
+        <Value>2013-05-17T16:29:46.0397684+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\flyerFast_0.xml</Key>
+        <Value>2013-05-17T16:29:46.0957716+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\gun_0.xml</Key>
+        <Value>2013-05-17T16:29:46.24278+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\rocket_0.xml</Key>
+        <Value>2013-05-17T16:29:47.4678501+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\missile_0.xml</Key>
+        <Value>2013-05-17T16:29:48.8949317+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\laser_0.xml</Key>
+        <Value>2013-05-17T16:29:50.2160072+07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Data\Maps\4.xml</Source>
+      <Importer>MapImporter</Importer>
+      <Processor>MapProcessor</Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Maps\4_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Maps\Map4_0.xml</Key>
+        <Value>2013-05-17T16:29:49.8399857+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landBasic_0.xml</Key>
+        <Value>2013-05-17T16:29:44.4686785+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landSlow_0.xml</Key>
+        <Value>2013-05-17T16:29:44.512681+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landFast_0.xml</Key>
+        <Value>2013-05-17T16:29:45.9787649+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\flyerSlow_0.xml</Key>
+        <Value>2013-05-17T16:29:46.0397684+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\flyerFast_0.xml</Key>
+        <Value>2013-05-17T16:29:46.0957716+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\gun_0.xml</Key>
+        <Value>2013-05-17T16:29:46.24278+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\rocket_0.xml</Key>
+        <Value>2013-05-17T16:29:47.4678501+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\missile_0.xml</Key>
+        <Value>2013-05-17T16:29:48.8949317+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\laser_0.xml</Key>
+        <Value>2013-05-17T16:29:50.2160072+07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Textures\Maps\Map4.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Maps\Map4_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Data\Towers\laser.xml</Source>
+      <Importer>TowerImporter</Importer>
+      <Processor>TowerProcessor</Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\laser_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Towers\tower-laser_0.xml</Key>
+        <Value>2013-05-17T16:29:50.1650043+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Weapons\fx-laser_0.xml</Key>
+        <Value>2013-05-17T16:29:50.1710047+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Towers\tower-laser1_0.xml</Key>
+        <Value>2013-05-17T16:29:50.1780051+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Towers\tower-laser2_0.xml</Key>
+        <Value>2013-05-17T16:29:50.2030065+07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Textures\Towers\tower-laser.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Towers\tower-laser_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Weapons\fx-laser.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Weapons\fx-laser_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Towers\tower-laser1.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Towers\tower-laser1_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Towers\tower-laser2.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Towers\tower-laser2_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Data\Maps\5.xml</Source>
+      <Importer>MapImporter</Importer>
+      <Processor>MapProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Data\Maps\5_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Maps\Map5_0.xml</Key>
+        <Value>2013-05-17T16:29:51.1460604+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landBasic_0.xml</Key>
+        <Value>2013-05-17T16:29:44.4686785+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landSlow_0.xml</Key>
+        <Value>2013-05-17T16:29:44.512681+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landFast_0.xml</Key>
+        <Value>2013-05-17T16:29:45.9787649+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\flyerSlow_0.xml</Key>
+        <Value>2013-05-17T16:29:46.0397684+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\flyerFast_0.xml</Key>
+        <Value>2013-05-17T16:29:46.0957716+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\gun_0.xml</Key>
+        <Value>2013-05-17T16:29:46.24278+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\rocket_0.xml</Key>
+        <Value>2013-05-17T16:29:47.4678501+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\missile_0.xml</Key>
+        <Value>2013-05-17T16:29:48.8949317+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\laser_0.xml</Key>
+        <Value>2013-05-17T16:29:50.2160072+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\earthquake_0.xml</Key>
+        <Value>2013-05-17T16:29:51.4650787+07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Data\Maps\5.xml</Source>
+      <Importer>MapImporter</Importer>
+      <Processor>MapProcessor</Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Maps\5_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Maps\Map5_0.xml</Key>
+        <Value>2013-05-17T16:29:51.1460604+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landBasic_0.xml</Key>
+        <Value>2013-05-17T16:29:44.4686785+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landSlow_0.xml</Key>
+        <Value>2013-05-17T16:29:44.512681+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\landFast_0.xml</Key>
+        <Value>2013-05-17T16:29:45.9787649+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\flyerSlow_0.xml</Key>
+        <Value>2013-05-17T16:29:46.0397684+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Enemies\flyerFast_0.xml</Key>
+        <Value>2013-05-17T16:29:46.0957716+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\gun_0.xml</Key>
+        <Value>2013-05-17T16:29:46.24278+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\rocket_0.xml</Key>
+        <Value>2013-05-17T16:29:47.4678501+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\missile_0.xml</Key>
+        <Value>2013-05-17T16:29:48.8949317+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\laser_0.xml</Key>
+        <Value>2013-05-17T16:29:50.2160072+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\earthquake_0.xml</Key>
+        <Value>2013-05-17T16:29:51.4650787+07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Textures\Maps\Map5.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Maps\Map5_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Data\Towers\earthquake.xml</Source>
+      <Importer>TowerImporter</Importer>
+      <Processor>TowerProcessor</Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Data\Towers\earthquake_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Towers\tower-quake-wave_0.xml</Key>
+        <Value>2013-05-17T16:29:51.2900687+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Weapons\fx-quake-wave_0.xml</Key>
+        <Value>2013-05-17T16:29:51.3610727+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Towers\tower-quake-wave1_0.xml</Key>
+        <Value>2013-05-17T16:29:51.3680731+07:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Towers\tower-quake-wave2_0.xml</Key>
+        <Value>2013-05-17T16:29:51.3990749+07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Textures\Towers\tower-quake-wave.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Towers\tower-quake-wave_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Weapons\fx-quake-wave.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Weapons\fx-quake-wave_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Towers\tower-quake-wave1.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Towers\tower-quake-wave1_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Towers\tower-quake-wave2.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\Textures\Towers\tower-quake-wave2_0.xml</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Backgrounds\playscreen.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Backgrounds\playscreen_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\Common.spritefont</Source>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Fonts\Common_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Buttons\HUD-button-options.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\HUD-button-options_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Buttons\next-wave2.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\next-wave2_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Buttons\Enter.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\Enter_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Buttons\Exit.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\Exit_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Buttons\HUD-button-pause.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\HUD-button-pause_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Buttons\HUD-button-play.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\HUD-button-play_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Buttons\X1.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\X1_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Buttons\X2.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\X2_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Buttons\X3.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\X3_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Towers\HUD-tower-gun.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Towers\HUD-tower-gun_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Towers\HUD-tower-gun-unavailable.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Towers\HUD-tower-gun-unavailable_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Towers\HUD-tower-rocket.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Towers\HUD-tower-rocket_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Towers\HUD-tower-rocket-unavailable.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Towers\HUD-tower-rocket-unavailable_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Towers\HUD-tower-missile.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Towers\HUD-tower-missile_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Towers\HUD-tower-missile-unavailable.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Towers\HUD-tower-missile-unavailable_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Towers\HUD-tower-laser.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Towers\HUD-tower-laser_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Towers\HUD-tower-laser-unavailable.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Towers\HUD-tower-laser-unavailable_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Towers\HUD-tower-wave.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Towers\HUD-tower-wave_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Towers\HUD-tower-wave-unavailable.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Towers\HUD-tower-wave-unavailable_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Backgrounds\1-main.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Backgrounds\1-main_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Backgrounds\2-level-select.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Backgrounds\2-level-select_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Buttons\locked.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\locked_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Buttons\back-previous.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\back-previous_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Buttons\next.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\next_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Buttons\HUD-button-sell.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\HUD-button-sell_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Buttons\HUD-button-upgrade.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\HUD-button-upgrade_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Backgrounds\4-highscores.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Backgrounds\4-highscores_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Backgrounds\3-loading.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Backgrounds\3-loading_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Buttons\enabled.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\enabled_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Buttons\disabled.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\Buttons\disabled_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\HelpScreens\Help1.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\HelpScreens\Help1_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\HelpScreens\Help2.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\HelpScreens\Help2_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\HelpScreens\Help3.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\HelpScreens\Help3_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\HelpScreens\Help4.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor></Processor>
+      <Options>None</Options>
+      <Output>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\Textures\HelpScreens\Help4_0.xnb</Output>
+      <Time>2011-11-20T13:17:32+07:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{9ACF3AFD-45D6-4F1B-823A-8DAE42E60873}</ContentProjectGUID>
+      <TargetPlatform>WindowsPhone</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Content\</RootDirectory>
+      <LoggerRootDirectory>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\obj\Windows Phone\Debug\</IntermediateDirectory>
+      <OutputDirectory>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Sample\bin\Windows Phone\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2011-09-01T16:22:30+07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2011-09-01T16:22:30+07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.ContentPipeline\bin\x86\Debug\Coding4Fun.ScriptTD.ContentPipeline.dll</Key>
+        <Value>2013-05-17T16:29:40.2404367+07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2011-11-18T15:35:57.9626049+07:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

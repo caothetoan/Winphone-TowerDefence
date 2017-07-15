@@ -1,0 +1,9 @@
+D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.ContentPipeline\bin\x86\Debug\Coding4Fun.ScriptTD.ContentPipeline.dll
+D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.ContentPipeline\bin\x86\Debug\Coding4Fun.ScriptTD.ContentPipeline.pdb
+D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.ContentPipeline\bin\x86\Debug\Coding4Fun.ScriptTD.Common.dll
+D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.ContentPipeline\bin\x86\Debug\Coding4Fun.ScriptTD.Engine.dll
+D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.ContentPipeline\bin\x86\Debug\Coding4Fun.ScriptTD.Common.pdb
+D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.ContentPipeline\bin\x86\Debug\Coding4Fun.ScriptTD.Engine.pdb
+D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.ContentPipeline\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.ContentPipeline\obj\x86\Debug\Coding4Fun.ScriptTD.ContentPipeline.dll
+D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.ContentPipeline\obj\x86\Debug\Coding4Fun.ScriptTD.ContentPipeline.pdb

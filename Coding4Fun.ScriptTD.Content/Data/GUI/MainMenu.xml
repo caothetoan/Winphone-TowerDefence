@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Window music="track1,track2">
+  <Visual>
+    <Image src="Textures\Backgrounds\1-main.jpg" />
+  </Visual>
+
+  <Templates>
+    <Template Name="menuButton">
+      <Text Align="Center" VAlign="Middle" Text="{TEXT}" Color="255,255,255,255" AllowParentResize="true" Font="Fonts\Common.spritefont" />
+    </Template>
+  </Templates>
+
+  <Button Name="resume" Location="55%, 15%" Text="Resume" Template="menuButton"/>
+
+  <Button Name="play" Location="55%, 30%" Text="New Game" Template="menuButton"/>
+
+  <Button Name="highscores" Location="55%, 45%" Text="High Scores" Template="menuButton"/>
+
+  <Button Name="help" Location="55%, 60%" Text="Help" Template="menuButton"/>
+
+  <Button Name="quit" Location="55%, 75%" Text="Quit" Template="menuButton"/>
+</Window>

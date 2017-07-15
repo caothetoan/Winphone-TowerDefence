@@ -1,0 +1,8 @@
+D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Engine\bin\Windows Phone\Debug\Coding4Fun.ScriptTD.Engine.dll
+D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Engine\bin\Windows Phone\Debug\Coding4Fun.ScriptTD.Engine.pdb
+D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Engine\bin\Windows Phone\Debug\Coding4Fun.ScriptTD.Common.dll
+D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Engine\bin\Windows Phone\Debug\Coding4Fun.ScriptTD.Common.pdb
+D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Engine\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
+D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Engine\obj\Windows Phone\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Engine\obj\Windows Phone\Debug\Coding4Fun.ScriptTD.Engine.dll
+D:\WP7\Project\ScriptTowerDefence\Coding4Fun.ScriptTD.Engine\obj\Windows Phone\Debug\Coding4Fun.ScriptTD.Engine.pdb

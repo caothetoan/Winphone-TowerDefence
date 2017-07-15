@@ -1,0 +1,799 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>ScriptTD&#58; Tower Defense Made Easy &#124; Coding4Fun Articles &#124; Channel 9</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="generator" content="Rev9"/>
+	<meta name="WT.z_bdb" content="1"/>
+	<meta name="msapplication-task" content="name=Coffeehouse;action-uri=/forums/coffeehouse;icon-uri=/styles/images/favicon.ico"/>
+	<meta name="msapplication-task" content="name=Browse All Content;action-uri=/Browse;icon-uri=/styles/images/favicon.ico"/>
+	<meta name="msapplication-task" content="name=Shows;action-uri=/Browse/Shows;icon-uri=/styles/images/favicon.ico"/>
+	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://static.ch9.ms/styles/images/favicon.ico"/>
+	<link rel="apple-touch-icon" href="http://static.ch9.ms/styles/images/favicon_129x129.png"/>
+  <link href="http://static.ch9.ms/styles/site.min.css?v=Sf7888W_CtrLgoGmT1_uvdgG_Dk1" media="all" rel="stylesheet" type="text/css" />
+  <link href="http://static.ch9.ms/styles/print.css?v=Sf7888W_CtrLgoGmT1_uvdgG_Dk1" media="print" rel="stylesheet" type="text/css" />
+  <link href="http://static.ch9.ms/styles/handheld.css?v=Sf7888W_CtrLgoGmT1_uvdgG_Dk1" media="handheld" rel="stylesheet" type="text/css" />
+	<link href="http://static.ch9.ms/styles/rating.css?v=Sf7888W_CtrLgoGmT1_uvdgG_Dk1" media="all" rel="stylesheet" type="text/css" />
+	<link href="http://static.ch9.ms/styles/comments.css?v=Sf7888W_CtrLgoGmT1_uvdgG_Dk1" media="all" rel="stylesheet" type="text/css" />
+	<link href="http://static.ch9.ms/styles/sourcecode.css?v=Sf7888W_CtrLgoGmT1_uvdgG_Dk1" media="all" rel="stylesheet" type="text/css" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<link href="http://static.ch9.ms/styles/admin.css?v=Sf7888W_CtrLgoGmT1_uvdgG_Dk1" media="all" rel="stylesheet" type="text/css" />
+	
+	<link href="http://static.ch9.ms/styles/entry.css?v=Sf7888W_CtrLgoGmT1_uvdgG_Dk1" media="all" rel="stylesheet" type="text/css" />
+	<link href="http://static.ch9.ms/scripts/sh/sh.css?v=Sf7888W_CtrLgoGmT1_uvdgG_Dk1" media="all" rel="stylesheet" type="text/css" />
+		<link href="http://static.ch9.ms/styles/coding4fun.css?v=Sf7888W_CtrLgoGmT1_uvdgG_Dk1" media="all" rel="stylesheet" type="text/css" />
+	<link href="/coding4fun/articles/ScriptTD-Tower-Defense-Made-Easy/RSS" title="Comment Feed - ScriptTD: Tower Defense Made Easy" rel="alternate" type="application/rss+xml"/>
+	<meta name="description" content="ScriptTD is an open source project that allows anyone to easily create a new Tower Defense game for the Windows Phone 7 platform, without any prior programming knowledge. The project lets you create new art &amp;amp; audio and edit some XML files to bring it all together into a polished game without having to write all of the code required to make the game work.If you are looking to just create a game without coding, this article isn’t for you, head to http://scripttd.codeplex.com and follow the instructions there to get started.Extending the CodeYou can easily get away with editing the XML and adding new assets to make a whole new Tower Defense game with ScriptTD as it is. If you know a bit of C#, however, you can take it further and extend the game to make a unique creation. The entire source code for the project is available for free on Codeplex (see links above), so feel free to download that and change any part of it that you want.There are three key areas that are easy to change in ScriptTD:Weapons The GUI The Game Screens (Menus) In this article we are going to focus on the main one you might want to edit—the weapons.Straight from the LabsThe game already has a number of different weapon types, ranging from projectiles to earthquake generators; the laser included with the project, however, only fires along one of the four cardinal directions (N, S, E, W).We will extend the code to add in a new type of laser, one that follows a target as it shoots. Remember that the code simply defines the behavior of the weapon, so you could change the art into flame images and create a flamethrower, without changing any of the code you are about to create.Getting StartedThis first thing you need to do before you can start creating your custom weapon is grab the source code for ScriptTD from Codeplex.Every weapon in the game implements the IWeapon interface, which is provided by the engine. This allows the game to interface in a common way with each weapon type. Once you implement that, simply register the weapon type when the game starts up, and then refer to it in the XML data files when you need to. For the purposes of this article we will work with the sample game, though everything you learn here can easily be applied to your own version of the game.First begin by creating a new class in the Coding4Fun.ScriptTD.Sample project and name it TrackingWeapon. Once you are done you should have an empty class that looks like this: using System.Collections.Generic;
+using Coding4Fun.ScriptTD.Engine.Data;
+using Coding4Fun.ScriptTD.Engine.Data.Abstracts;
+using Coding4Fun.ScriptTD.Engine.Logic;
+using Coding4Fun.ScriptTD.Engine.Logic.Instances;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+ 
+namespace Coding4Fun.ScriptTD.Sample
+{
+    public class TrackingWeapon : IWeapon
+    {
+        public Texture2D Texture { get; set; }
+ 
+        public TowerData TowerData { get; set; }
+ 
+        public bool CanFire()
+        {
+            throw new System.NotImplementedException();
+        }
+ 
+        public bool TargetAndFire(ref List&amp;lt;EnemyInstance&amp;gt; enemies,
+            ref Vector2 towerPos, float gridCellSize)
+        {
+            throw new System.NotImplementedException();
+        }
+ 
+        public void Update(float elapsedSeconds, ref GameSession session)
+        {
+        }
+ 
+        public void Draw(GraphicsDevice device, SpriteBatch sb)
+        {
+        }
+    }
+}
+When working with weapons in this project, you need to remember that weapons act purely as logic operating on the provided data. Accordingly, the game will provide the texture and specifications for the tower, and you need to make use of that to make the weapon behave as it should. Inside the base class above, we have two properties that are set by the game: Texture and TowerData. These will be set automatically upon creation, so you can generally ignore those unless you want to get info from the texture whenever it changes.Next we have the CanFire method; this is usually used to check if the tower has finished reloading. Depending on your tower, however, you could do other checks here. The key thing is that this is just telling the game if the tower is ready to fire, rather than if it has any targets.Finding targets is done in the next method, TargetAndFire. This is where you have access to the list of enemies that you can test against for range/suitability, and based on that choose a target and fire.After that we have the usual Update and Draw methods, which let you manage shots in flight as well as keeping track of reloading.For this weapon, we won’t worry about reloading. Instead the weapon will constantly fire at its closest target.1, 2, 3, Fire!First we need to tell the game it is ok to fire at any time, so simply make CanFire() return true:
+public bool CanFire()
+{
+    return true;
+}
+Once that is done, we can begin with the code of the weapon, the TargetAndFire() method. And so we will we doing the following:Check which enemy is the closest Make sure we are allowed to shoot at the enemy Make that enemy the target First we need a variable to keep track of the closest enemy, and their distance, so we need an EnemyInstance variable and a float. I have named them closest and distSq, respectively, and initialised distSq to float.MaxValue (you’ll see why shortly):
+EnemyInstance closest = null;
+float distSq = float.MaxValue;
+Once we do that, we need to prepare our Min and Max ranges so that we can ensure we only target enemies within that area. To do so, we need to add the following code:
+float maxRange = TowerData.MaxRange * gridCellSize;
+maxRange *= maxRange;
+float minRange = TowerData.MinRange * gridCellSize;
+minRange *= minRange;
+The MaxRange is stored as the number of cells, so we need to expand this into the actual distance by multiplying with the provided cell size. Then we square it because we will be doing all of our distance tests using the squared length values. We do this to save on performance, and since a square root operation (as required by the Length formula) can be costly, we instead use the squared distance, and as long as everything uses squared distance, it will all be correct.Next we need to loop through every enemy and check the following:Can we target the enemy? Is it a flyer or land enemy, can we target either? Is it the closest? Is it within the Min/Max range If all of the above is true, we set the enemy to be our closest, and continue iterating through the list of enemies:
+for (int i = 0; i &amp;lt; enemies.Count; &amp;#43;&amp;#43;i)
+{
+    if ((TowerData.CanShootFlyers &amp;amp;&amp;amp; enemies[i].Data.CanFly)
+        || (TowerData.CanShootLand &amp;amp;&amp;amp; !enemies[i].Data.CanFly))
+    {
+        float d = (enemies[i].Position - towerPos).LengthSquared();
+        if (d &amp;lt;= distSq &amp;amp;&amp;amp; d &amp;lt;= maxRange &amp;amp;&amp;amp; d &amp;gt;= minRange)
+        {
+            distSq = d;
+            closest = enemies[i];
+        }
+    }
+}
+Next, we set the closest enemy as the target, and store some helper data for when we draw later. This helper data includes the position of the tower and the size of a grid cell. Finally, we return true if we have a target, which lets the game know if it should play the &amp;quot;Shoot&amp;quot; sound effect:
+_towerPos = towerPos;_cellSize = gridCellSize;
+_target = closest;
+return _target != null;
+I’m Taking Damage!Now we need to make the weapon actually damage the enemy, to do this we add the following code to the Update method:
+if (_target != null)
+_target.TakeDamage(TowerData.FullName, TowerData.DPS * elapsedSeconds);
+If we are currently targeting something, we tell it to take damage based on the information inside TowerData. We do this every update because the tower instantly hits the enemy, and will never miss. The enemy itself will handle decreasing its health and applying any resistances it may have, the only thing we need to do is get the correct damage from the DPS (Damage Per Second) value by multiplying it with the elapsedSeconds variable.Draw their Fire!Now we will draw the laser as it fires. First check if we have a target to shoot at:
+if (_target == null)
+    return;
+Now we can start preparing the data we need to create a continuous line of fire towards the enemy:
+var origin = new Vector2(Texture.Width / 2f, Texture.Height / 2f);float numSteps = (_target.Position - _towerPos).Length() / _cellSize;
+Here we get the center of the texture; we will use this as the origin when drawing in order to ensure it rotates correctly. We also get the number of grid cell sized textures to draw between the tower and the enemy. Then we can loop through this to draw each texture:
+for (float i = 1; i &amp;lt; numSteps; &amp;#43;&amp;#43;i)
+{
+    float x = MathHelper.Lerp(_towerPos.X, _target.Position.X, i / numSteps);
+    float y = MathHelper.Lerp(_towerPos.Y, _target.Position.Y, i / numSteps);    Vector2 pos = new Vector2(x, y);
+    Vector2 dir = _target.Position - pos;
+    dir.Normalize();
+    float angle = (float)Math.Atan2(dir.Y, dir.X);    sb.Draw(Texture, pos, null, Color.White, angle, origin, 1, SpriteEffects.None, 0);
+}
+Here we loop through each step, drawing the texture at an interpolated position. Note the i=1 in the for loop, this lets us start drawing after the tower, so it looks like the laser is emerging from the tower, rather than behind it.Next we get the X and Y coordinates for the texture. To do this we need to interpolate along the line from the tower to the enemy. We can make use of the built in Lerp function to do this by providing the start and end coordinates (the tower and enemy respectively) and then getting a value from 0 to 1 based on which step we are drawing.Next we need to ensure the texture is rotated correctly, we do this using some math by getting the direction vector, normalizing it, and then getting the ArcTan value.Once we have all of the data, we call the appropriate Draw method inside SpriteBatch. The parameters in order are:The Texture The Position to draw the texture A Rectangle describing what portion of the texture to draw (in our case: all of it) The tint to apply (in our case: no tint, which is Color.White) The angle with which to rotate the texture around its origin The origin of the texture The scale (In our case: 1, we don’t scale the texture) The SpriteEffects to apply The depth at which to draw the texture (in our case: in front with everything else) Weapons in the ArmoryNow that we have completed the behavior for the weapon, we can register it with the game, ready for use.To do this, find the SampleGame class inside the Coding4Fun.ScriptTD.Sample project and scroll down to the RegisterWeapons() method (around line 84).Add the following line anywhere inside that method:
+Armory.AddWeaponType(&amp;quot;Tracking&amp;quot;, typeof(TrackingWeapon));
+Here we are registering the weapon type, and telling the game that it will be called &amp;quot;Tracking&amp;quot; inside the XML files. This lets us use friendlier names whilst maintaining naming conventions in our code.Now we just need to add this weapon to a tower and try it out.From the root directory for the project, navigate to:Coding4Fun.ScriptTD.Content\Data\TowersAnd open laser.xml and change the WeaponType attribute from &amp;quot;Laser&amp;quot; to &amp;quot;Tracking&amp;quot;.With that done, compile the game and run it! You can find a laser inside Mission 4, so to try it out select that mission and place the fourth tower. Wait for it to build and for enemies to arrive, and then bask in the glory of your new weapon.ConclusionYou now know how to add a completely new weapon type to the game, which will let you add a unique touch to your Tower Defense game. There are other areas in the game that you can extend in code, and there is a lot of power in the XML definition files. So if you are interested in learning more, browse the code and the documentation at the Codeplex link at the start of the article. Play around with the behavior, create a new tower in XML, and tweak the values. If you find the sound annoying you can add a delay in between changing targets, or completely remove the sound from the XML. Make whatever you want using the tools available—turn it into something you made. Remember, the tools are free and with some creativity you can make a really great game!About The AuthorI am a student at the University of Technology Sydney, and an R&amp;amp;D Engineer for Orion Integration Pty Ltd, specializing in 3D Visualization, as well as Computer Vision. I have a strong interest in game development, particularly on the Graphics and GPU programming side. I am also a Microsoft Student Partner at my university and the State Lead for the MSPs in New South Wales.You can contact me at michael@mquandt.com or visit my blog at http://mquandt.com/blog. Feel free to also follow me on Twitter: @quandtm. If you have any questions or suggestions, contact me through one of the above methods, or if you find any issues with ScriptTD, report them on the Codeplex page."/>
+	<meta name="WT.entryid" content="Entry:WebView:9818e1ba2a49441eb60d9f2c0164e78f"/>
+	<meta name="Search.PageType" content="Entry.Item"/>
+		<meta name="Search.SectionType" content="Blogs"/>
+		<meta name="Search.Section" content="Coding4FunArticles"/>
+	<meta name="title" content="ScriptTD: Tower Defense Made Easy"/>
+	<meta name="Search.Title" content="ScriptTD: Tower Defense Made Easy"/>
+	<meta name="Search.Author" content="Clint Rutkas"/>
+	<meta name="Search.Author" content="Michael Quandt"/>
+	<meta name="Search.Author" content="Clint"/>
+	<meta name="Search.Author" content="Quandtm"/>
+		<link type="image/jpeg" rel="videothumbnail" href="http://files.channel9.msdn.com/thumbnail/09e3b936-4520-43f8-9623-da1751c3bf72.png"/>
+		<link rel="image_src" href="http://files.channel9.msdn.com/thumbnail/09e3b936-4520-43f8-9623-da1751c3bf72.png"/>
+		<meta name="Search.Image" content="http://files.channel9.msdn.com/thumbnail/bc0fba7c-5514-4081-8319-f63398876b2d.png"/>
+	<link rel="canonical" href="http://channel9.msdn.com/coding4fun/articles/ScriptTD-Tower-Defense-Made-Easy"/>
+	<meta name="CommentCount" content="7"/>
+	<!-- <meta name="keywords" content="${Model.Entry.Tags.ToString}" /> -->
+	<noscript><link href="http://static.ch9.ms/styles/noscript.css?v=Sf7888W_CtrLgoGmT1_uvdgG_Dk1" media="all" rel="stylesheet" type="text/css" /></noscript>
+	<!--[if gt IE 8]><link href="http://static.ch9.ms/styles/ie9beta1.css?v=Sf7888W_CtrLgoGmT1_uvdgG_Dk1" media="all" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 8]><link href="http://static.ch9.ms/styles/ie8.css?v=Sf7888W_CtrLgoGmT1_uvdgG_Dk1" media="all" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if lt IE 8]><link href="http://static.ch9.ms/styles/ie7_6.css?v=Sf7888W_CtrLgoGmT1_uvdgG_Dk1" media="all" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if lt IE 7]><link href="http://static.ch9.ms/styles/ie6.css?v=Sf7888W_CtrLgoGmT1_uvdgG_Dk1" media="all" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IEMobile 7]> <link href="http://static.ch9.ms/styles/ieMobile7.css?v=Sf7888W_CtrLgoGmT1_uvdgG_Dk1" media="all" rel="stylesheet" type="text/css" /><![endif]-->
+		<script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.6.4.min.js" type="text/javascript"></script>
+	<script src="http://static.ch9.ms/scripts/globals.min.js?v=Sf7888W_CtrLgoGmT1_uvdgG_Dk1" type="text/javascript"></script>
+	<!--[if lt IE 7]><script>ch9.data.isIE6=true;</script><![endif]-->
+	<script src="http://static.ch9.ms/scripts/videoplayer.min.js?v=Sf7888W_CtrLgoGmT1_uvdgG_Dk1" type="text/javascript"></script>
+	<script src="http://static.ch9.ms/scripts/entry.js?v=Sf7888W_CtrLgoGmT1_uvdgG_Dk1" type="text/javascript"></script>
+	
+</head>
+<body class="hasSidebar entry ">
+<div class="branding">
+	<div class="toolbar">
+		<div class="container"><ul>
+	<li class="region"><a class="globe" href="/Blogs/C9Team/Channel-9-has-gone-global"><span class="datacenter rounded">South Central US</span></a></li>
+    <li class="followus"><a href="http://twitter.com/ch9">Follow Us @Ch9</a></li>
+	<li class="subscribe site"><a href="/Feeds/RSS">Subscribe to Channel 9</a></li>
+	<!--IE7 needs a return here-->
+		<li class="signIn"><a href="https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=11&amp;ct=1321954903&amp;rver=6.1.6195.0&amp;wp=MBI&amp;wreply=http:%2F%2Fchannel9.msdn.com%2Fcoding4fun%2Farticles%2FScriptTD-Tower-Defense-Made-Easy&amp;id=47159">Sign In</a></li>
+</ul>
+		</div>
+	</div>
+	<div class="navigation">
+		<div class="container"><div class="logo"><a href="/">Channel&#160;9</a></div><div class="search bing">
+	<form action="/search" autocomplete="off">
+		<input type="text" class="text inactive" value="Search this site" name="term"/>
+		<input class="theSubmit" type="submit" alt="Submit"/>
+	</form>
+</div>
+<ul class="mainNav">
+	<li class="browse">
+		<a href="/Browse">Browse</a>
+		<ul class="rounded">
+			<li><a href="/Browse/Tags">Tags</a></li>
+			<li><a href="/Browse/Shows">Shows</a></li>
+			<li><a href="/Browse/Series">Series</a></li>
+			<li><a href="/Browse/Blogs">Blogs</a></li>
+			<li><a href="/Browse/Authors">Authors</a></li>
+			<li><a href="/Learn">Learn</a></li>
+			<li><a href="/Browse/Events">Events</a></li>
+		</ul>
+	</li>
+	<li class="forums">
+		<a href="/Forums">Forums</a>
+		<ul class="rounded">
+			<li><a href="/Forums/Coffeehouse">Coffeehouse</a></li>
+			<li><a href="/Forums/Feedback">Site Feedback</a></li>
+			<li><a href="/Forums/TechOff">Tech Off</a></li>
+		</ul>
+	</li>
+	<li class="learn active">
+		<a href="/coding4fun">Coding<span>4</span>Fun</a>
+		<ul class="rounded">
+			<li><a href="/coding4fun/blog">Blog</a></li>
+			<li><a href="/coding4fun/projects">Projects</a></li>
+      <li>
+        <a href="/coding4fun/kinect">Kinect</a>
+      </li>
+      <li>
+        <a href="/coding4fun/articles">Articles</a>
+      </li>
+      <li>
+        <a href="/coding4fun/tv">Show</a>
+      </li>
+    </ul>
+	</li>
+	<li class="events">
+		<a href="/Events">Events</a>
+		<ul class="rounded">
+      <li>
+        <a href="/Events/Build/Build2011">BUILD</a>
+      </li>
+      <li>
+        <a href="/Events/Mix">MIX</a>
+      </li>
+      <li>
+        <a href="/Events/PDC">PDC</a>
+      </li>
+			<li>
+        <a href="/Events/TechEd">Tech·Ed</a>
+      </li>
+			<li><a href="/Events/Speakers">Speakers</a></li>
+		</ul>
+	</li>
+</ul>
+		</div>
+	</div>
+</div>
+
+<div class="firstContent text">
+	
+</div>
+
+<div class="mainHolder">
+	
+	<div class="mainContent text">
+			<div class="breadcrumbs"><ul><li class="first"><a class="coding4fun" href="/coding4fun">Coding4Fun</a></li><li class="last"><a href="/coding4fun/articles">Articles</a></li></ul></div>
+
+
+
+<div class="entry">
+	<div class="entry-header item-header">
+		<h1>ScriptTD: Tower Defense Made&#160;Easy</h1>
+		<ul class="entry-data item-data">
+			<li class="date">
+					Posted: Jul 26, 2011 at 2:51 PM
+			</li>
+			<li class="author">
+				By: 
+					<a href="/Niners/Clint">Clint Rutkas</a>
+					,
+					<a href="/Niners/Quandtm">Michael Quandt</a>
+			</li>
+			<li class="rating">
+<div class="rating">
+	<div class="rating-average">
+			<fieldset>
+					<input type="radio" value="0.25"/>
+					<input type="radio" value="0.5"/>
+					<input type="radio" value="0.75"/>
+					<input type="radio" value="1"/>
+					<input type="radio" value="1.25"/>
+					<input type="radio" value="1.5"/>
+					<input type="radio" value="1.75"/>
+					<input type="radio" value="2"/>
+					<input type="radio" value="2.25"/>
+					<input type="radio" value="2.5"/>
+					<input type="radio" value="2.75"/>
+					<input type="radio" value="3"/>
+					<input type="radio" value="3.25"/>
+					<input type="radio" value="3.5"/>
+					<input type="radio" value="3.75"/>
+					<input type="radio" value="4"/>
+					<input type="radio" value="4.25"/>
+					<input type="radio" value="4.5"/>
+					<input type="radio" value="4.75"/>
+					<input type="radio" value="5" checked="checked"/>
+			</fieldset>
+	</div>
+	<p class="avg-rating">Avg Rating: <span>5</span></p>
+</div>
+<div class="rating-count">(3)</div>
+
+			</li>
+			<li class="views">
+					<span class="count">141,145</span> Views
+			</li>
+			<li class="comments">
+				<a href="#comments"><span class="count">7</span> Comments</a>
+			</li>
+			<li class="sharelinks">
+				<div class="retweet" data-tweet_url="http://channel9.msdn.com/coding4fun/articles/ScriptTD-Tower-Defense-Made-Easy" data-tweet_related="ClintRutkas"></div>
+				<a class="fb_share" data-share_url="http://channel9.msdn.com/coding4fun/articles/ScriptTD-Tower-Defense-Made-Easy"></a>
+			</li>
+		</ul>
+	</div>
+	<div class="entry-content">
+		<div id="entry-body">
+			<p>ScriptTD is an open source project that allows anyone to easily create a new Tower Defense game for the Windows Phone 7 platform, without any prior programming knowledge. The project lets you create new art &amp; audio and edit some XML files to bring it all together into a polished game without having to write all of the code required to make the game work.</p><p>If you are looking to just create a game without coding, this article isn’t for you, head to <a href="http://scripttd.codeplex.com">http://scripttd.codeplex.com</a> and follow the instructions there to get started.</p><p><a href="http://files.channel9.msdn.com/wlwimages/1932b237046e4743a4e79e6800c0220f/HomeScreen%5B3%5D%5B1%5D%5B3%5D.png"><img title="HomeScreen[3][1]" src="http://files.channel9.msdn.com/wlwimages/1932b237046e4743a4e79e6800c0220f/HomeScreen%5B3%5D%5B1%5D_thumb%5B1%5D.png" alt="HomeScreen[3][1]" width="550" height="330" border="0"></a></p><h3>Extending the Code</h3><p>You can easily get away with editing the XML and adding new assets to make a whole new Tower Defense game with ScriptTD as it is. If you know a bit of C#, however, you can take it further and extend the game to make a unique creation. The entire source code for the project is available for free on Codeplex (see links above), so feel free to download that and change any part of it that you want.</p><p>There are three key areas that are easy to change in ScriptTD:</p><ul><li>Weapons </li><li>The GUI </li><li>The Game Screens (Menus) </li></ul><p>In this article we are going to focus on the main one you might want to edit—the weapons.</p><h3>Straight from the Labs</h3><p>The game already has a number of different weapon types, ranging from projectiles to earthquake generators; the laser included with the project, however, only fires along one of the four cardinal directions (N, S, E, W).</p><p>We will extend the code to add in a new type of laser, one that follows a target as it shoots. Remember that the code simply defines the behavior of the weapon, so you could change the art into flame images and create a flamethrower, without changing any of the code you are about to create.</p><h3>Getting Started</h3><p>This first thing you need to do before you can start creating your custom weapon is grab the source code for <a href="http://scripttd.codeplex.com/">ScriptTD from Codeplex</a>.</p><p>Every weapon in the game implements the <strong>IWeapon</strong> interface, which is provided by the engine. This allows the game to interface in a common way with each weapon type. Once you implement that, simply register the weapon type when the game starts up, and then refer to it in the XML data files when you need to. For the purposes of this article we will work with the sample game, though everything you learn here can easily be applied to your own version of the game.</p><p>First begin by creating a new class in the Coding4Fun.ScriptTD.Sample project and name it <strong>TrackingWeapon</strong>. Once you are done you should have an empty class that looks like this:</p><p><pre class="brush: csharp"> using System.Collections.Generic;
+using Coding4Fun.ScriptTD.Engine.Data;
+using Coding4Fun.ScriptTD.Engine.Data.Abstracts;
+using Coding4Fun.ScriptTD.Engine.Logic;
+using Coding4Fun.ScriptTD.Engine.Logic.Instances;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+ 
+namespace Coding4Fun.ScriptTD.Sample
+{
+    public class TrackingWeapon : IWeapon
+    {
+        public Texture2D Texture { get; set; }
+ 
+        public TowerData TowerData { get; set; }
+ 
+        public bool CanFire()
+        {
+            throw new System.NotImplementedException();
+        }
+ 
+        public bool TargetAndFire(ref List&lt;EnemyInstance&gt; enemies,
+            ref Vector2 towerPos, float gridCellSize)
+        {
+            throw new System.NotImplementedException();
+        }
+ 
+        public void Update(float elapsedSeconds, ref GameSession session)
+        {
+        }
+ 
+        public void Draw(GraphicsDevice device, SpriteBatch sb)
+        {
+        }
+    }
+}
+</pre></p><p>When working with weapons in this project, you need to remember that weapons act purely as logic operating on the provided data. Accordingly, the game will provide the texture and specifications for the tower, and you need to make use of that to make the weapon behave as it should. Inside the base class above, we have two properties that are set by the game: <strong>Texture</strong> and <strong>TowerData</strong>. These will be set automatically upon creation, so you can generally ignore those unless you want to get info from the texture whenever it changes.</p><p>Next we have the <strong>CanFire</strong> method; this is usually used to check if the tower has finished reloading. Depending on your tower, however, you could do other checks here. The key thing is that this is just telling the game if the tower is ready to fire, rather than if it has any targets.</p><p>Finding targets is done in the next method, <strong>TargetAndFire</strong>. This is where you have access to the list of enemies that you can test against for range/suitability, and based on that choose a target and fire.</p><p>After that we have the usual <strong>Update</strong> and <strong>Draw</strong> methods, which let you manage shots in flight as well as keeping track of reloading.<strong></strong></p><p>For this weapon, we won’t worry about reloading. Instead the weapon will constantly fire at its closest target.</p><h3>1, 2, 3, Fire!</h3><p>First we need to tell the game it is ok to fire at any time, so simply make <strong>CanFire()</strong> return true:</p><p><pre class="brush: csharp">
+public bool CanFire()
+{
+    return true;
+}
+</pre></p><p>Once that is done, we can begin with the code of the weapon, the <strong>TargetAndFire()</strong> method. And so we will we doing the following:</p><ul><li>Check which enemy is the closest </li><li>Make sure we are allowed to shoot at the enemy </li><li>Make that enemy the target </li></ul><p>First we need a variable to keep track of the closest enemy, and their distance, so we need an <strong>EnemyInstance</strong> variable and a float. I have named them closest and distSq, respectively, and initialised distSq to float.MaxValue (you’ll see why shortly):</p><p><pre class="brush: csharp">
+EnemyInstance closest = null;
+float distSq = float.MaxValue;
+</pre></p><p>Once we do that, we need to prepare our Min and Max ranges so that we can ensure we only target enemies within that area. To do so, we need to add the following code:</p><p><pre class="brush: csharp">
+float maxRange = TowerData.MaxRange * gridCellSize;
+maxRange *= maxRange;
+float minRange = TowerData.MinRange * gridCellSize;
+minRange *= minRange;
+</pre></p><p>The <strong>MaxRange</strong> is stored as the number of cells, so we need to expand this into the actual distance by multiplying with the provided cell size. Then we square it because we will be doing all of our distance tests using the squared length values. We do this to save on performance, and since a square root operation (as required by the Length formula) can be costly, we instead use the squared distance, and as long as everything uses squared distance, it will all be correct.</p><p>Next we need to loop through every enemy and check the following:</p><ul><li>Can we target the enemy? <ul><li>Is it a flyer or land enemy, can we target either? </li></ul></li><li>Is it the closest? </li><li>Is it within the Min/Max range </li></ul><p>If all of the above is true, we set the enemy to be our closest, and continue iterating through the list of enemies:</p><p><pre class="brush: csharp">
+for (int i = 0; i &lt; enemies.Count; &#43;&#43;i)
+{
+    if ((TowerData.CanShootFlyers &amp;&amp; enemies[i].Data.CanFly)
+        || (TowerData.CanShootLand &amp;&amp; !enemies[i].Data.CanFly))
+    {
+        float d = (enemies[i].Position - towerPos).LengthSquared();
+        if (d &lt;= distSq &amp;&amp; d &lt;= maxRange &amp;&amp; d &gt;= minRange)
+        {
+            distSq = d;
+            closest = enemies[i];
+        }
+    }
+}
+</pre></p><p>Next, we set the closest enemy as the target, and store some helper data for when we draw later. This helper data includes the position of the tower and the size of a grid cell. Finally, we return true if we have a target, which lets the game know if it should play the &quot;Shoot&quot; sound effect:</p><p><pre class="brush: csharp">
+_towerPos = towerPos;_cellSize = gridCellSize;
+_target = closest;
+return _target != null;
+</pre></p><h3>I’m Taking Damage!</h3><p>Now we need to make the weapon actually damage the enemy, to do this we add the following code to the Update method:</p><p><pre class="brush: csharp">
+if (_target != null)
+_target.TakeDamage(TowerData.FullName, TowerData.DPS * elapsedSeconds);
+</pre></p><p>If we are currently targeting something, we tell it to take damage based on the information inside <strong>TowerData</strong>. We do this every update because the tower instantly hits the enemy, and will never miss. The enemy itself will handle decreasing its health and applying any resistances it may have, the only thing we need to do is get the correct damage from the DPS (Damage Per Second) value by multiplying it with the elapsedSeconds variable.</p><h3>Draw their Fire!</h3><p>Now we will draw the laser as it fires. First check if we have a target to shoot at:</p><p><pre class="brush: csharp">
+if (_target == null)
+    return;
+</pre></p><p>Now we can start preparing the data we need to create a continuous line of fire towards the enemy:</p><p><pre class="brush: csharp">
+var origin = new Vector2(Texture.Width / 2f, Texture.Height / 2f);float numSteps = (_target.Position - _towerPos).Length() / _cellSize;
+</pre></p><p>Here we get the center of the texture; we will use this as the origin when drawing in order to ensure it rotates correctly. We also get the number of grid cell sized textures to draw between the tower and the enemy. Then we can loop through this to draw each texture:</p><p><pre class="brush: csharp">
+for (float i = 1; i &lt; numSteps; &#43;&#43;i)
+{
+    float x = MathHelper.Lerp(_towerPos.X, _target.Position.X, i / numSteps);
+    float y = MathHelper.Lerp(_towerPos.Y, _target.Position.Y, i / numSteps);    Vector2 pos = new Vector2(x, y);
+    Vector2 dir = _target.Position - pos;
+    dir.Normalize();
+    float angle = (float)Math.Atan2(dir.Y, dir.X);    sb.Draw(Texture, pos, null, Color.White, angle, origin, 1, SpriteEffects.None, 0);
+}
+</pre></p><p>Here we loop through each step, drawing the texture at an interpolated position. Note the i=1 in the for loop, this lets us start drawing after the tower, so it looks like the laser is emerging from the tower, rather than behind it.</p><p>Next we get the X and Y coordinates for the texture. To do this we need to interpolate along the line from the tower to the enemy. We can make use of the built in Lerp function to do this by providing the start and end coordinates (the tower and enemy respectively) and then getting a value from 0 to 1 based on which step we are drawing.</p><p>Next we need to ensure the texture is rotated correctly, we do this using some math by getting the direction vector, normalizing it, and then getting the ArcTan value.</p><p>Once we have all of the data, we call the appropriate Draw method inside <strong>SpriteBatch</strong>. The parameters in order are:</p><ul><li>The Texture </li><li>The Position to draw the texture </li><li>A Rectangle describing what portion of the texture to draw (in our case: all of it) </li><li>The tint to apply (in our case: no tint, which is Color.White) </li><li>The angle with which to rotate the texture around its origin </li><li>The origin of the texture </li><li>The scale (In our case: 1, we don’t scale the texture) </li><li>The SpriteEffects to apply </li><li>The depth at which to draw the texture (in our case: in front with everything else) </li></ul><h3>Weapons in the Armory</h3><p>Now that we have completed the behavior for the weapon, we can register it with the game, ready for use.</p><p>To do this, find the <strong>SampleGame</strong> class inside the Coding4Fun.ScriptTD.Sample project and scroll down to the <strong>RegisterWeapons()</strong> method (around line 84).</p><p>Add the following line anywhere inside that method:</p><p><pre class="brush: csharp">
+Armory.AddWeaponType(&quot;Tracking&quot;, typeof(TrackingWeapon));
+</pre></p><p>Here we are registering the weapon type, and telling the game that it will be called &quot;Tracking&quot; inside the XML files. This lets us use friendlier names whilst maintaining naming conventions in our code.</p><p>Now we just need to add this weapon to a tower and try it out.</p><p>From the root directory for the project, navigate to:</p><blockquote><p>Coding4Fun.ScriptTD.Content\Data\Towers</p></blockquote><p>And open <strong>laser.xml</strong> and change the <strong>WeaponType</strong> attribute from &quot;Laser&quot; to &quot;Tracking&quot;.</p><p>With that done, compile the game and run it! You can find a laser inside Mission 4, so to try it out select that mission and place the fourth tower. Wait for it to build and for enemies to arrive, and then bask in the glory of your new weapon.</p><p><a href="http://files.channel9.msdn.com/wlwimages/1932b237046e4743a4e79e6800c0220f/clip_image002%5B6%5D.gif"><img title="clip_image002" src="http://files.channel9.msdn.com/wlwimages/1932b237046e4743a4e79e6800c0220f/clip_image002_thumb%5B3%5D.gif" alt="clip_image002" width="550" height="330" border="0"></a></p><h3>Conclusion</h3><p>You now know how to add a completely new weapon type to the game, which will let you add a unique touch to your Tower Defense game. There are other areas in the game that you can extend in code, and there is a lot of power in the XML definition files. So if you are interested in learning more, browse the code and the documentation at the Codeplex link at the start of the article. Play around with the behavior, create a new tower in XML, and tweak the values. If you find the sound annoying you can add a delay in between changing targets, or completely remove the sound from the XML. Make whatever you want using the tools available—turn it into something you made. Remember, the tools are free and with some creativity you can make a really great game!</p><h3>About The Author</h3><p>I am a student at the University of Technology Sydney, and an R&amp;D Engineer for Orion Integration Pty Ltd, specializing in 3D Visualization, as well as Computer Vision. I have a strong interest in game development, particularly on the Graphics and GPU programming side. I am also a Microsoft Student Partner at my university and the State Lead for the MSPs in New South Wales.</p><p>You can contact me at <a>michael@mquandt.com</a> or visit my blog at <a href="http://mquandt.com/blog">http://mquandt.com/blog</a>. Feel free to also follow me on Twitter: <a href="http://twitter.com/quandtm">@quandtm</a>. If you have any questions or suggestions, contact me through one of the above methods, or if you find any issues with ScriptTD, report them on the Codeplex page.</p>
+		</div>
+	</div>
+	<div id="entry-tags">
+		<h3>Tags:</h3>
+		<ul>
+			<li>
+				<a href="/Tags/games">Games</a>
+				, 
+			</li>
+			<li>
+				<a href="/Tags/windows+phone">Windows Phone</a>
+				, 
+			</li>
+			<li>
+				<a href="/Tags/windows-phone-7">Windows Phone 7</a>
+				, 
+			</li>
+			<li>
+				<a href="/Tags/xna">XNA</a>
+				, 
+			</li>
+			<li>
+				<a href="/Tags/xna-framework">XNA Framework</a>
+			</li>
+		</ul>
+	</div>
+	<div class="comments follow">
+		<a name="comments"></a>
+		<div class="comments-header">
+			<h2>Follow the Discussion</h2>
+			<ul>
+				<li class="subscribe">
+					<a href="/coding4fun/articles/ScriptTD-Tower-Defense-Made-Easy/RSS">Subscribe to these comments</a>
+				</li>
+			</ul>
+		</div>
+		<ul class="posts">
+				<li data-author="Ian2">
+
+<div class="author">
+		<a class="button" href="/Niners/Ian2"><img alt="Ian Walker" class="avatar" src="http://files.channel9.msdn.com/avatar/d5d942d3-e461-4bb8-aefd-ccda8ec3be5e.jpg" title="Ian Walker" /><span class="name">Ian2</span></a>
+		<span class="caption">In geeks we trust&#160;...</span>
+</div>
+
+<div class="post" id="c634473892170000000">
+	<div class="post-header">
+		<a class="permalink" href="/coding4fun/articles/ScriptTD-Tower-Defense-Made-Easy#c634473892170000000" title="Comment Permalink">Jul 27, 2011 at 11:46&#160;AM</a>
+				<a class="add quote button" href="/coding4fun/articles/ScriptTD-Tower-Defense-Made-Easy#c634473892170000000" title="quote comment">quote</a>
+				<a class="add reply button" href="/coding4fun/articles/ScriptTD-Tower-Defense-Made-Easy#c634473892170000000?areaType=Blogs&amp;areaName=Coding4FunArticles" title="reply to comment">reply</a>
+	</div>
+	<div class="post-content">
+			 <p>Nice idea, thanks.</p>
+	</div>
+</div>
+
+				</li>
+				<li data-author="Osorio">
+
+<div class="author">
+		<a class="button" href="/Niners/Osorio"><img alt="Osorio" class="avatar" src="http://mschnlnine.vo.llnwd.net/d1/Dev/App_Themes/C9/images/avatars/c9classic/default.gif" title="Osorio" /><span class="name">Osorio</span></a>
+</div>
+
+<div class="post" id="c634480385020000000">
+	<div class="post-header">
+		<a class="permalink" href="/coding4fun/articles/ScriptTD-Tower-Defense-Made-Easy#c634480385020000000" title="Comment Permalink">Aug 04, 2011 at 12:08&#160;AM</a>
+				<a class="add quote button" href="/coding4fun/articles/ScriptTD-Tower-Defense-Made-Easy#c634480385020000000" title="quote comment">quote</a>
+				<a class="add reply button" href="/coding4fun/articles/ScriptTD-Tower-Defense-Made-Easy#c634480385020000000?areaType=Blogs&amp;areaName=Coding4FunArticles" title="reply to comment">reply</a>
+	</div>
+	<div class="post-content">
+			 <p>This was so useful....thank you very much!</p>
+	</div>
+</div>
+
+				</li>
+				<li data-author="ismail">
+
+<div class="author">
+		<span><img alt="ismail" class="avatar" src="http://www.gravatar.com/avatar/45f6b3a20ea2e13c31ca33b14f7f0fc9?s=100&amp;d=http://channel9.msdn.com/styles/images/defaults/c9-100x66.png" title="ismail" /><span class="name">ismail</span></span>
+</div>
+
+<div class="post" id="c634518593010135000">
+	<div class="post-header">
+		<a class="permalink" href="/coding4fun/articles/ScriptTD-Tower-Defense-Made-Easy#c634518593010135000" title="Comment Permalink">Sep 17, 2011 at 5:28&#160;AM</a>
+				<a class="add quote button" href="/coding4fun/articles/ScriptTD-Tower-Defense-Made-Easy#c634518593010135000" title="quote comment">quote</a>
+				<a class="add reply button" href="/coding4fun/articles/ScriptTD-Tower-Defense-Made-Easy#c634518593010135000?areaType=Blogs&amp;areaName=Coding4FunArticles" title="reply to comment">reply</a>
+	</div>
+	<div class="post-content">
+			<p>hi, when I compiled the project, it gave this error. Error&#9;1&#9;Building content threw ArgumentException&#58; Visual Type &#34;CİRCLE&#34; does not exist. at Coding4Fun.ScriptTD.ContentPipeline.GUI.WindowProcessor.ProcessVisuals&#40;List&#96;1 visuals, IControl owner, ContentProcessorContext context&#41;<br><br>how can i run this project&#63;<br><br>thanks<br></p>
+	</div>
+</div>
+
+				</li>
+				<li data-author="JoPring">
+
+<div class="author">
+		<span><img alt="JoPring" class="avatar" src="http://www.gravatar.com/avatar/22584c627697c497c9df51679252b41a?s=100&amp;d=http://channel9.msdn.com/styles/images/defaults/c9-100x66.png" title="JoPring" /><span class="name">JoPring</span></span>
+</div>
+
+<div class="post" id="c634530479644893047">
+	<div class="post-header">
+		<a class="permalink" href="/coding4fun/articles/ScriptTD-Tower-Defense-Made-Easy#c634530479644893047" title="Comment Permalink">Sep 30, 2011 at 11:39&#160;PM</a>
+				<a class="add quote button" href="/coding4fun/articles/ScriptTD-Tower-Defense-Made-Easy#c634530479644893047" title="quote comment">quote</a>
+				<a class="add reply button" href="/coding4fun/articles/ScriptTD-Tower-Defense-Made-Easy#c634530479644893047?areaType=Blogs&amp;areaName=Coding4FunArticles" title="reply to comment">reply</a>
+	</div>
+	<div class="post-content">
+			<p>Could anyone post how the whole thing&#39;s supposed to look exactly&#63; It&#39;d be much appreciated. New to this and I can&#39;t seem to get everything in the right place.</p>
+	</div>
+</div>
+
+				</li>
+				<li data-author="Mike">
+
+<div class="author">
+		<span><img alt="Mike" class="avatar" src="http://www.gravatar.com/avatar/6e9d11e2e1b025b0826bceb70d9a3eaa?s=100&amp;d=http://channel9.msdn.com/styles/images/defaults/c9-100x66.png" title="Mike" /><span class="name">Mike</span></span>
+</div>
+
+<div class="post" id="c634534228441887118">
+	<div class="post-header">
+		<a class="permalink" href="/coding4fun/articles/ScriptTD-Tower-Defense-Made-Easy#c634534228441887118" title="Comment Permalink">Oct 05, 2011 at 7:47&#160;AM</a>
+				<a class="add quote button" href="/coding4fun/articles/ScriptTD-Tower-Defense-Made-Easy#c634534228441887118" title="quote comment">quote</a>
+				<a class="add reply button" href="/coding4fun/articles/ScriptTD-Tower-Defense-Made-Easy#c634534228441887118?areaType=Blogs&amp;areaName=Coding4FunArticles" title="reply to comment">reply</a>
+	</div>
+	<div class="post-content">
+			<p>Yes I agree.<br>Could you update the code with the above done so we just have to set laser to tracking&#63;<br>I&#39;m not lazy, just a little slow&#33;</p>
+	</div>
+</div>
+
+				</li>
+				<li data-author="varfar">
+
+<div class="author">
+		<span><img alt="varfar" class="avatar" src="http://www.gravatar.com/avatar/7f3d47770da8cc53725ecea4ef0ce36b?s=100&amp;d=http://channel9.msdn.com/styles/images/defaults/c9-100x66.png" title="varfar" /><span class="name">varfar</span></span>
+</div>
+
+<div class="post" id="c634542576109441145">
+	<div class="post-header">
+		<a class="permalink" href="/coding4fun/articles/ScriptTD-Tower-Defense-Made-Easy#c634542576109441145" title="Comment Permalink">Oct 14, 2011 at 11:40&#160;PM</a>
+				<a class="add quote button" href="/coding4fun/articles/ScriptTD-Tower-Defense-Made-Easy#c634542576109441145" title="quote comment">quote</a>
+				<a class="add reply button" href="/coding4fun/articles/ScriptTD-Tower-Defense-Made-Easy#c634542576109441145?areaType=Blogs&amp;areaName=Coding4FunArticles" title="reply to comment">reply</a>
+	</div>
+	<div class="post-content">
+			<p>great. can&#39;t wait to see hundreds of bland tower defense games flood the market.</p>
+	</div>
+</div>
+
+				</li>
+				<li data-author="inform_knight">
+
+<div class="author">
+		<a class="button" href="/Niners/inform_knight"><img alt="inform_knight" class="avatar" src="http://mschnlnine.vo.llnwd.net/d1/Dev/App_Themes/C9/images/avatars/c9classic/default.gif" title="inform_knight" /><span class="name">inform_knig&#8203;ht</span></a>
+</div>
+
+<div class="post" id="c634542772213583513">
+	<div class="post-header">
+		<a class="permalink" href="/coding4fun/articles/ScriptTD-Tower-Defense-Made-Easy#c634542772213583513" title="Comment Permalink">Oct 15, 2011 at 5:07&#160;AM</a>
+				<a class="add quote button" href="/coding4fun/articles/ScriptTD-Tower-Defense-Made-Easy#c634542772213583513" title="quote comment">quote</a>
+				<a class="add reply button" href="/coding4fun/articles/ScriptTD-Tower-Defense-Made-Easy#c634542772213583513?areaType=Blogs&amp;areaName=Coding4FunArticles" title="reply to comment">reply</a>
+	</div>
+	<div class="post-content">
+			<p>@<a href="/coding4fun/articles/ScriptTD-Tower-Defense-Made-Easy#c634542576109441145?areaType=Blogs&amp;areaName=Coding4FunArticles">varfar</a>:You're right :3</p>
+	</div>
+</div>
+
+				</li>
+		</ul>
+<div id="adminRemoveComment" class="text">
+	<h2 class="removeThisComment">Remove this comment</h2>
+	<h2 class="removeThisThread">Remove this thread</h2>
+	<div class="message alert"></div>
+	<form method="POST" action="#">
+		
+		<dl>
+			<dt>
+				<input type="radio" name="reason" value="Spam" id="deleteCommentReasonSpam" checked="checked"/>
+			</dt>
+			<dd>
+				<label for="deleteCommentReasonSpam">Spam</label>
+			</dd>
+			<dt>
+				<input type="radio" name="reason" value="guidlines" id="deleteCommentReasonGuidlines"/>
+			</dt>
+			<dd>
+				<label for="deleteCommentReasonGuidlines">Violates C9 guidelines</label>
+			</dd>
+			<dt>
+				<input type="radio" name="reason" value="language" id="deleteCommentLanguage"/>
+			</dt>
+			<dd>
+				<label for="deleteCommentLanguage">Foul language</label>
+			</dd>
+			<dt>
+				<input type="radio" name="reason" value="attack" id="deleteCommentPersonalAttack"/>
+			</dt>
+			<dd>
+				<label for="deleteCommentPersonalAttack">Personal attacks</label>
+			</dd>
+		</dl>
+		<input type="submit" value="Remove Comment" class="submit removeThisComment"/>
+		<input type="submit" value="Remove Thread" class="submit removeThisThread"/>
+	</form>
+	<a class="close" href="#">close</a>
+</div>
+
+
+
+
+	</div>
+
+<div class="comments add-comment">
+			<div class="comments-header">
+				<h2>Comment on the Post</h2>
+			</div>
+			<div class="goSignIn">
+				<p><strong>Already have a Channel 9 account?</strong> Please <a href="https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=11&amp;ct=1321954903&amp;rver=6.1.6195.0&amp;wp=MBI&amp;wreply=http:%2F%2Fchannel9.msdn.com%2Fcoding4fun%2Farticles%2FScriptTD-Tower-Defense-Made-Easy&amp;id=47159">sign&#160;in</a></p>
+			</div>
+			<form method="post" id="commentState" class="commentform" autocomplete="off">
+				<div class="validation-summary-valid" id="validationSummary"><ul><li style="display:none"></li>
+</ul></div>
+				<fieldset>
+					<ol>
+						<li class="subject">
+							<span class="field-validation-valid" id="CommentState_Subject_validationMessage"></span>
+							<label for="CommentState_Subject">Are you human? If so, leave this field blank.</label>
+							<input id="CommentState_Subject" name="CommentState.Subject" type="text" value="" />
+						</li>
+							<li>
+								<span class="field-validation-valid" id="CommentState_AnonymousUser_DisplayName_validationMessage"></span>
+								<label for="CommentState_AnonymousUser_DisplayName">Name</label>
+								<input id="CommentState_AnonymousUser_DisplayName" name="CommentState.AnonymousUser.DisplayName" type="text" value="" />
+							</li>
+							<li>
+								<span class="field-validation-valid" id="CommentState_AnonymousUser_Email_validationMessage"></span>
+								<label for="CommentState_AnonymousUser_Email">Email</label>
+								<input id="CommentState_AnonymousUser_Email" name="CommentState.AnonymousUser.Email" type="text" value="" />
+							</li>
+						<li class="textarea">
+								<span class="field-validation-valid" id="CommentState_AnonymousBody_validationMessage"></span>
+								<label for="CommentState_AnonymousBody">Comment</label>
+								<textarea cols="100" id="CommentState_AnonymousBody" name="CommentState.AnonymousBody" rows="10">
+</textarea>
+						</li>
+					</ol>
+				</fieldset>
+				
+				<p class="submit">
+					<input type="submit" value="Comment"/>
+				</p>
+			</form><script type="text/javascript">
+//<![CDATA[
+if (!window.mvcClientValidationMetadata) { window.mvcClientValidationMetadata = []; }
+window.mvcClientValidationMetadata.push({"Fields":[{"FieldName":"CommentState.Subject","ReplaceValidationMessageContents":true,"ValidationMessageId":"CommentState_Subject_validationMessage","ValidationRules":[]},{"FieldName":"CommentState.AnonymousUser.DisplayName","ReplaceValidationMessageContents":true,"ValidationMessageId":"CommentState_AnonymousUser_DisplayName_validationMessage","ValidationRules":[{"ErrorMessage":"Please enter a name with only letters, numbers, and spaces","ValidationParameters":{"pattern":"[A-Za-z0-9][A-Za-z 0-9]+[A-Za-z0-9]"},"ValidationType":"regex"},{"ErrorMessage":"The Name field is required.","ValidationParameters":{},"ValidationType":"required"}]},{"FieldName":"CommentState.AnonymousUser.Email","ReplaceValidationMessageContents":true,"ValidationMessageId":"CommentState_AnonymousUser_Email_validationMessage","ValidationRules":[{"ErrorMessage":"Please enter a valid email address","ValidationParameters":{},"ValidationType":"email"},{"ErrorMessage":"The Email field is required.","ValidationParameters":{},"ValidationType":"required"}]},{"FieldName":"CommentState.AnonymousBody","ReplaceValidationMessageContents":true,"ValidationMessageId":"CommentState_AnonymousBody_validationMessage","ValidationRules":[]}],"FormId":"commentState","ReplaceValidationSummary":true,"ValidationSummaryId":"validationSummary"});
+//]]>
+</script>
+</div>
+
+</div>
+
+
+
+	</div>
+
+	<div class="pageNavHolder">
+	</div>
+
+	<div class="sidebarHolder">
+	
+		<div class="download text">
+				<a href="http://scripttd.codeplex.com/" class="button download">download the code</a>
+				<a href="http://scripttd.codeplex.com/" class="button download">see it in action</a>
+
+		</div>
+	
+	<div class="sidebar">
+			<div class="related series metadata">
+				<h2>About this article</h2>
+				<dl>
+						<dt>Difficulty:</dt>
+						<dd>Intermediate</dd>
+						<dt>Time Required:</dt>
+						<dd>Medium</dd>
+						<dt>Cost:</dt>
+						<dd>Free</dd>
+						<dt>Software:</dt>
+						<dd> <p><span><a href="http://create.msdn.com/en-us/home/getting_started">Windows Phone Developer Tools</a></span></p></dd>
+				</dl>
+			</div>
+			<div class="related series">
+				<h2>
+					More posts 
+					in this blog
+				</h2><ul>
+	<li>
+			<a href="/coding4fun/articles/Jellybean-the-Kinect-Drivable-Lounge-Chair">
+	<img class="thumb" src="http://files.channel9.msdn.com/thumbnail/96b1dfed-ee2a-4b57-9576-1677f58d7d17.jpg" alt="Jellybean, the Kinect Drivable Lounge Chair"/>
+	<span class="title">Jellybean, the Kinect Drivable Lounge Chair</span></a>
+	</li>
+	<li>
+			<strong>
+	<img class="thumb" src="http://files.channel9.msdn.com/thumbnail/bc0fba7c-5514-4081-8319-f63398876b2d.png" alt="ScriptTD: Tower Defense Made Easy"/>
+	<span class="title">ScriptTD: Tower Defense Made Easy</span></strong>
+	</li>
+	<li>
+			<a href="/coding4fun/articles/Wheres-My-Car">
+	<img class="thumb" src="http://files.channel9.msdn.com/thumbnail/f417e829-b3c6-410f-860e-efc221003c8e.png" alt="Where’s My Car?"/>
+	<span class="title">Where’s My Car?</span></a>
+	</li>
+</ul>
+
+				<p class="more"><a href="/coding4fun/articles">See More</a></p>
+			</div>
+			<div class="related">
+				<h2>Related posts</h2><ul>
+	<li>
+			<a href="/Shows/Inside+Out/Tanagram-Partners-Exploring-Natural-User-Interfaces-In-the-Real-World">
+	<img class="thumb" src="http://ecn.channel9.msdn.com/o9/previewImages/100/568117_100x75.jpg" alt="Tanagram Partners: Exploring Natural User Interfaces In the Real World"/>
+	<span class="title">Tanagram Partners: Exploring Natural User&#8230;</span></a>
+	</li>
+	<li>
+			<a href="/Blogs/LauraFoy/Accelerometer-Helper">
+	<img class="thumb" src="http://ecn.channel9.msdn.com/o9/previewImages/100/570542_100x75.jpg" alt="Accelerometer Helper for Windows Phone 7"/>
+	<span class="title">Acceleromet&#8203;er Helper for Windows Phone 7</span></a>
+	</li>
+	<li>
+			<a href="/Blogs/LauraFoy/Windows-Phone-News-for-Developers">
+	<img class="thumb" src="http://ecn.channel9.msdn.com/o9/previewImages/100/568596_100x75.jpg" alt="Windows Phone 7: News for Developers"/>
+	<span class="title">Windows Phone 7: News for Developers</span></a>
+	</li>
+</ul>
+
+			</div>
+	</div>	
+	</div>
+</div>
+
+<div class="footer">
+	<div class="container">
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/" class="ccl">
+	<img alt="Creative Commons License" src="http://static.ch9.ms/styles/images/somerights20.png"/>
+</a>
+<p class="copyright">
+	&copy; 2011 Microsoft. <a href="/info">Except where designated</a> as licensed by <br/>
+	<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/">Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 License</a>,<br/>
+	Microsoft reserves all rights associated with the materials on this site.
+</p>
+<ul class="footerNav">
+	<li class="subscribe site"><a href="/Feeds/RSS">Subscribe to Channel 9</a></li>
+	<li class="followus"><a href="http://twitter.com/ch9">Follow Us @Ch9</a></li>
+	<li class="feedback"><a href="http://r.ch9.ms/feedback">Feedback</a></li>
+	<li class="privacy"><a href="http://privacy.microsoft.com">Privacy Statement</a></li>
+	<li class="termsofuse"><a href="http://www.microsoft.com/info/cpyright.mspx">Terms Of Use</a></li>
+	<li class="codeofconduct"><a href="/CodeOfConduct">Code Of Conduct</a></li>
+	<li class="contactus"><a href="/ContactUs">Contact Us</a></li>
+</ul>
+
+	</div>
+</div>
+	<script src="http://static.ch9.ms/scripts/jqueryUI-core_widget.js?v=Sf7888W_CtrLgoGmT1_uvdgG_Dk1" type="text/javascript"></script>
+	<script src="http://static.ch9.ms/scripts/ratings.min.js?v=Sf7888W_CtrLgoGmT1_uvdgG_Dk1" type="text/javascript"></script>
+	<script src="http://static.ch9.ms/scripts/comments.js?v=Sf7888W_CtrLgoGmT1_uvdgG_Dk1" type="text/javascript"></script>
+	<script src="http://static.ch9.ms/scripts/markDirty.js?v=Sf7888W_CtrLgoGmT1_uvdgG_Dk1" type="text/javascript"></script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<script src="http://static.ch9.ms/scripts/admin/removeComment.js?v=Sf7888W_CtrLgoGmT1_uvdgG_Dk1" type="text/javascript"></script>
+	<script src="http://static.ch9.ms/scripts/tiny_mce_loader.js?v=Sf7888W_CtrLgoGmT1_uvdgG_Dk1" type="text/javascript"></script>
+	<script src="http://static.ch9.ms/scripts/validation.min.js?v=Sf7888W_CtrLgoGmT1_uvdgG_Dk1" type="text/javascript"></script>
+	<script src="http://static.ch9.ms/scripts/syntaxhighlighter.js?v=Sf7888W_CtrLgoGmT1_uvdgG_Dk1" type="text/javascript"></script>
+	<script src="http://static.ch9.ms/scripts/sharing_init.js?v=Sf7888W_CtrLgoGmT1_uvdgG_Dk1" type="text/javascript"></script><!-- START OF SmartSource Data Collector TAG -->
+<!-- Copyright (c) 1996-2009 WebTrends Inc.  All rights reserved. -->
+<!-- Version: MS.3.0.0 -->
+<script src="http://static.ch9.ms/scripts/wt.js?v=Sf7888W_CtrLgoGmT1_uvdgG_Dk1" type="text/javascript"></script>
+
+<!-- Warning: The two script blocks below must remain inline. Moving them to an external -->
+<!-- JavaScript include file can cause serious problems with cross-domain tracking.      -->
+<script type="text/javascript">
+	//<![CDATA[
+var _tag=new WebTrends();
+_tag.dcsid="dcs1wotjh10000w0irc493s0e_6x1g";
+_tag.fpcdom=".channel9.msdn.com";
+_tag.dcsGetId();
+_tag.trackevents=true;
+//]]>>
+</script>
+
+<script type="text/javascript">
+	//<![CDATA[
+// Add custom parameters here.
+//_tag.DCSext.param_name=param_value;
+_tag.dcsCollect();
+//]]>>
+</script>
+
+<noscript>
+	<div>
+		<img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="http://m.webtrends.com/dcs1wotjh10000w0irc493s0e_6x1g/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=MS.3.0.0"/>
+	</div>
+</noscript>
+<!-- END OF SmartSource Data Collector TAG -->
+
+  <!-- Host Location: South Central US -->
+</body>
+</html>

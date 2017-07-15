@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Window music="gametrack">
+  <Templates>
+    <Template name="valueLabel">
+      <Text text="{VALUE}" Color="255,255,255,255" Font="Fonts\Common.spritefont" />
+    </Template>
+  </Templates>
+
+  <Visual>
+    <Image name="mapImg" />
+    <Image src="Textures\Backgrounds\playscreen.png" />
+    <Text text="Cash:" Color="255,255,255,255" location="10, 0" Font="Fonts\Common.spritefont" />
+    <Text text="Lives:" Color="255,255,255,255" location="200, 0" Font="Fonts\Common.spritefont" />
+    <Text text="Points:" Color="255,255,255,255" location="400, 0" Font="Fonts\Common.spritefont" />
+    <Text text="Wave:" Color="255,255,255,255" location="600, 0" Font="Fonts\Common.spritefont" />
+    <Gameplay name="gameplay" />
+    <Circle name="rangeCircle" color="0,0,255,128" density="16" />
+    <GridOverlay name="grid" Align="Center" VAlign="Middle" Color="0,0,0,255" Spacing="35" Size="665,385" />
+  </Visual>
+
+  <Label name="cash" Location="100, 0" Template="valueLabel" />
+  <Label name="lives" Location="300, 0" Template="valueLabel" />
+  <Label name="points" Location="510, 0" Template="valueLabel" />
+  <Label name="wave" Location="700, 0" Template="valueLabel" />
+
+  <Button name="options" Location="740, 45" Size="50, 50">
+    <Visual>
+      <Image src="Textures\Buttons\HUD-button-options.png" useparentsize="true" />
+    </Visual>
+  </Button>
+
+  <!--<Button name="mainmenu" Location="15, 50" Size="35, 35">
+    <Visual>
+      <Image src="Textures\Buttons\back-previous.png" useparentsize="true" />
+    </Visual>
+  </Button>-->
+
+  <Button name="forceWave" Location="140, 437" Size="43,43">
+    <Visual>
+      <Image src="Textures\Buttons\next-wave2.png" useparentsize="true" disabledtint="128,128,128,255" />
+    </Visual>
+  </Button>
+
+  <Button name="Enter" Location="0, 185" Size="70,70">
+    <Visual>
+      <Image src="Textures\Buttons\Enter.png"/>
+    </Visual>
+  </Button>
+
+  <Button name="Exit" Location="740, 185" Size="70,70">
+    <Visual>
+      <Image src="Textures\Buttons\Exit.png"/>
+    </Visual>
+  </Button>
+  
+  <!-- Time Controls -->
+  
+  <Button name="pause" location="10,437" size="43,43">
+    <Visual>
+      <Image src="Textures\Buttons\HUD-button-pause.png" useparentsize="true" visibility="enabled" />
+    </Visual>
+  </Button>
+
+  <Button name="play" location="10,437" size="43,43">
+    <Visual>
+      <Image src="Textures\Buttons\HUD-button-play.png" useparentsize="true" visibility="enabled" />
+    </Visual>
+  </Button>
+
+  <Button name="speed1" location="75,437" size="43,43">
+    <Visual>
+      <Image src="Textures\Buttons\X1.png" useparentsize="true" visibility="enabled" />
+    </Visual>
+  </Button>
+  <Button name="speed2" location="75,437" size="43,43">
+    <Visual>
+      <Image src="Textures\Buttons\X2.png" useparentsize="true" visibility="enabled" />
+    </Visual>
+  </Button>
+  <Button name="speed3" location="75,437" size="43,43">
+    <Visual>
+      <Image src="Textures\Buttons\X3.png" useparentsize="true" visibility="enabled" />
+    </Visual>
+  </Button>
+
+  <!-- Tower Construction Buttons -->
+
+  <TowerButton name="gun" towerid="gun" location="535,445" size="35,35">
+    <Visual>
+      <Image src="Textures\Towers\HUD-tower-gun.png" useparentsize="true" visibility="enabled" />
+      <Image src="Textures\Towers\HUD-tower-gun-unavailable.png" useparentsize="true" visibility="disabled" />
+    </Visual>
+  </TowerButton>
+
+  <TowerButton name="rocket" towerid="rocket" location="590,445" size="35,35">
+    <Visual>
+      <Image src="Textures\Towers\HUD-tower-rocket.png" useparentsize="true" visibility="enabled" />
+      <Image src="Textures\Towers\HUD-tower-rocket-unavailable.png" useparentsize="true" visibility="disabled" />
+    </Visual>
+  </TowerButton>
+
+  <TowerButton name="missile" towerid="missile" location="645,445" size="35,35">
+    <Visual>
+      <Image src="Textures\Towers\HUD-tower-missile.png" useparentsize="true" visibility="enabled" />
+      <Image src="Textures\Towers\HUD-tower-missile-unavailable.png" useparentsize="true" visibility="disabled" />
+    </Visual>
+  </TowerButton>
+
+  <TowerButton name="laser" towerid="laser" location="700,445" size="35,35">
+    <Visual>
+      <Image src="Textures\Towers\HUD-tower-laser.png" useparentsize="true" visibility="enabled" />
+      <Image src="Textures\Towers\HUD-tower-laser-unavailable.png" useparentsize="true" visibility="disabled" />
+    </Visual>
+  </TowerButton>
+
+  <TowerButton name="earthquake" towerid="earthquake" location="755,445" size="35,35">
+    <Visual>
+      <Image src="Textures\Towers\HUD-tower-wave.png" useparentsize="true" visibility="enabled" />
+      <Image src="Textures\Towers\HUD-tower-wave-unavailable.png" useparentsize="true" visibility="disabled" />
+    </Visual>
+  </TowerButton>
+</Window>

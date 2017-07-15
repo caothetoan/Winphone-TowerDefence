@@ -1,0 +1,3 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Creep Id="flyerfast" CanFly="true" Speed="2" Health="150" Worth="1" Texture="flyer-fast.png" DeathSoundId="29_Fast_Flyer_Death" SpawnSoundId="28_Fast_Flyer_Spawn" />

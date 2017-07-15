@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Window size="125,45">
+  <Button name="sell" size="35,35" location="5,5">
+    <Visual>
+      <Image src="Textures\Buttons\HUD-button-sell.png" useparentsize="true" />
+    </Visual>
+  </Button>
+  <Button name="upgrade" size="35,35" location="85,5">
+    <Visual>
+      <Image src="Textures\Buttons\HUD-button-upgrade.png" disabledtint="128,128,128,255" useparentsize="true" />
+    </Visual>
+  </Button>
+
+  <Label name="costDisplay" Location="85, 35">
+    <Visual>
+      <Text text="{VALUE}" Color="255,255,255,255" Font="Fonts\Common.spritefont"/>
+    </Visual>
+  </Label>
+</Window>

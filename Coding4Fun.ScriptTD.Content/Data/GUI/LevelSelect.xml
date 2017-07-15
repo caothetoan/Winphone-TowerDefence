@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Window>
+  <Visual>
+    <Image src="Textures\Backgrounds\2-level-select.jpg" />
+  </Visual>
+
+  <Templates>
+    <Template Name="levelButtonTemplate">
+      <Image Name="thumb" Align="Center" disabledtint="128,128,128,255" VAlign="Top" />
+      <Text Text="{TEXT}" Align="Center" Color="255,255,255,255" VAlign="Bottom" AllowParentResize="false" Font="Fonts\Common.spritefont" />
+      <Image Align="Center" VAlign="Middle" src="Textures\Buttons\locked.png" visibility="disabled" />
+    </Template>
+  </Templates>
+
+  <Button name="level1" Template="levelButtonTemplate" Location="25%, 25%" Size="50%, 50%" />
+
+
+  <Button name="prev" Location="16%, 46%" Size="55,55">
+    <Visual>
+      <Image src="Textures\Buttons\back-previous.png" UseParentSize="true" />
+    </Visual>
+  </Button>
+
+  <Button name="next" Location="77%, 46%" Size="55,55">
+    <Visual>
+      <Image src="Textures\Buttons\next.png" UseParentSize="true" />
+    </Visual>
+  </Button>
+</Window>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Tower Id="laser" WeaponType="Laser">
+  <Level
+    Cost="12"
+    TimeToBuildMs="3000"
+    TimeToSellMs="0"
+    Damage="10"
+    ReloadTimeMs="500"
+    MinRange="0"
+    MaxRange="10"
+    Texture="tower-laser.png"
+    ShotTexture="fx-laser.png"
+    ShotSpeed="5"
+    CanShootFlying="true"
+    CanShootLand="true"
+    BuildSoundId="10_Construction_Tower"
+    SellSoundId="11_Sell_Tower"
+    UpgradeSoundId="12_Construction_Tower_Upgrade"
+    ShotSoundId="05_Laser_Firing"
+    />
+
+    <Level
+    Cost="12"
+    TimeToBuildMs="2000"
+    TimeToSellMs="0"
+    Damage="15"
+    ReloadTimeMs="500"
+    MinRange="0"
+    MaxRange="15"
+    Texture="tower-laser1.png"
+    ShotTexture="fx-laser.png"
+    ShotSpeed="5"
+    CanShootFlying="true"
+    CanShootLand="true"
+    BuildSoundId="10_Construction_Tower"
+    SellSoundId="11_Sell_Tower"
+    UpgradeSoundId="12_Construction_Tower_Upgrade"
+    ShotSoundId="05_Laser_Firing"
+      />
+  
+  <Level
+    Cost="12"
+    TimeToBuildMs="2000"
+    TimeToSellMs="0"
+    Damage="25"
+    ReloadTimeMs="500"
+    MinRange="0"
+    MaxRange="20"
+    Texture="tower-laser2.png"
+    ShotTexture="fx-laser.png"
+    ShotSpeed="5"
+    CanShootFlying="true"
+    CanShootLand="true"
+    BuildSoundId="10_Construction_Tower"
+    SellSoundId="11_Sell_Tower"
+    UpgradeSoundId="12_Construction_Tower_Upgrade"
+    ShotSoundId="05_Laser_Firing"
+    />
+
+</Tower>

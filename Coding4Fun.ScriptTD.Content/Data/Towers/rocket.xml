@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Tower Id="rocket" WeaponType="DumbProjectile">
+	<Level
+	  Cost="10"
+	  TimeToBuildMs="3000"
+	  TimeToSellMs="0"
+	  Damage="30"
+	  ReloadTimeMs="3000"
+	  MinRange="0"
+	  MaxRange="2"
+	  Texture="tower-rocket.png"
+	  ShotTexture="fx-rocket.png"
+	  ShotSpeed="2"
+	  CanShootFlying="true"
+	  CanShootLand="true"
+	  HitTexture="explosion.png"
+	  HitAnimationFPS="4"
+    BuildSoundId="10_Construction_Tower"
+    SellSoundId="11_Sell_Tower"
+    UpgradeSoundId="12_Construction_Tower_Upgrade"
+    ShotSoundId="03_Missile_Fire_"
+    HitSoundId="04_Explosion"
+	  />
+
+    <Level
+    Cost="15"
+    TimeToBuildMs="2000"
+    TimeToSellMs="0"
+    Damage="50"
+    ReloadTimeMs="2000"
+    MinRange="0"
+    MaxRange="3"
+    Texture="tower-rocket1.png"
+    ShotTexture="fx-rocket.png"
+    ShotSpeed="2"
+    CanShootFlying="true"
+    CanShootLand="true"
+    HitTexture="explosion.png"
+    HitAnimationFPS="4"
+    BuildSoundId="10_Construction_Tower"
+    SellSoundId="11_Sell_Tower"
+    UpgradeSoundId="12_Construction_Tower_Upgrade"
+    ShotSoundId="03_Missile_Fire_"
+    HitSoundId="04_Explosion"
+	    />
+
+      <Level
+    Cost="20"
+    TimeToBuildMs="1500"
+    TimeToSellMs="0"
+    Damage="60"
+    ReloadTimeMs="1000"
+    MinRange="0"
+    MaxRange="6"
+    Texture="tower-rocket2.png"
+    ShotTexture="fx-rocket.png"
+    ShotSpeed="3"
+    CanShootFlying="true"
+    CanShootLand="true"
+    HitTexture="explosion.png"
+    HitAnimationFPS="4"
+    BuildSoundId="10_Construction_Tower"
+    SellSoundId="11_Sell_Tower"
+    UpgradeSoundId="12_Construction_Tower_Upgrade"
+    ShotSoundId="03_Missile_Fire_"
+    HitSoundId="04_Explosion"
+	      />
+  
+</Tower>

@@ -1,0 +1,1534 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="FF "><head id="ctl00_ctl00_HeadTag">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><link id="ctl00_ctl00_MasterCss" type="text/css" rel="stylesheet" href="wikipage_files/StyleSheet.css"><link rel="SHORTCUT ICON" href="http://scripttd.codeplex.com/favicon.ico">
+    <style type="text/css">.SideBar, .SideBarPadding{display:none;}.MainContent{width:auto;}.SiteContentTable{width:100%;}</style>
+    <style id="ctl00_ctl00_Header_ProjectStyles" type="text/css">.SiteHeader,.SiteHeaderLeft{height:45px !important;overflow:hidden;}.SiteContent{padding:0 1em 1em 1em;margin-top:0;min-height:225px;}.FF .SiteContentTable{clear:both;}.ProjectContent{min-height:225px;}.Safari .ProjectContent{padding-top:0em;}.IE6 .ProjectTitleControl{position:relative;}.CanvasMargin{width:0;}h1.ProjectHeader{font-size:2em;font-weight:bold;margin-bottom:0;}.ProjectHeader a{color:#3E62A6;}.IE table.MinWidthContent{table-layout:auto !important;}.ProjectMessage{border:solid 0.1em #ccc;background-color:#F1FCEE;padding:1em;}</style>
+    
+    
+    
+    
+    
+    <style type="text/css">.ProjectContent{padding:0;}</style>
+    <style type="text/css">
+        .WikiHolder
+        {
+            margin: 0 1em 0 1em;
+        }
+        #WikiBreadCrumbs
+        {
+            margin: 0.25em 0 1em 0;
+        }
+        .SecondarySearchButton 
+        {
+            margin:0 0 0 -0.6em;
+        }
+        .FF .SecondarySearchButton 
+        {
+            margin:-0.1em 0 0 -0.5em;
+            height: 22px;
+        }
+        .IE .SecondarySearchButton
+        {
+            width: 22px;
+            height: 22px;
+        }
+    </style>
+    
+    
+    <meta id="ctl00_ctl00_Header_WTProjectName" name="WT.pi" content="scripttd">
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://scripttd.codeplex.com/rsd">
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" title="WLWManifest" href="http://scripttd.codeplex.com/wlwmanifest.xml">
+<meta id="ctl00_ctl00_PageDescription" name="Description"><link rel="alternate" type="application/rss+xml" title="Coding4Fun's ScriptTD" href="http://scripttd.codeplex.com/project/feeds/rss"><link rel="alternate" type="application/rss+xml" title="Coding4Fun's ScriptTD-Discussions" href="http://scripttd.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fforum%2fscripttd"><link rel="alternate" type="application/rss+xml" title="Coding4Fun's ScriptTD-Issue Tracker" href="http://scripttd.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fworkitem%2fscripttd"><link rel="alternate" type="application/rss+xml" title="Coding4Fun's ScriptTD-Releases" href="http://scripttd.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2frelease%2fscripttd"><link rel="alternate" type="application/rss+xml" title="Coding4Fun's ScriptTD-Source Code" href="http://scripttd.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fsourcecontrol%2fscripttd"><link rel="alternate" type="application/rss+xml" title="Coding4Fun's ScriptTD-Wiki" href="http://scripttd.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fwiki%2fscripttd"><link rel="alternate" type="application/rss+xml" title="Coding4Fun's ScriptTD-Reviews" href="http://scripttd.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2freview%2fscripttd"><title>
+	Coding4Fun's ScriptTD
+</title></head>
+
+<body onload="masterLoad();">
+    <form name="aspnetForm" method="POST" action="/wikipage?title=Updating%20the%20Script%20XML&amp;IsNewlyCreatedPage=true" id="aspnetForm" autocomplete="off" enctype="multipart/form-data">
+<div>
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJLTI3ODQ0OTE1D2QWAmYPZBYCZg9kFgRmD2QWBmYPFgIeBGhyZWYFOGh0dHA6Ly9pMS5jb2RlcGxleC5jb20vY3NzL3YxODMwMS9pNzA2NjMvU3R5bGVTaGVldC5hc2h4ZAICD2QWBGYPFgIeCWlubmVyaHRtbAWeBC5TaXRlSGVhZGVyLC5TaXRlSGVhZGVyTGVmdHtoZWlnaHQ6NDVweCAhaW1wb3J0YW50O292ZXJmbG93OmhpZGRlbjt9LlNpdGVDb250ZW50e3BhZGRpbmc6MCAxZW0gMWVtIDFlbTttYXJnaW4tdG9wOjA7bWluLWhlaWdodDoyMjVweDt9LkZGIC5TaXRlQ29udGVudFRhYmxle2NsZWFyOmJvdGg7fS5Qcm9qZWN0Q29udGVudHttaW4taGVpZ2h0OjIyNXB4O30uU2FmYXJpIC5Qcm9qZWN0Q29udGVudHtwYWRkaW5nLXRvcDowZW07fS5JRTYgLlByb2plY3RUaXRsZUNvbnRyb2x7cG9zaXRpb246cmVsYXRpdmU7fS5DYW52YXNNYXJnaW57d2lkdGg6MDt9aDEuUHJvamVjdEhlYWRlcntmb250LXNpemU6MmVtO2ZvbnQtd2VpZ2h0OmJvbGQ7bWFyZ2luLWJvdHRvbTowO30uUHJvamVjdEhlYWRlciBhe2NvbG9yOiMzRTYyQTY7fS5JRSB0YWJsZS5NaW5XaWR0aENvbnRlbnR7dGFibGUtbGF5b3V0OmF1dG8gIWltcG9ydGFudDt9LlByb2plY3RNZXNzYWdle2JvcmRlcjpzb2xpZCAwLjFlbSAjY2NjO2JhY2tncm91bmQtY29sb3I6I0YxRkNFRTtwYWRkaW5nOjFlbTt9ZAICDxYEHgdjb250ZW50BQhzY3JpcHR0ZB4HVmlzaWJsZWdkAgMPFgQfAmQfA2dkAgEPZBYGZg9kFggCAQ9kFgQCAQ9kFgQCAQ8PFgIeC05hdmlnYXRlVXJsBR1odHRwOi8vc2NyaXB0dGQuY29kZXBsZXguY29tL2QWAmYPDxYKHgpJbWFnZUFsaWduCyokU3lzdGVtLldlYi5VSS5XZWJDb250cm9scy5JbWFnZUFsaWduCB4ISW1hZ2VVcmwFWGh0dHA6Ly9kb3dubG9hZC5jb2RlcGxleC5jb20vRG93bmxvYWQ/UHJvamVjdE5hbWU9c2NyaXB0dGQmRG93bmxvYWRJZD0yNDcyODMmQnVpbGQ9MTgzMDEeCENzc0NsYXNzBRBIYWxmUGFkZGluZ1JpZ2h0HgRfIVNCAgIfA2dkZAIDDw8WAh8EBR1odHRwOi8vc2NyaXB0dGQuY29kZXBsZXguY29tL2QWAmYPFgIeBWNsYXNzBR1Qcm9qZWN0SGVhZGVyIE5vTWFyZ2luIElubGluZRYCAgEPDxYCHgRUZXh0BRlDb2Rpbmc0RnVuJiMzOTtzIFNjcmlwdFREZGQCAw9kFgJmD2QWAgIBDw8WAh8GBTpodHRwOi8vaTMuY29kZXBsZXguY29tL0ltYWdlcy92MTgzMDEvc2VhcmNoLWJ1dHRvbi1vZmYuZ2lmFgQeC29ubW91c2VvdmVyBVBqYXZhc2NyaXB0OnRoaXMuc3JjPSdodHRwOi8vaTMuY29kZXBsZXguY29tL0ltYWdlcy92MTgzMDEvc2VhcmNoLWJ1dHRvbi1vbi5naWYnOx4Kb25tb3VzZW91dAVRamF2YXNjcmlwdDp0aGlzLnNyYz0naHR0cDovL2kzLmNvZGVwbGV4LmNvbS9JbWFnZXMvdjE4MzAxL3NlYXJjaC1idXR0b24tb2ZmLmdpZic7ZAIDD2QWBAIBD2QWBGYPDxYCHwNoZBYCAgMPZBYCZg9kFgICAQ9kFgQCBQ8PFgIfA2hkZAIHDw8WAh8DaGRkAgEPZBYCAgMPZBYCAgEPZBYCAgEPZBYCAgEPZBYCAgEPFgIfAAVCaHR0cDovL3NjcmlwdHRkLmNvZGVwbGV4LmNvbS9wcm9qZWN0L2VkaXQ/Rm9jdXNFbGVtZW50PURlc2NyaXB0aW9uZAIDD2QWAmYPFgIfA2gWAmYPDxYCHwQFKWh0dHA6Ly9zY3JpcHR0ZC5jb2RlcGxleC5jb20vcHJvamVjdC9lZGl0ZGQCBQ8PFgIfA2hkZAIHD2QWBAIBD2QWEgIBDxYCHwkFElRhYiBJbmFjdGl2ZVRhYk5ldxYCAgEPDxYCHwQFHWh0dHA6Ly9zY3JpcHR0ZC5jb2RlcGxleC5jb20vZGQCAw8WAh8JBRJUYWIgSW5hY3RpdmVUYWJOZXcWAgIBDw8WAh8EBTBodHRwOi8vc2NyaXB0dGQuY29kZXBsZXguY29tL3JlbGVhc2VzL3ZpZXcvNzE5MDlkZAIFDxYCHwkFEFRhYiBBY3RpdmVUYWJOZXcWAgIBDw8WAh8EBSpodHRwOi8vc2NyaXB0dGQuY29kZXBsZXguY29tL2RvY3VtZW50YXRpb25kZAIHDxYCHwkFElRhYiBJbmFjdGl2ZVRhYk5ldxYCAgEPDxYCHwQFKGh0dHA6Ly9zY3JpcHR0ZC5jb2RlcGxleC5jb20vZGlzY3Vzc2lvbnNkZAIJDxYCHwkFElRhYiBJbmFjdGl2ZVRhYk5ldxYCAgEPDxYCHwQFMGh0dHA6Ly9zY3JpcHR0ZC5jb2RlcGxleC5jb20vd29ya2l0ZW0vbGlzdC9iYXNpY2RkAgsPFgIfCQUSVGFiIEluYWN0aXZlVGFiTmV3FgICAQ8PFgIfBAU6aHR0cDovL3NjcmlwdHRkLmNvZGVwbGV4LmNvbS9Tb3VyY2VDb250cm9sL2xpc3QvY2hhbmdlc2V0c2RkAg0PFgIfCQUSVGFiIEluYWN0aXZlVGFiTmV3FgICAQ8PFgIfBAUmaHR0cDovL3NjcmlwdHRkLmNvZGVwbGV4LmNvbS90ZWFtL3ZpZXdkZAIPDxYCHwkFElRhYiBJbmFjdGl2ZVRhYk5ldxYCAgEPDxYCHwQFJGh0dHA6Ly9zY3JpcHR0ZC5jb2RlcGxleC5jb20vbGljZW5zZWRkAhEPZBYEAgIPZBYCAgMPZBYEZg9kFgICAQ9kFgQCAQ8PFgIfBgU4aHR0cDovL2kzLmNvZGVwbGV4LmNvbS9JbWFnZXMvdjE4MzAxL2Fycm93X2RzY19ncmVlbi5naWZkZAIDDw8WAh8GBTFodHRwOi8vaTMuY29kZXBsZXguY29tL0ltYWdlcy92MTgzMDEvaWNvbl9yc3MuZ2lmZGQCAQ9kFgICAQ9kFgICAQ9kFg4CAQ9kFgICAQ8PFgIfBAUuaHR0cDovL3NjcmlwdHRkLmNvZGVwbGV4LmNvbS9wcm9qZWN0L2ZlZWRzL3Jzc2RkAgMPZBYCAgEPDxYCHwQFX2h0dHA6Ly9zY3JpcHR0ZC5jb2RlcGxleC5jb20vcHJvamVjdC9mZWVkcy9yc3M/UHJvamVjdFJTU0ZlZWQ9Y29kZXBsZXglM2ElMmYlMmZmb3J1bSUyZnNjcmlwdHRkZGQCBQ9kFgICAQ8PFgIfBAViaHR0cDovL3NjcmlwdHRkLmNvZGVwbGV4LmNvbS9wcm9qZWN0L2ZlZWRzL3Jzcz9Qcm9qZWN0UlNTRmVlZD1jb2RlcGxleCUzYSUyZiUyZndvcmtpdGVtJTJmc2NyaXB0dGRkZAIHD2QWAgIBDw8WAh8EBWFodHRwOi8vc2NyaXB0dGQuY29kZXBsZXguY29tL3Byb2plY3QvZmVlZHMvcnNzP1Byb2plY3RSU1NGZWVkPWNvZGVwbGV4JTNhJTJmJTJmcmVsZWFzZSUyZnNjcmlwdHRkZGQCCQ9kFgICAQ8PFgIfBAVgaHR0cDovL3NjcmlwdHRkLmNvZGVwbGV4LmNvbS9wcm9qZWN0L2ZlZWRzL3Jzcz9Qcm9qZWN0UlNTRmVlZD1jb2RlcGxleCUzYSUyZiUyZnJldmlldyUyZnNjcmlwdHRkZGQCCw9kFgICAQ8PFgIfBAVnaHR0cDovL3NjcmlwdHRkLmNvZGVwbGV4LmNvbS9wcm9qZWN0L2ZlZWRzL3Jzcz9Qcm9qZWN0UlNTRmVlZD1jb2RlcGxleCUzYSUyZiUyZnNvdXJjZWNvbnRyb2wlMmZzY3JpcHR0ZGRkAg0PZBYCAgEPDxYCHwQFXmh0dHA6Ly9zY3JpcHR0ZC5jb2RlcGxleC5jb20vcHJvamVjdC9mZWVkcy9yc3M/UHJvamVjdFJTU0ZlZWQ9Y29kZXBsZXglM2ElMmYlMmZ3aWtpJTJmc2NyaXB0dGRkZAIED2QWBGYPDxYCHwYFOmh0dHA6Ly9pMy5jb2RlcGxleC5jb20vSW1hZ2VzL3YxODMwMS9hcnJvd19yaWdodF9ncmVlbi5naWZkZAICDw8WAh8GBTFodHRwOi8vaTMuY29kZXBsZXguY29tL0ltYWdlcy92MTgzMDEvaWNvbl9yc3MuZ2lmZGQCBw8WAh4Fd2lkdGgFAzE1JRYCAgEPDxYEHwcFNFN0YW5kYXJkUGFkZGluZyBTaWRlQmFyIFJpZ2h0U2lkZUJhciBHcmFkaWVudFNpZGVCYXIfCAICZGQCAQ8WAh8KBUo8c2NyaXB0IHNyYz0iL3NpdGUvbGlicmFyeS9zdnkvYnJva2VyLmpzIiB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPjwvc2NyaXB0PmQCAg8PFgIfBgUuaHR0cDovL2kzLmNvZGVwbGV4LmNvbS9JbWFnZXMvdjE4MzAxL2JsYW5rLnBuZxYCHgZvbmxvYWQFGXNlbGYubG9nb0ltYWdlTG9hZGVkPXRydWVkGAEFOGN0bDAwJGN0bDAwJE1hc3RlckNvbnRlbnQkUHJvamVjdFNpZ25JbkNvbnRyb2wkTG9naW5WaWV3Dw9kAgFkEv5UM3Uo12zfXmFL7sWZiwFbq6w=" type="hidden">
+</div>
+
+<div>
+
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAgKGoqqzBgLYp/iUDoEtw9tftT8FcRemSD1qiIzsbcoy" type="hidden">
+</div>
+    <script src="wikipage_files/ScriptLoader.ashx" type="text/javascript"></script>
+    <table id="CanvasTable" cellpadding="0" cellspacing="0">
+        <tbody><tr valign="top">
+            <td>
+                <div id="Canvas">
+                    <div id="CanvasContent">
+                        
+    <div id="ctl00_ctl00_MasterContent_ProjectHeader">
+        <table class="FullWidth" width="100%" cellpadding="0" cellspacing="0">
+            <tbody><tr>
+                <td class="FullWidth" valign="bottom">
+                    <div class="ProjectLogoLeft">
+                        <table cellpadding="0" cellspacing="0">
+                            <tbody><tr>
+                                <td style="height: 90px;" valign="middle">
+                                    <div style="padding-left: 1.1em; padding-top: 1.1em; padding-bottom:.8em;">
+                                        
+                                        
+<div class="ProjectTitleControl HalfMarginBottom">
+    <a id="ctl00_ctl00_MasterContent_ProjectTitleControl1_ProjectTitleLink" href="http://scripttd.codeplex.com/"><img id="ctl00_ctl00_MasterContent_ProjectTitleControl1_ProjectLogo" class="HalfPaddingRight" src="wikipage_files/Download.png" style="border-width: 0px;" align="absmiddle"></a>
+    <a id="ctl00_ctl00_MasterContent_ProjectTitleControl1_ProjectTitleLink1" href="http://scripttd.codeplex.com/"><h1 id="ctl00_ctl00_MasterContent_ProjectTitleControl1_ProjectHeader" class="ProjectHeader NoMargin Inline">
+            <span id="ctl00_ctl00_MasterContent_ProjectTitleControl1_TitleLabel">Coding4Fun's ScriptTD</span>
+        </h1></a>
+</div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </div>    
+                </td>
+                <td valign="top">
+                    <div class="ProjectLogoRight" onmouseover="this.style.cursor = 'hand';" onmouseout="this.style.cursor = 'default';">
+                        <div class="LogoLinkOuter">
+                            <a href="http://www.codeplex.com/" class="LogoLink" title="CodePlex Home"><div class="LogoLinkInner">CodePlex Home</div></a>
+                        </div>
+                    </div>
+                </td>
+                <td class="StandardPaddingTop SiteHeaderProjectRight" style="padding-right: 1.7em; padding-left: 0.1em;" valign="top">
+                    
+        <div class="NoWrap ProjectSignInControl">
+            <a href="http://www.codeplex.com/site/users/view/caothetoan" title="Update Your Profile" class="ZoomFix"><span id="ctl00_ctl00_MasterContent_ProjectSignInControl_LoginView_LoginName">caothetoan</span></a>
+            <span class="VerticalBarTop ZoomFix">|</span>
+            <a href="https://www.codeplex.com/UserAccount/SignOut.ashx" id="signOutLink" class="ZoomFix">Sign Out</a>
+            <span class="VerticalBarTop ZoomFix">|</span>
+            <a class="ZoomFix" href="http://www.codeplex.com/">CodePlex Home</a>
+        </div>
+    
+                    <div style="margin-top: .5em;">
+                        <div id="ctl00_ctl00_MasterContent_ProjectSearchControl_ProjectSearchPanel" class="ProjectSearchPanel NoWrap">
+	
+    <div class="ProjectSearchPanel">
+        <input value="Search all CodePlex projects" style="color: rgb(170, 170, 170); font-style: italic;" title="Search all CodePlex projects" autocomplete="off" name="ctl00$ctl00$MasterContent$ProjectSearchControl$SearchTextBox" maxlength="500" id="ctl00_ctl00_MasterContent_ProjectSearchControl_SearchTextBox" class="SingleLineTextBox ProjectSearchTextBox" type="text">
+        <img title="Search all CodePlex projects" id="ctl00_ctl00_MasterContent_ProjectSearchControl_SearchButton" class="ProjectSearchButton" onmouseover="javascript:this.src='http://i3.codeplex.com/Images/v18301/search-button-on.gif';" onmouseout="javascript:this.src='http://i3.codeplex.com/Images/v18301/search-button-off.gif';" src="wikipage_files/search-button-off.gif" alt="Search" style="border-width: 0px;">
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $loadScript('http://i4.services.social.microsoft.com/search/Widgets/SearchBox.jss?appid=1000&scopeid=1&boxId=ctl00_ctl00_MasterContent_ProjectSearchControl_SearchTextBox&btnId=ctl00_ctl00_MasterContent_ProjectSearchControl_SearchButton&watermark=Search%20all%20CodePlex%20projects&overrideWatermark=true&searchLocation=http%3a%2f%2fwww.codeplex.com%2fsite%2fsearch&allowEmptySearch=true&minimumTermLength=3');
+                if (typeof epx_loaded === 'undefined' || !epx_loaded) {
+                    $('#ctl00_ctl00_MasterContent_ProjectSearchControl_SearchButton').bind('click', doProjectSearch);
+                    $('#ctl00_ctl00_MasterContent_ProjectSearchControl_SearchTextBox').bind('keydown', function (e) { { if ($keyCode(e) === 13) return doProjectSearch(); } });
+                }
+            })
+            function doProjectSearch() {
+                window.location.replace('http://www.codeplex.com/site/search?query=' + $('#ctl00_ctl00_MasterContent_ProjectSearchControl_SearchTextBox').val());
+                return false;
+            }
+        </script>
+    <div style="display: none; text-align: left; border: 1px solid buttonshadow; position: absolute; z-index: 1000; padding: 2px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 255); font-family: arial;" id="SearchFlyoutContainer"><div id="SuggestionContainer"><ul style="list-style: none outside none; padding: 4px 2px 0px 1px; cursor: pointer; font-size: 8pt; margin: 1px;"></ul></div><div style="width: 100%; margin: 0px; text-align: right; font-size: 8pt;" id="FooterContainer"><a href="#">Close</a></div></div></div>
+
+</div>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody></table>
+    </div>
+    <div id="ProjectBody" class="SiteContent">
+        <div id="ctl00_ctl00_MasterContent_ProjectDetailsDiv">
+            
+
+<script type="text/javascript">
+    function VerifyProjectDeletion()
+    {
+        var result = confirm("Are you sure you want to delete this project?  You will not be able to recover it later");
+        if (result)
+            ShowUpdatingPanel();
+        else
+            allowUnsavedDataAlert();
+        return result;
+    }
+    function ShowPublishPanel()
+    {
+        ShowUpdatingPanel();
+    }
+    function ShowUpdatingPanel()
+    {
+        var publishButton=$('#ctl00_ctl00_MasterContent_ProjectCountdown_PublishProject_PublishButton')[0];
+        var deleteButton=$('#ctl00_ctl00_MasterContent_ProjectCountdown_PublishProject_DeleteButton')[0];
+
+        setTimeout(function() { CodePlex.UpdateProgress.displayPanelAndDisableControls('Updating...', publishButton, deleteButton) }, 1);
+    }
+</script>
+<div class="ClearBoth"></div>
+<div class="StandardPaddingBottom">
+
+
+</div>
+<script type="text/javascript">
+    // replaces the smartdatecontrol's "Today" with "today" or "on {Date}" for this user control
+    function formatDate() {
+        var dateSpan = $('#ctl00_ctl00_MasterContent_ProjectCountdown_PublishProject_DeletionDateLiteral');
+        if (dateSpan.text().toLowerCase() == "today")
+            dateSpan.text("today");
+        else
+            dateSpan.text("on " + dateSpan.text());
+    }
+    formatDate();
+</script>
+
+            
+
+        </div>
+            
+        <table class="SiteContentTable" cellpadding="0" cellspacing="0">
+            <tbody><tr valign="top">
+               <td class="MainContent">
+                    <div class="MainContentMinWidthContent">
+                        
+                        
+                        <div id="ctl00_ctl00_MasterContent_ProjectContentPanel" class="ProjectContent">
+	
+                            <div id="MenuDiv">
+                                
+    
+<div class="TabStripNew">
+    <table class="FullWidth" border="0" cellpadding="0" cellspacing="0">
+        <tbody><tr>
+            <td id="ctl00_ctl00_MasterContent_Tabs_homeTabCell" class="Tab InactiveTabNew">
+                <a id="ctl00_ctl00_MasterContent_Tabs_homeTab" class="TabLinkNew" href="http://scripttd.codeplex.com/"><div class="TabPadding">Home</div></a>
+            </td>
+	
+            <td id="ctl00_ctl00_MasterContent_Tabs_releasesTabCell" class="Tab InactiveTabNew">
+                <a id="ctl00_ctl00_MasterContent_Tabs_releasesTab" class="TabLinkNew" href="http://scripttd.codeplex.com/releases/view/71909"><div class="TabPadding">Downloads</div></a>
+            </td>
+	
+            <td id="ctl00_ctl00_MasterContent_Tabs_documentationTabCell" class="Tab ActiveTabNew">
+                <a id="ctl00_ctl00_MasterContent_Tabs_documentationTab" class="TabLinkNew" href="http://scripttd.codeplex.com/documentation"><div class="TabPadding">Documentation</div></a>
+            </td>
+	
+            <td id="ctl00_ctl00_MasterContent_Tabs_discussionTabCell" class="Tab InactiveTabNew">
+                <a id="ctl00_ctl00_MasterContent_Tabs_discussionTab" class="TabLinkNew" href="http://scripttd.codeplex.com/discussions"><div class="TabPadding">Discussions</div></a> 
+            </td>
+	
+            <td id="ctl00_ctl00_MasterContent_Tabs_workItemsTabCell" class="Tab InactiveTabNew">
+                <a id="ctl00_ctl00_MasterContent_Tabs_workItemsTab" class="TabLinkNew" href="http://scripttd.codeplex.com/workitem/list/basic"><div class="TabPadding">Issue Tracker</div></a>
+            </td>
+	
+            <td id="ctl00_ctl00_MasterContent_Tabs_sourceTabCell" class="Tab InactiveTabNew">
+                <a id="ctl00_ctl00_MasterContent_Tabs_sourceTab" class="TabLinkNew" href="http://scripttd.codeplex.com/SourceControl/list/changesets"><div class="TabPadding">Source Code</div></a>
+            </td>
+	
+            <td id="ctl00_ctl00_MasterContent_Tabs_peopleTabCell" class="Tab InactiveTabNew">
+                <a id="ctl00_ctl00_MasterContent_Tabs_peopleTab" class="TabLinkNew" href="http://scripttd.codeplex.com/team/view"><div class="TabPadding">People</div></a>
+            </td>
+	
+            <td id="ctl00_ctl00_MasterContent_Tabs_licenseTabCell" class="Tab InactiveTabNew">
+                <a id="ctl00_ctl00_MasterContent_Tabs_licenseTab" class="TabLinkNew" href="http://scripttd.codeplex.com/license"><div class="TabPadding">License</div></a>
+            </td>
+	
+            <td class="FullWidth LastTabNew" nowrap="nowrap">
+                <style id="ctl00_ctl00_MasterContent_Tabs_rssFeeds_ProjectDirectoryStyles" type="text/css">
+        .FF .RightMarginFix{
+            margin-right: 1px;
+        }
+        .HoverPanel{
+            position: absolute; 
+            display: none;
+            z-index: 3; 
+        }
+        .IE .HoverPanel{
+            margin-left: -1px;
+        }
+        .IE7 HoverPanel{
+            margin-top: 1px;
+        }
+        .IE6 .HoverPanel .Content{
+	        margin-top: -13px;
+        }
+        .LeftHoverWidth{
+            width: 16.4em;
+        }
+        .HoverClosePanel{
+            width: 4em;
+            position: absolute; 
+            right: 2em;
+            top: -1.9em;
+            z-index: 1;
+        }
+        .HoverClosePanel .RoundedContent{
+            min-height: 2em;
+            height: 2em;
+        }
+        .HoverContentPanel{
+            position:relative;
+            z-index: 2;
+        }
+        .MockPanelBorder{
+            padding-left: 1px;
+            padding-right: 1px;
+        }
+</style>
+    
+<script type="text/javascript">
+        function setMaxHeight(divName, bottomPixelPadding){
+            var constraindiv = $('#' + divName)[0];
+            var divpoint = CodePlex.UI.getElementPosition(constraindiv);
+            var maxHeight = $('#Canvas').offset().top - divpoint.y - bottomPixelPadding;
+            var scrollHeight = constraindiv.scrollHeight;
+            constraindiv.style.height = (scrollHeight > maxHeight) ? maxHeight + 'px' : 'auto';
+        }
+        function placeHover(linkname, hovername) {
+            var link = $('#' + linkname)[0];
+            var $hover = $('#' + hovername);
+            var point = CodePlex.UI.getElementPosition(link);
+            $hover.css('left', (point.x - 135) + 'px');
+            $hover.css('top', (point.y - 7) + 'px');
+            $hover.css('display', 'block');
+        }
+        
+        function closeHover(hovername) {
+            $('#' + hovername).css('display', '');
+        }
+        function closeHovers() {
+            $('#rssHoverDiv').css('display', '');
+        }
+</script>
+    
+<div id="rssHoverDiv" class="HoverPanel LeftHoverWidth AlignLeft">
+        <div id="ctl00_ctl00_MasterContent_Tabs_rssFeeds_RssHoverContentPanel" class="ContentPanelBox SideBarControl HoverContentPanel" style="">
+		<div id="ctl00_ctl00_MasterContent_Tabs_rssFeeds_RssHoverContentPanel_headerPanel" class="HeaderPanel Header">
+			
+    
+                <div class="StandardPaddingBottom">
+                    <div style="float:right">
+                        <a href="#" onclick="allowUnsavedDataAlert();closeHover('rssHoverDiv'); return false;">Close</a>
+                    </div>
+                    <div style="float:left" onclick="allowUnsavedDataAlert();closeHover('rssHoverDiv');">
+                        <a href="#" onclick="return false;"><img id="ctl00_ctl00_MasterContent_Tabs_rssFeeds_RssHoverContentPanel_ArrowDownImg3" src="wikipage_files/arrow_dsc_green.gif" style="height: 9px; width: 9px; border-width: 0px;"></a>
+                        <a href="#" onclick="return false;">RSS</a>
+                        <img id="ctl00_ctl00_MasterContent_Tabs_rssFeeds_RssHoverContentPanel_rssFeedImageHover" src="wikipage_files/icon_rss.gif" alt="RSS Feed" style="border: 0px none; vertical-align: bottom;" hspace="5">
+                    </div>
+                    <div class="ClearBoth"></div>
+                </div>
+           
+
+		</div><div id="ctl00_ctl00_MasterContent_Tabs_rssFeeds_RssHoverContentPanel_contentPanel" class="StandardPadding">
+			
+    
+           <ul id="ctl00_ctl00_MasterContent_Tabs_rssFeeds_RssHoverContentPanel_FeedsPanel" class="RssFeedsPanel">
+            <div id="ctl00_ctl00_MasterContent_Tabs_rssFeeds_RssHoverContentPanel_ProjectPanel">
+				
+                <li>
+                    <a id="ctl00_ctl00_MasterContent_Tabs_rssFeeds_RssHoverContentPanel_ProjectRssLink" title="All Project Updates" class="ArrowSmall NoUnderline" href="http://scripttd.codeplex.com/project/feeds/rss">All Project Updates</a>
+                </li>
+            
+			</div>
+            <div id="ctl00_ctl00_MasterContent_Tabs_rssFeeds_RssHoverContentPanel_DiscussionsPanel">
+				
+                <li>
+                    <a id="ctl00_ctl00_MasterContent_Tabs_rssFeeds_RssHoverContentPanel_DiscussionsRssLink" title="New threads and posts" class="ArrowSmall NoUnderline" href="http://scripttd.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fforum%2fscripttd">Discussions</a>
+                </li>
+            
+			</div>
+            <div id="ctl00_ctl00_MasterContent_Tabs_rssFeeds_RssHoverContentPanel_IssueTrackerPanel">
+				
+                <li>    
+                    <a id="ctl00_ctl00_MasterContent_Tabs_rssFeeds_RssHoverContentPanel_IssueTrackerRssLink" title="New and updated work items" class="ArrowSmall NoUnderline" href="http://scripttd.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fworkitem%2fscripttd">Issue Tracker</a>
+                </li>
+            
+			</div>
+            <div id="ctl00_ctl00_MasterContent_Tabs_rssFeeds_RssHoverContentPanel_ReleasesPanel">
+				
+                <li>
+                    <a id="ctl00_ctl00_MasterContent_Tabs_rssFeeds_RssHoverContentPanel_ReleasesRssLink" title="New and updated releases" class="ArrowSmall NoUnderline" href="http://scripttd.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2frelease%2fscripttd">Releases</a>
+                </li>
+            
+			</div>  
+            <div id="ctl00_ctl00_MasterContent_Tabs_rssFeeds_RssHoverContentPanel_ReviewsPanel">
+				
+                <li>
+                    <a id="ctl00_ctl00_MasterContent_Tabs_rssFeeds_RssHoverContentPanel_ReviewsRssLink" title="New and updated reviews" class="ArrowSmall NoUnderline" href="http://scripttd.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2freview%2fscripttd">Reviews</a>
+                </li>
+            
+			</div>          
+            <div id="ctl00_ctl00_MasterContent_Tabs_rssFeeds_RssHoverContentPanel_SourceControlPanel">
+				
+                <li>
+                    <a id="ctl00_ctl00_MasterContent_Tabs_rssFeeds_RssHoverContentPanel_SourceControlRssLink" title="New check-ins" class="ArrowSmall NoUnderline" href="http://scripttd.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fsourcecontrol%2fscripttd">Source Code</a>
+                </li>
+            
+			</div>
+            <div id="ctl00_ctl00_MasterContent_Tabs_rssFeeds_RssHoverContentPanel_WikiPanel">
+				
+                <li>
+                    <a id="ctl00_ctl00_MasterContent_Tabs_rssFeeds_RssHoverContentPanel_WikiRssLink" title="New and updated wiki pages" class="ArrowSmall NoUnderline" href="http://scripttd.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fwiki%2fscripttd">Wiki &amp; Documentation</a>
+                </li>
+            
+			</div>
+        </ul>
+           
+
+		</div>
+	</div>  
+</div>
+    
+<div class="StandardPaddingBottom">
+    <span id="rssHoverLink" onclick="closeHovers();placeHover('rssHoverLink', 'rssHoverDiv');">
+    <span id="ctl00_ctl00_MasterContent_Tabs_rssFeeds_FeedsLabel"><img id="ctl00_ctl00_MasterContent_Tabs_rssFeeds_rssRightArrow" title="RSS Feed" src="wikipage_files/arrow_right_green.gif" style="border-width: 0px;" align="absmiddle">
+        <a href="#" onclick="return false;">RSS</a>
+        <img id="ctl00_ctl00_MasterContent_Tabs_rssFeeds_rssFeedImage" src="wikipage_files/icon_rss.gif" alt="RSS Feed" style="border: 0px none; vertical-align: bottom;" hspace="5"></span>
+    </span>
+</div>
+    
+        
+
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+                                
+    <div id="DeleteWikiPagePanel" style="display: none;" title="Are you Sure?">
+        <div class="Body">
+            By clicking Delete, all history, comments and attachments for this page will be deleted and cannot be restored.
+        </div>
+        <div class="Buttons">
+            <input id="DeleteButton" class="DefaultButton" value="Delete" type="button">
+            <input id="CancelButton" class="Button" value="Cancel" type="button">
+        </div>
+    </div>
+    
+    <table style="width: 100%;" id="SubTabMenuTable" cellpadding="0" cellspacing="0">
+        <tbody><tr id="wikiTop" class="wikiTop" width="100%">
+            <td align="left" nowrap="nowrap">
+                <div id="wikiLinksPanel">
+
+                    
+                        <a id="CommentsHyperLink" href="#CommentsAnchor" onclick="return setWikiCommentTextBoxFocus();">Show Page Comments</a>
+                        
+                        <span>|</span>
+                        <a id="printerFriendlyHyperLink" href="javascript:openPreviewWikiWindow('http://scripttd.codeplex.com/Wiki/Print.aspx?action=Print&amp;title=Updating%20the%20Script%20XML&amp;version=28');">Print View</a>
+                        <span>|</span>
+                        <a id="pageInfoHyperLink" href="http://scripttd.codeplex.com/Wiki/Info.aspx?title=Updating%20the%20Script%20XML&amp;action=Info">Page Info</a>
+                     <span>|</span> 
+                    <a id="changesHyperlink" href="http://scripttd.codeplex.com/wikipage/history">Change&nbsp;History&nbsp;(all&nbsp;pages)</a>
+                </div>
+            </td>
+            <td class="NoWrap StandardPadding" align="right">
+                
+
+<div id="searchPanel" class="SearchWikiControl">
+    <input value="Search Wiki &amp; Documentation" maxlength="500" id="searchTextBox" class="SingleLineTextBox ProjectSearchTextBox WikiSearchTextBox EmptyTextBox" type="text">
+    <input id="SearchButton" class="SecondarySearchButton" alt="Search" style="border-width: 0px;" src="wikipage_files/go-off.gif" type="image" align="top">
+</div>
+
+<script type="text/javascript">
+
+    $(function () {
+
+        $('#searchTextBox').keypress(function (e) {
+            if ($keyCode(event) == 13) {
+                wikiSearch();
+                return false;
+            }
+        });
+
+        $('#SearchButton').click(function () {
+            wikiSearch();
+            return false;
+        });
+
+        $('#SearchButton').mouseover(function () {
+            this.src = 'http://i3.codeplex.com/Images/v18301/go-on.gif';
+        });
+
+        $('#SearchButton').mouseout(function () {
+            this.src = 'http://i3.codeplex.com/Images/v18301/go-off.gif';
+        });
+
+        $('#searchTextBox').promptBox('Search Wiki & Documentation');
+
+    });
+    function setWikiCommentTextBoxFocus() {
+        $('#Comment').focus();
+        return false;
+    }
+
+    function wikiSearch() {
+        var $textbox = $('#searchTextBox');
+        if($textbox.attr('dirty') != 'true')
+            return;
+        var searchText = encodeURIComponent(jQuery.trim($textbox.val()));
+        if(searchText != null & searchText.length > 0)
+            window.location.href = 'http://scripttd.codeplex.com/wiki/search?tab=Documentation&SearchText=' + searchText;
+    }
+
+</script>
+            </td>
+        </tr>
+    </tbody></table>
+    
+                            </div>
+                            <table width="100%" cellpadding="0" cellspacing="0">
+                                <tbody><tr>
+                                    <td valign="top">
+                                        <div id="ctl00_ctl00_MasterContent_ContentPanel" class="Content">
+		
+                                            
+    <div class="WikiHolder">
+        
+            <div id="WikiBreadCrumbs" class="breadcrumbs">
+                
+                    <a href="http://scripttd.codeplex.com/documentation">Documentation</a>
+                    
+                        <img src="wikipage_files/arrow_sm.gif" alt="Go" align="bottom">
+                    
+                    <a href="http://scripttd.codeplex.com/wikipage?title=Updating%20the%20Script%20XML">Updating the Script XML</a>
+                    
+            </div>
+        
+        <div class="DocumentationMissingMessage" id="titleDoesNotExistPanel" style="margin-bottom: 4px;">
+            The wiki page was successfully created. Add a link to this page by inserting <strong>[Updating the Script XML]</strong> into your wiki markup. 
+        </div>
+        
+            <div id="WikiContent" class="WikiContent">
+                <div class="wikidoc">
+<p>I’m a big fan of Tower Defense games and I’ve always wanted to build 
+my own. The problem is I’m better at graphics than programming. Script 
+TD was born as a way to abstract the programming and create a Tower 
+Defense engine that allows anyone to create a
+ TD game with some simple scripting.</p>
+<p>The Script TD project contains a Visual Studio project and a number 
+of directories containing the engine, the XML that constructs the game, 
+and the graphics. After extracting the project you can follow along with
+ me as I walk you through each of the files
+ and directories and explain how they work.</p>
+<p>By changing the graphics and the attributes/behaviors of the maps, 
+towers, and creeps, you too can make your own Tower Defense game and 
+even sell it in the Windows Phone Marketplace. If you’re also a 
+developer you can extend Script TD to include new features
+ and additions.</p>
+<p>So let’s get started.</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td valign="top" width="10%">
+<p><strong><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253574"><img title="folder" alt="folder" src="wikipage_files/download_002.jpg" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" width="30" align="left" border="0" height="32"></a>
+ \Coding4FunTDContent</strong></p>
+</td>
+<td valign="top" width="90%">
+<p>This is the primary parent directory for game content. If you're a 
+designer, this is likely the only directory you'll be working in.</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="10%">
+<p><strong><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253574"><img title="folder" alt="folder" src="wikipage_files/download_002.jpg" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" width="30" align="left" border="0" height="32"></a></strong><strong>\Audio</strong></p>
+</td>
+<td valign="top" width="90%">
+<p>The Audio directory includes two folders, one for Music and one 
+called SFX for sound effects. The music folder is where you would put 
+theme music you want to play at the title screen. SFX directory includes
+ game sounds like spawn sounds, projectile shots
+ and hits.</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="10%">
+<p><strong><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253574"><img title="folder" alt="folder" src="wikipage_files/download_002.jpg" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" width="30" align="left" border="0" height="32"></a></strong><strong>\Data</strong></p>
+</td>
+<td valign="top" width="90%">
+<p>The Data directory is the folder for Enemies, Maps, Towers, and Game UI. The root of Data includes Maps.xml.</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="10%">
+<p><strong><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253576"><img title="File" alt="File" src="wikipage_files/download.jpg" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" width="23" align="left" border="0" height="30"></a>
+ \Data\Maps.xml</strong></p>
+</td>
+<td valign="top" width="90%">
+<p><strong>Maps Definition&nbsp; <br>
+</strong>This XML contains the maps that make up your game. In our 
+ScriptTD sample project it defines 5 maps; 1.xml through 5.xml. We also 
+define which prerequisite each map requires, if any.</p>
+<pre><span style="color:blue">&lt;</span><span style="color:#a31515">Maps</span><span style="color:blue">&gt; 
+  &lt;</span><span style="color:#a31515">Map </span><span style="color:red">Data</span><span style="color:blue">=</span>"<span style="color:blue">1.xml</span>" <span style="color:blue">/&gt;
+  &lt;</span><span style="color:#a31515">Map </span><span style="color:red">Data</span><span style="color:blue">=</span>"<span style="color:blue">2.xml</span>" <span style="color:blue">/</span><span style="color:blue">&gt;
+</span><span style="color:blue">  &lt;</span><span style="color:#a31515">Map </span><span style="color:red">Data</span><span style="color:blue">=</span>"<span style="color:blue">3.xml</span>" /<span style="color:blue">&gt;</span><span style="color:blue">
+  &lt;</span><span style="color:#a31515">Map </span><span style="color:red">Data</span><span style="color:blue">=</span>"<span style="color:blue">4.xml</span>" /<span style="color:blue">&gt;
+</span><span style="color:blue">  &lt;</span><span style="color:#a31515">Map </span><span style="color:red">Data</span><span style="color:blue">=</span>"<span style="color:blue">5.xml</span>" /<span style="color:blue">&gt;<br></span><span style="color:blue">    &lt;</span><span style="color:#a31515">Prerequisite</span><span style="color:blue">&gt;</span>mis04<span style="color:blue">&lt;/</span><span style="color:#a31515">Prerequisite</span><span style="color:blue">&gt;</span>
+<span style="color:blue">  &lt;/</span><span style="color:#a31515">Map</span><span style="color:blue">&gt;
+&lt;/</span><span style="color:#a31515">Maps</span><span style="color:blue">&gt;</span></pre>
+</td>
+</tr>
+<tr>
+<td valign="top" width="10%">
+<p><strong><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253574"><img title="folder" alt="folder" src="wikipage_files/download_002.jpg" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" width="30" align="left" border="0" height="32"></a></strong><strong>\Data\Enemies\</strong></p>
+</td>
+<td valign="top" width="90%">
+<p>This directory contains all the enemies you'll have in your TD game.</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="10%">
+<p><strong><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253576"><img title="File" alt="File" src="wikipage_files/download.jpg" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" width="23" align="left" border="0" height="30"></a></strong><strong>\Data\Enemies\FlyerFast.xml</strong></p>
+<p></p>
+</td>
+<td valign="top" width="90%">
+<p><strong>Typical Creep XML</strong> <br>
+FlyerFast.xml is a typical XML for a "creep" or tower defense game 
+enemy. If you want to create a new creep class, you simply create a new 
+XML file like this one. It includes the following attributes:</p>
+<pre><span style="color:blue">&lt;</span><span style="color:#a31515">Creep <br>   </span><span style="color:red">Id</span><span style="color:blue">=</span>"<span style="color:blue">flyerfast</span>" <br><span style="color:red">   CanFly</span><span style="color:blue">=</span>"<span style="color:blue">true</span>" <br>   <span style="color:red">Speed</span><span style="color:blue">=</span>"<span style="color:blue">2</span>" <br>   <span style="color:red">Health</span><span style="color:blue">=</span>"<span style="color:blue">150</span>" <br>   <span style="color:red">Worth</span><span style="color:blue">=</span>"<span style="color:blue">1</span>" <br>   <span style="color:red">Texture</span><span style="color:blue">=</span>"<span style="color:blue">flyer-fast.png</span>" <br>   <span style="color:red">DeathSoundId</span><span style="color:blue">=</span>"<span style="color:blue">29_Fast_Flyer_Death</span>" <br>   <span style="color:red">SpawnSoundId</span><span style="color:blue">=</span>"<span style="color:blue">28_Fast_Flyer_Spawn</span>" <br><span style="color:blue">/&gt;</span></pre>
+<a href="http://11011.net/software/vspaste"></a>
+<p>- <strong>Id </strong>– The name we'll use to reference this class creep in other areas of the game.
+<br>
+- <strong>CanFly </strong>– This is a true or false attribute for whether this is a ground based creep or if it can fly over towers.
+<br>
+- <strong>Speed </strong>– This is the base speed for how fast this class creep moves.
+<br>
+- <strong>Health </strong>– The number of hit points required to kill this creep.
+<br>
+- <strong>Worth </strong>– This is how much money you get for killing this creep.
+<br>
+- <strong>Texture </strong>– The image for this creep. Simply reference the name of the image located in the Textures\Creeps\ directory.
+<br>
+- <strong>DeathSoundID </strong>– The name of the sound file in the \Audio directory to play when this enemy is killed.
+<br>
+- <strong>SpawnSoundID </strong>– This is the sound this class of creep 
+makes on spawn. Reference the name of the sound file in the \Audio 
+directory that you want to play.
+<span style="font-family:consolas; color:#0000ff; font-size:x-small">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="10%">
+<p><strong><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253574"><img title="folder" alt="folder" src="wikipage_files/download_002.jpg" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" width="30" align="left" border="0" height="32"></a></strong><strong>\Data\GUI\</strong></p>
+</td>
+<td valign="top" width="90%">
+<p>This is the directory for XML files that define the UI of the game. 
+For typical non-developers, the only things you would change in these 
+files are the position of buttons and the name of the image used to 
+represent the buttons.</p>
+<p>For more information about the GUI XML specification, read the <a href="http://scripttd.codeplex.com/wikipage?title=GUI%20XML%20Reference">
+GUI XML Reference</a>.</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="10%">
+<p><strong><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253576"><img title="File" alt="File" src="wikipage_files/download.jpg" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" width="23" align="left" border="0" height="30"></a></strong><strong>\Data\GUI\Defeat.xml</strong></p>
+<p><strong></strong></p>
+<p align="center"><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253620"><img title="Loser" alt="Loser" src="wikipage_files/download_007.png" style="border-width: 0px; display: inline;" width="200" border="0" height="120"></a>
+<br>
+(Click to enlarge)</p>
+</td>
+<td valign="top" width="90%">
+<p><strong>Defeat <br>
+</strong>The defeat screen is what you see when you get beat on a map. 
+The Visual node defines the image to use in the background and the text 
+presented immediately upon defeat. The color of this text can be defined
+ in the color attribute. There is also a Tap
+ to Continue text button that continues past the defeat screen. It too 
+can be customized with the text attributes.</p>
+<pre><span style="color:blue">&lt;</span><span style="color:#a31515">Window</span><span style="color:blue">&gt;
+  &lt;</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+    &lt;</span><span style="color:#a31515">Image </span><span style="color:red">src</span><span style="color:blue">=</span>"<span style="color:blue">Textures\Backgrounds\3-loading.jpg</span>" <span style="color:red">useparentsize</span><span style="color:blue">=</span>"<span style="color:blue">true</span>" <span style="color:blue">/&gt;
+    &lt;</span><span style="color:#a31515">Text <br>     </span><span style="color:red">text</span><span style="color:blue">=</span>"<span style="color:blue">You Have Been Defeated</span>" <br>     <span style="color:red">align</span><span style="color:blue">=</span>"<span style="color:blue">Center</span>" <br>     <span style="color:red">location</span><span style="color:blue">=</span>"<span style="color:blue">0,25%</span>" <br>     <span style="color:red">size</span><span style="color:blue">=</span>"<span style="color:blue">800,0</span>" <br>     <span style="color:red">allowparentresize</span><span style="color:blue">=</span>"<span style="color:blue">true</span>" <br>     <span style="color:red">color</span><span style="color:blue">=</span>"<span style="color:blue">255,255,255,255</span>" <br>     <span style="color:red">font</span><span style="color:blue">=</span>"<span style="color:blue">Fonts\Common.spritefont</span>" <span style="color:blue">/&gt;
+  &lt;/</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+  &lt;</span><span style="color:#a31515">Button </span><span style="color:red">name</span><span style="color:blue">=</span>"<span style="color:blue">continue</span>" <span style="color:red">size</span><span style="color:blue">=</span>"<span style="color:blue">800,480</span>" <span style="color:red">location</span><span style="color:blue">=</span>"<span style="color:blue">0,0</span>" <span style="color:red">text</span><span style="color:blue">=</span>"<span style="color:blue">Tap to Continue</span>"<span style="color:blue">&gt;
+    &lt;</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+      &lt;</span><span style="color:#a31515">Text <br>       </span><span style="color:red">align</span><span style="color:blue">=</span>"<span style="color:blue">Center</span>" <br>       <span style="color:red">color</span><span style="color:blue">=</span>"<span style="color:blue">255,255,255,255</span>" <br>       <span style="color:red">Font</span><span style="color:blue">=</span>"<span style="color:blue">Fonts\Common.spritefont</span>" <br>       <span style="color:red">Text</span><span style="color:blue">=</span>"<span style="color:blue">{TEXT}</span>" <br>       <span style="color:red">valign</span><span style="color:blue">=</span>"<span style="color:blue">Middle</span>" <span style="color:blue">/&gt;
+    &lt;/</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+  &lt;/</span><span style="color:#a31515">Button</span><span style="color:blue">&gt;
+&lt;/</span><span style="color:#a31515">Window</span><span style="color:blue">&gt;</span></pre>
+</td>
+</tr>
+<tr>
+<td valign="top" width="10%">
+<p><strong><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253576"><img title="File" alt="File" src="wikipage_files/download.jpg" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" width="23" align="left" border="0" height="30"></a></strong><strong>\Data\GUI\HighScoreMap.xml</strong></p>
+<p><strong></strong></p>
+<p align="center"><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253602"><img title="High Score" alt="High Score" src="wikipage_files/download_004.png" style="border-width: 0px; display: inline;" width="200" border="0" height="120"></a>
+<br>
+(Click to enlarge)</p>
+</td>
+<td valign="top" width="90%">
+<p><strong>The High Score Screen <br>
+</strong>This is the list of high scores and what image is shown in the 
+background. The Image scr attribute is defining the background used on 
+this screen. Text attributes can be defined for your High Score screen 
+style. The 5 best high scores are shown.
+</p>
+<pre><span style="color:blue">&lt;</span><span style="color:#a31515">Window</span><span style="color:blue">&gt;
+  &lt;</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+    &lt;</span><span style="color:#a31515">Image </span><span style="color:red">src</span><span style="color:blue">=</span>"<span style="color:blue">Textures\Backgrounds\2-level-select.jpg</span>" <span style="color:blue">/&gt;
+    &lt;</span><span style="color:#a31515">Text <br>     </span><span style="color:red">Font</span><span style="color:blue">=</span>"<span style="color:blue">Fonts\Common.spritefont</span>" <br>     <span style="color:red">Text</span><span style="color:blue">=</span>"<span style="color:blue">{TEXT}</span>" <br>     <span style="color:red">color</span><span style="color:blue">=</span>"<span style="color:blue">255,255,255,255</span>" <br>     <span style="color:red">Location</span><span style="color:blue">=</span>"<span style="color:blue">15%, 5%</span>" <br>     <span style="color:red">allowparentresize</span><span style="color:blue">=</span>"<span style="color:blue">true</span>" <span style="color:blue">/&gt;
+  &lt;/</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+
+  &lt;</span><span style="color:#a31515">Templates</span><span style="color:blue">&gt;
+    &lt;</span><span style="color:#a31515">Template </span><span style="color:red">Name</span><span style="color:blue">=</span>"<span style="color:blue">scoreItemTemplate</span>"<span style="color:blue">&gt;
+      &lt;</span><span style="color:#a31515">Text <br>       </span><span style="color:red">Font</span><span style="color:blue">=</span>"<span style="color:blue">Fonts\Common.spritefont</span>" <br>       <span style="color:red">color</span><span style="color:blue">=</span>"<span style="color:blue">255,255,255,255</span>" <br>       <span style="color:red">Text</span><span style="color:blue">=</span>"<span style="color:blue">{VALUE}</span>" <br>       <span style="color:red">allowparentresize</span><span style="color:blue">=</span>"<span style="color:blue">false</span>" <span style="color:blue">/&gt;
+    &lt;/</span><span style="color:#a31515">Template</span><span style="color:blue">&gt;
+  &lt;/</span><span style="color:#a31515">Templates</span><span style="color:blue">&gt;
+
+  &lt;</span><span style="color:#a31515">Label </span><span style="color:red">name</span><span style="color:blue">=</span>"<span style="color:blue">score1</span>" <span style="color:red">Template</span><span style="color:blue">=</span>"<span style="color:blue">scoreItemTemplate</span>" <span style="color:red">Location</span><span style="color:blue">=</span>"<span style="color:blue">15%, 20%</span>" <span style="color:blue">/&gt;
+  &lt;</span><span style="color:#a31515">Label </span><span style="color:red">name</span><span style="color:blue">=</span>"<span style="color:blue">score2</span>" <span style="color:red">Template</span><span style="color:blue">=</span>"<span style="color:blue">scoreItemTemplate</span>" <span style="color:red">Location</span><span style="color:blue">=</span>"<span style="color:blue">15%, 30%</span>" <span style="color:blue">/&gt;
+  &lt;</span><span style="color:#a31515">Label </span><span style="color:red">name</span><span style="color:blue">=</span>"<span style="color:blue">score3</span>" <span style="color:red">Template</span><span style="color:blue">=</span>"<span style="color:blue">scoreItemTemplate</span>" <span style="color:red">Location</span><span style="color:blue">=</span>"<span style="color:blue">15%, 40%</span>" <span style="color:blue">/&gt;
+  &lt;</span><span style="color:#a31515">Label </span><span style="color:red">name</span><span style="color:blue">=</span>"<span style="color:blue">score4</span>" <span style="color:red">Template</span><span style="color:blue">=</span>"<span style="color:blue">scoreItemTemplate</span>" <span style="color:red">Location</span><span style="color:blue">=</span>"<span style="color:blue">15%, 50%</span>" <span style="color:blue">/&gt;
+  &lt;</span><span style="color:#a31515">Label </span><span style="color:red">name</span><span style="color:blue">=</span>"<span style="color:blue">score5</span>" <span style="color:red">Template</span><span style="color:blue">=</span>"<span style="color:blue">scoreItemTemplate</span>" <span style="color:red">Location</span><span style="color:blue">=</span>"<span style="color:blue">15%, 60%</span>" <span style="color:blue">/&gt;
+&lt;/</span><span style="color:#a31515">Window</span><span style="color:blue">&gt;</span></pre>
+</td>
+</tr>
+<tr>
+<td valign="top" width="10%">
+<p><strong><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253576"><img title="File" alt="File" src="wikipage_files/download.jpg" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" width="23" align="left" border="0" height="30"></a></strong><strong>\Data\GUI\Ingame.xml</strong></p>
+<p><strong></strong></p>
+<p align="center"><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253604"><img title="Gameplay2" alt="Gameplay2" src="wikipage_files/download_003.jpg" style="border-width: 0px; display: inline;" width="204" border="0" height="124"></a>
+<br>
+(Click to enlarge)</p>
+</td>
+<td valign="top" width="90%">
+<p><strong>InGame Layout</strong> <br>
+This is a significant file in that it defines what your game screen looks like when playing.</p>
+<pre><span style="color:blue">&lt;</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+    &lt;</span><span style="color:#a31515">Image </span><span style="color:red">name</span><span style="color:blue">=</span>"<span style="color:blue">mapImg</span>" <span style="color:blue">/&gt;
+    &lt;</span><span style="color:#a31515">Image </span><span style="color:red">src</span><span style="color:blue">=</span>"<span style="color:blue">Textures\Backgrounds\playscreen.png</span>" <span style="color:blue">/&gt;
+    &lt;</span><span style="color:#a31515">Text </span><span style="color:red">text</span><span style="color:blue">=</span>"<span style="color:blue">Cash:</span>" <span style="color:red">Color</span><span style="color:blue">=</span>"<span style="color:blue">255,255,255,255</span>" <span style="color:red">location</span><span style="color:blue">=</span>"<span style="color:blue">10, 0</span>" <span style="color:red">Font</span><span style="color:blue">=</span>"<span style="color:blue">Fonts\Common.spritefont</span>" <span style="color:blue">/&gt;
+    &lt;</span><span style="color:#a31515">Text </span><span style="color:red">text</span><span style="color:blue">=</span>"<span style="color:blue">Lives:</span>" <span style="color:red">Color</span><span style="color:blue">=</span>"<span style="color:blue">255,255,255,255</span>" <span style="color:red">location</span><span style="color:blue">=</span>"<span style="color:blue">200, 0</span>" <span style="color:red">Font</span><span style="color:blue">=</span>"<span style="color:blue">Fonts\Common.spritefont</span>" <span style="color:blue">/&gt;
+    &lt;</span><span style="color:#a31515">Text </span><span style="color:red">text</span><span style="color:blue">=</span>"<span style="color:blue">Points:</span>" <span style="color:red">Color</span><span style="color:blue">=</span>"<span style="color:blue">255,255,255,255</span>" <span style="color:red">location</span><span style="color:blue">=</span>"<span style="color:blue">400, 0</span>" <span style="color:red">Font</span><span style="color:blue">=</span>"<span style="color:blue">Fonts\Common.spritefont</span>" <span style="color:blue">/&gt;
+    &lt;</span><span style="color:#a31515">Text </span><span style="color:red">text</span><span style="color:blue">=</span>"<span style="color:blue">Wave:</span>" <span style="color:red">Color</span><span style="color:blue">=</span>"<span style="color:blue">255,255,255,255</span>" <span style="color:red">location</span><span style="color:blue">=</span>"<span style="color:blue">600, 0</span>" <span style="color:red">Font</span><span style="color:blue">=</span>"<span style="color:blue">Fonts\Common.spritefont</span>" <span style="color:blue">/&gt;
+    &lt;</span><span style="color:#a31515">Gameplay </span><span style="color:red">name</span><span style="color:blue">=</span>"<span style="color:blue">gameplay</span>" <span style="color:blue">/&gt;
+    &lt;</span><span style="color:#a31515">Circle </span><span style="color:red">name</span><span style="color:blue">=</span>"<span style="color:blue">rangeCircle</span>" <span style="color:red">color</span><span style="color:blue">=</span>"<span style="color:blue">0,0,255,128</span>" <span style="color:red">density</span><span style="color:blue">=</span>"<span style="color:blue">16</span>" <span style="color:blue">/&gt;
+    &lt;</span><span style="color:#a31515">GridOverlay </span><span style="color:red">name</span><span style="color:blue">=</span>"<span style="color:blue">grid</span>" <span style="color:red">Align</span><span style="color:blue">=</span>"<span style="color:blue">Center</span>" <span style="color:red">VAlign</span><span style="color:blue">=</span>"<span style="color:blue">Middle</span>" <span style="color:red">Color</span><span style="color:blue">=</span>"<span style="color:blue">0,0,0,255</span>" <span style="color:red">Spacing</span><span style="color:blue">=</span>"<span style="color:blue">35</span>" <span style="color:red">Size</span><span style="color:blue">=</span>"<span style="color:blue">665,385</span>" <span style="color:blue">/&gt;
+  &lt;/</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+</span></pre>
+<p>The first node &lt;Visual&gt; defines what your game play screen will look like.
+<br>
+- <strong>Image src – </strong>This sets the title bar background at the top of the screen. The following text lines will lay play data over this graphic.
+<br>
+- <strong>Text</strong> – These 4 attributes set the placement and color of the play data attributes: Cash, Lives, Points, and Wave number.
+<br>
+- <strong>Circle </strong>– This attribute sets the color of the range circle around your towers.
+<br>
+- <strong>GridOverlay</strong> – This defines the grid overlay users can display, per the grid checkbox in options setting.
+</p>
+<pre><span style="color:blue">  &lt;</span><span style="color:#a31515">Label </span><span style="color:red">name</span><span style="color:blue">=</span>"<span style="color:blue">cash</span>" <span style="color:red">Location</span><span style="color:blue">=</span>"<span style="color:blue">100, 0</span>" <span style="color:red">Template</span><span style="color:blue">=</span>"<span style="color:blue">valueLabel</span>" <span style="color:blue">/&gt;
+</span><span style="color:blue">  &lt;</span><span style="color:#a31515">Label </span><span style="color:red">name</span><span style="color:blue">=</span>"<span style="color:blue">lives</span>" <span style="color:red">Location</span><span style="color:blue">=</span>"<span style="color:blue">300, 0</span>" <span style="color:red">Template</span><span style="color:blue">=</span>"<span style="color:blue">valueLabel</span>" <span style="color:blue">/&gt;
+  &lt;</span><span style="color:#a31515">Label </span><span style="color:red">name</span><span style="color:blue">=</span>"<span style="color:blue">points</span>" <span style="color:red">Location</span><span style="color:blue">=</span>"<span style="color:blue">520, 0</span>" <span style="color:red">Template</span><span style="color:blue">=</span>"<span style="color:blue">valueLabel</span>" <span style="color:blue">/&gt;
+  &lt;</span><span style="color:#a31515">Label </span><span style="color:red">name</span><span style="color:blue">=</span>"<span style="color:blue">wave</span>" <span style="color:red">Location</span><span style="color:blue">=</span>"<span style="color:blue">700, 0</span>" <span style="color:red">Template</span><span style="color:blue">=</span>"<span style="color:blue">valueLabel</span>" <span style="color:blue">/&gt;
+</span></pre>
+<a href="http://11011.net/software/vspaste"></a>
+<p>The labels will set the placement of the values of the text fields above in the Visual node.</p>
+<pre><span style="color:blue">&lt;</span><span style="color:#a31515">Button </span><span style="color:red">name</span><span style="color:blue">=</span>"<span style="color:blue">options</span>" <span style="color:red">Location</span><span style="color:blue">=</span>"<span style="color:blue">740, 45</span>" <span style="color:red">Size</span><span style="color:blue">=</span>"<span style="color:blue">50, 50</span>"<span style="color:blue">&gt;
+  &lt;</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+    &lt;</span><span style="color:#a31515">Image </span><span style="color:red">src</span><span style="color:blue">=</span>"<span style="color:blue">Textures\Buttons\HUD-button-options.png</span>" <span style="color:red">useparentsize</span><span style="color:blue">=</span>"<span style="color:blue">true</span>" <span style="color:blue">/&gt;
+  &lt;/</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+&lt;/</span><span style="color:#a31515">Button</span><span style="color:blue">&gt;</span></pre>
+<a href="http://11011.net/software/vspaste"></a>
+<p>There are several buttons on the sample play screen with attributes 
+that define the picture used, size, and placement. The 5 buttons in the 
+sample are:
+<br>
+- <strong>Options </strong>- (shown above) The options button takes the 
+user to the Options button. They return by hitting the hardware Back 
+button on the phone.
+<br>
+- <strong>ForceWave – </strong>This button forces the next wave to start spawning.&nbsp;
+<br>
+- <strong>Enter (&amp; Exit) – </strong>The enter and exit buttons 
+aren't actually buttons. Without these 'fake' buttons, the creeps spawn 
+from off the map. The player has no idea where they will start coming 
+from. I could define the entrance on the map's background
+ graphic, but I wanted to hide the creeps as well as define the entrance
+ and exit. Enter the fake enter button. This is a transparent PNG that 
+lies on top of the creeps as they enter. You can choose to use buttons 
+like this when needed, use your background
+ to show a entrance path, or maybe just surprise players with where 
+creeps come in. It's your game.</p>
+<p>&nbsp;</p>
+<pre><span style="color:blue">&lt;</span><span style="color:#a31515">TowerButton </span><span style="color:red">name</span><span style="color:blue">=</span>"<span style="color:blue">gun</span>" <span style="color:red">towerid</span><span style="color:blue">=</span>"<span style="color:blue">gun</span>" <span style="color:red">location</span><span style="color:blue">=</span>"<span style="color:blue">535,445</span>" <span style="color:red">size</span><span style="color:blue">=</span>"<span style="color:blue">35,35</span>"<span style="color:blue">&gt;
+ &lt;</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+  &lt;</span><span style="color:#a31515">Image </span><span style="color:red">src</span><span style="color:blue">=</span>"<span style="color:blue">Textures\Towers\HUD-tower-gun.png</span>" <span style="color:red">useparentsize</span><span style="color:blue">=</span>"<span style="color:blue">true</span>" <span style="color:red">visibility</span><span style="color:blue">=</span>"<span style="color:blue">enabled</span>" <span style="color:blue">/&gt;
+  &lt;</span><span style="color:#a31515">Image </span><span style="color:red">src</span><span style="color:blue">=</span>"<span style="color:blue">Textures\Towers\HUD-tower-gun-unavailable.png</span>" <span style="color:red">useparentsize</span><span style="color:blue">=</span>"<span style="color:blue">true</span>" <span style="color:red">visibility</span><span style="color:blue">=</span>"<span style="color:blue">disabled</span>" <span style="color:blue">/&gt;
+ &lt;/</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+&lt;/</span><span style="color:#a31515">TowerButton</span><span style="color:blue">&gt;
+</span></pre>
+<a href="http://11011.net/software/vspaste"></a>
+<p>Five towers are available in the ScriptTD demo project. This section 
+defines where you click to drag a new tower to your game field. Some 
+maps may only let you use one, all, or any combination of towers, but in
+ this code sample all 5 are hard coded to a
+ location. Remember if you create a new creep class (in the 
+Data\Enemies\ directory) this is where you'll need to define where the 
+button for that tower should be, what image to use for it, and what 
+image to use if it is unavailable on a map.</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="10%">
+<p><strong><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253576"><img title="File" alt="File" src="wikipage_files/download.jpg" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" width="23" align="left" border="0" height="30"></a></strong><strong>\Data\GUI\LevelSelect.xml</strong></p>
+<p><strong></strong></p>
+<p align="center"><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253606"><img title="Levels" alt="Levels" src="wikipage_files/download.png" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" width="200" border="0" height="120"></a>
+<br>
+(Click to Enlarge)</p>
+</td>
+<td valign="top" width="90%">
+<p><strong>Level Select Screen</strong> <br>
+This is the UI for the level/map selecting screen. This screen has a 
+number of buttons that denote each map, as well as buttons to cycle the 
+displayed maps.
+</p>
+<pre><span style="color:blue">&lt;</span><span style="color:#a31515">Window</span><span style="color:blue">&gt;
+  &lt;</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+    &lt;</span><span style="color:#a31515">Image </span><span style="color:red">src</span><span style="color:blue">=</span>"<span style="color:blue">Textures\Backgrounds\2-level-select.jpg</span>" <span style="color:blue">/&gt;
+  &lt;/</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;</span></pre>
+<p><span style="color:blue"><span style="color:#000000">In the Visual section we define what background to use in the level select screen.
+</span></span></p>
+<pre>  <span style="color:blue">&lt;</span><span style="color:#a31515">Templates</span><span style="color:blue">&gt;
+    &lt;</span><span style="color:#a31515">Template </span><span style="color:red">Name</span><span style="color:blue">=</span>"<span style="color:blue">levelButtonTemplate</span>"<span style="color:blue">&gt;
+      &lt;</span><span style="color:#a31515">Image </span><span style="color:red">Name</span><span style="color:blue">=</span>"<span style="color:blue">thumb</span>" <span style="color:red">Align</span><span style="color:blue">=</span>"<span style="color:blue">Center</span>" <span style="color:red">disabledtint</span><span style="color:blue">=</span>"<span style="color:blue">128,128,128,255</span>" <span style="color:red">VAlign</span><span style="color:blue">=</span>"<span style="color:blue">Top</span>" <span style="color:blue">/&gt;
+      &lt;</span><span style="color:#a31515">Text </span><span style="color:red">Text</span><span style="color:blue">=</span>"<span style="color:blue">{TEXT}</span>" <span style="color:red">Align</span><span style="color:blue">=</span>"<span style="color:blue">Center</span>" <span style="color:red">VAlign</span><span style="color:blue">=</span>"<span style="color:blue">Bottom</span>" <span style="color:red">AllowParentResize</span><span style="color:blue">=</span>"<span style="color:blue">false</span>" <span style="color:red">Font</span><span style="color:blue">=</span>"<span style="color:blue">Fonts\Common.spritefont</span>" <span style="color:blue">/&gt;
+      &lt;</span><span style="color:#a31515">Image </span><span style="color:red">Align</span><span style="color:blue">=</span>"<span style="color:blue">Center</span>" <span style="color:red">VAlign</span><span style="color:blue">=</span>"<span style="color:blue">Middle</span>" <span style="color:red">src</span><span style="color:blue">=</span>"<span style="color:blue">Textures\Buttons\locked.png</span>" <span style="color:red">visibility</span><span style="color:blue">=</span>"<span style="color:blue">disabled</span>" <span style="color:blue">/&gt;
+    &lt;/</span><span style="color:#a31515">Template</span><span style="color:blue">&gt;
+  &lt;/</span><span style="color:#a31515">Templates</span><span style="color:blue">&gt;
+</span></pre>
+<p><span style="color:blue"><span style="color:#000000">This template 
+section is for the buttons players use to select the map they want to 
+play. It defines what you see if a particular map is locked (a tint and 
+locked image).
+</span></span></p>
+<pre><span style="color:blue">&lt;</span><span style="color:#a31515">Buttonname</span><span style="color:blue">=</span>"<span style="color:blue">level1</span>" <span style="color:red">Template</span><span style="color:blue">=</span>"<span style="color:blue">levelButtonTemplate</span>" <span style="color:red">Location</span><span style="color:blue">=</span>"<span style="color:blue">33%, 40%</span>" <span style="color:red">Size</span><span style="color:blue">=</span>"<span style="color:blue">20%, 30%</span>" <span style="color:blue">/&gt;
+&lt;</span><span style="color:#a31515">Buttonname</span><span style="color:blue">=</span>"<span style="color:blue">level2</span>" <span style="color:red">Template</span><span style="color:blue">=</span>"<span style="color:blue">levelButtonTemplate</span>" <span style="color:red">Location</span><span style="color:blue">=</span>"<span style="color:blue">66%, 40%</span>" <span style="color:red">Size</span><span style="color:blue">=</span>"<span style="color:blue">20%, 30%</span>" <span style="color:blue">/&gt;
+</span></pre>
+<a href="http://11011.net/software/vspaste"></a>
+<p><span style="color:blue"><span style="color:#000000">Here you see two map </span>
+</span><span style="color:blue"><span style="color:#000000">buttons </span></span><span style="color:blue"><span style="color:#000000">side
+ by side. Consider this a button template that all of your maps defined 
+in Maps.xml will flow through. If you have more
+ maps in the Maps.xml than you have buttons to display (like 12 maps 
+with the 2 button screen above), the ScriptTD game engine will 
+automatically show buttons to go to the next page of maps. In the 
+ScriptTD code sample, we have one map per screen. We could
+ lay out all five of our maps on a single screen and not have any 
+navigation buttons. It's entirely up to you.
+</span></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="10%">
+<p><strong><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253576"><img title="File" alt="File" src="wikipage_files/download.jpg" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" width="23" align="left" border="0" height="30"></a></strong><strong>\Data\GUI\MainMenu.xml</strong></p>
+<p><strong></strong></p>
+<p align="center"><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253608"><img title="Main Screen" alt="Main Screen" src="wikipage_files/download_003.png" style="border-width: 0px; display: inline;" width="200" border="0" height="120"></a>
+<br>
+(Click to Enlarge)</p>
+</td>
+<td valign="top" width="90%">
+<p><strong>Main Menu <br>
+</strong>This is the main screen that comes up when the game is loaded. </p>
+<pre><span style="color:blue">&lt;</span><span style="color:#a31515">Window </span><span style="color:red">music</span><span style="color:blue">=</span>"<span style="color:blue">track1,track2</span>"<span style="color:blue">&gt;
+  &lt;</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+    &lt;</span><span style="color:#a31515">Image </span><span style="color:red">src</span><span style="color:blue">=</span>"<span style="color:blue">Textures\Backgrounds\1-main.jpg</span>" <span style="color:blue">/&gt;
+  &lt;/</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;</span></pre>
+<p>Here we set the background music that plays when the main menu starts as well as the background image to display. .</p>
+<pre><span style="color:blue">  &lt;</span><span style="color:#a31515">Templates</span><span style="color:blue">&gt;
+    &lt;</span><span style="color:#a31515">Template </span><span style="color:red">Name</span><span style="color:blue">=</span>"<span style="color:blue">menuButton</span>"<span style="color:blue">&gt;
+      &lt;</span><span style="color:#a31515">Text <br>        </span><span style="color:red">Align</span><span style="color:blue">=</span>"<span style="color:blue">Center</span>" <br>        <span style="color:red">VAlign</span><span style="color:blue">=</span>"<span style="color:blue">Middle</span>" <br>        <span style="color:red">Text</span><span style="color:blue">=</span>"<span style="color:blue">{TEXT}</span>" <br>        <span style="color:red">Color</span><span style="color:blue">=</span>"<span style="color:blue">255,255,255,255</span>" <br>        <span style="color:red">AllowParentResize</span><span style="color:blue">=</span>"<span style="color:blue">true</span>" <br>        <span style="color:red">Font</span><span style="color:blue">=</span>"<span style="color:blue">Fonts\Common.spritefont</span>" <span style="color:blue">/&gt;
+    &lt;/</span><span style="color:#a31515">Template</span><span style="color:blue">&gt;
+  &lt;/</span><span style="color:#a31515">Templates</span><span style="color:blue">&gt;
+
+  &lt;</span><span style="color:#a31515">Button </span><span style="color:red">Name</span><span style="color:blue">=</span>"<span style="color:blue">resume</span>" <span style="color:red">Location</span><span style="color:blue">=</span>"<span style="color:blue">55%, 15%</span>" <span style="color:red">Text</span><span style="color:blue">=</span>"<span style="color:blue">Resume</span>" <span style="color:red">Template</span><span style="color:blue">=</span>"<span style="color:blue">menuButton</span>"<span style="color:blue">/&gt;
+  &lt;</span><span style="color:#a31515">Button </span><span style="color:red">Name</span><span style="color:blue">=</span>"<span style="color:blue">play</span>" <span style="color:red">Location</span><span style="color:blue">=</span>"<span style="color:blue">55%, 30%</span>" <span style="color:red">Text</span><span style="color:blue">=</span>"<span style="color:blue">New Game</span>" <span style="color:red">Template</span><span style="color:blue">=</span>"<span style="color:blue">menuButton</span>"<span style="color:blue">/&gt;
+  &lt;</span><span style="color:#a31515">Button </span><span style="color:red">Name</span><span style="color:blue">=</span>"<span style="color:blue">highscores</span>" <span style="color:red">Location</span><span style="color:blue">=</span>"<span style="color:blue">55%, 45%</span>" <span style="color:red">Text</span><span style="color:blue">=</span>"<span style="color:blue">High Scores</span>" <span style="color:red">Template</span><span style="color:blue">=</span>"<span style="color:blue">menuButton</span>"<span style="color:blue">/&gt;
+  &lt;</span><span style="color:#a31515">Button </span><span style="color:red">Name</span><span style="color:blue">=</span>"<span style="color:blue">help</span>" <span style="color:red">Location</span><span style="color:blue">=</span>"<span style="color:blue">55%, 60%</span>" <span style="color:red">Text</span><span style="color:blue">=</span>"<span style="color:blue">Help</span>" <span style="color:red">Template</span><span style="color:blue">=</span>"<span style="color:blue">menuButton</span>"<span style="color:blue">/&gt;
+  &lt;</span><span style="color:#a31515">Button </span><span style="color:red">Name</span><span style="color:blue">=</span>"<span style="color:blue">quit</span>" <span style="color:red">Location</span><span style="color:blue">=</span>"<span style="color:blue">55%, 75%</span>" <span style="color:red">Text</span><span style="color:blue">=</span>"<span style="color:blue">Quit</span>" <span style="color:red">Template</span><span style="color:blue">=</span>"<span style="color:blue">menuButton</span>"<span style="color:blue">/&gt;
+&lt;/</span><span style="color:#a31515">Window</span><span style="color:blue">&gt;
+</span></pre>
+<a href="http://11011.net/software/vspaste"></a>
+<p>Here we are setting the color of our menu text and placing the 
+buttons. Script TD has 5 buttons on the main screen; Resume (in case you
+ were playing a game and tombstoned), Play, High Scores, Help, and Quit.
+ The Location of these buttons can be changed with
+ each buttons location attribute.</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="10%">
+<p><strong><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253576"><img title="File" alt="File" src="wikipage_files/download.jpg" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" width="23" align="left" border="0" height="30"></a></strong><strong>\Data\GUI\Options.xml</strong></p>
+<p><strong></strong></p>
+<p align="center"><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253610"><img title="Options" alt="Options" src="wikipage_files/download_005.png" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" width="200" border="0" height="120"></a>
+<br>
+(Click to Enlarge)</p>
+</td>
+<td valign="top" width="90%">
+<p><strong>Options Screen <br>
+</strong>This is the options screen seen from the Main Menu or when the 
+gear is clicked while playing a game. The Options screen background can 
+be changed through the Visual&gt;Image element. Buttons include volume 
+controls and show grid.</p>
+<pre><span style="color:blue">&lt;</span><span style="color:#a31515">Window</span><span style="color:blue">&gt;
+  &lt;</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+    &lt;</span><span style="color:#a31515">Image </span><span style="color:red">src</span><span style="color:blue">=</span>"<span style="color:blue">Textures\Backgrounds\2-level-select.jpg</span>" <span style="color:red">useparentsize</span><span style="color:blue">=</span>"<span style="color:blue">true</span>" <span style="color:blue">/&gt;
+    &lt;</span><span style="color:#a31515">Text </span><span style="color:red">location</span><span style="color:blue">=</span>"<span style="color:blue">18%, 35%</span>" <span style="color:red">text</span><span style="color:blue">=</span>"<span style="color:blue">SFX:</span>" <span style="color:red">font</span><span style="color:blue">=</span>"<span style="color:blue">Fonts\Common.spritefont</span>" <span style="color:red">color</span><span style="color:blue">=</span>"<span style="color:blue">255,255,255,255</span>" <span style="color:blue">/&gt;
+    &lt;</span><span style="color:#a31515">Text </span><span style="color:red">location</span><span style="color:blue">=</span>"<span style="color:blue">18%, 45%</span>" <span style="color:red">text</span><span style="color:blue">=</span>"<span style="color:blue">Music:</span>" <span style="color:red">font</span><span style="color:blue">=</span>"<span style="color:blue">Fonts\Common.spritefont</span>" <span style="color:red">color</span><span style="color:blue">=</span>"<span style="color:blue">255,255,255,255</span>" <span style="color:blue">/&gt;
+  &lt;/</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+  &lt;</span><span style="color:#a31515">Checkbox </span><span style="color:red">name</span><span style="color:blue">=</span>"<span style="color:blue">showgrid</span>" <span style="color:red">location</span><span style="color:blue">=</span>"<span style="color:blue">18%, 15%</span>" <span style="color:red">size</span><span style="color:blue">=</span>"<span style="color:blue">35,35</span>"<span style="color:blue">&gt;
+    &lt;</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+      &lt;</span><span style="color:#a31515">Image </span><span style="color:red">Visibility</span><span style="color:blue">=</span>"<span style="color:blue">Checked</span>" <span style="color:red">src</span><span style="color:blue">=</span>"<span style="color:blue">Textures\Buttons\enabled.png</span>" <span style="color:red">size</span><span style="color:blue">=</span>"<span style="color:blue">35,35</span>" <span style="color:blue">/&gt;
+      &lt;</span><span style="color:#a31515">Image </span><span style="color:red">Visibility</span><span style="color:blue">=</span>"<span style="color:blue">Unchecked</span>" <span style="color:red">src</span><span style="color:blue">=</span>"<span style="color:blue">Textures\Buttons\disabled.png</span>" <span style="color:red">size</span><span style="color:blue">=</span>"<span style="color:blue">35,35</span>" <span style="color:blue">/&gt;
+      &lt;</span><span style="color:#a31515">Text </span><span style="color:red">font</span><span style="color:blue">=</span>"<span style="color:blue">Fonts\Common.spritefont</span>" <span style="color:red">Text</span><span style="color:blue">=</span>"<span style="color:blue">Show Grid</span>" <span style="color:red">location</span><span style="color:blue">=</span>"<span style="color:blue">60, 0</span>" <span style="color:red">color</span><span style="color:blue">=</span>"<span style="color:blue">255,255,255,255</span>" <span style="color:blue">/&gt;
+    &lt;/</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+  &lt;/</span><span style="color:#a31515">Checkbox</span><span style="color:blue">&gt;
+  &lt;</span><span style="color:#a31515">Button </span><span style="color:red">name</span><span style="color:blue">=</span>"<span style="color:blue">sfxdown</span>" <span style="color:red">location</span><span style="color:blue">=</span>"<span style="color:blue">30%, 35%</span>" <span style="color:red">size</span><span style="color:blue">=</span>"<span style="color:blue">35,10%</span>"<span style="color:blue">&gt;
+    &lt;</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+      &lt;</span><span style="color:#a31515">Image </span><span style="color:red">src</span><span style="color:blue">=</span>"<span style="color:blue">Textures\Buttons\back-previous.png</span>" <span style="color:red">VAlign</span><span style="color:blue">=</span>"<span style="color:blue">Middle</span>" <span style="color:red">size</span><span style="color:blue">=</span>"<span style="color:blue">35,35</span>" <span style="color:blue">/&gt;
+    &lt;/</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+  &lt;/</span><span style="color:#a31515">Button</span><span style="color:blue">&gt;
+  &lt;</span><span style="color:#a31515">Label </span><span style="color:red">name</span><span style="color:blue">=</span>"<span style="color:blue">sfxval</span>" <span style="color:red">location</span><span style="color:blue">=</span>"<span style="color:blue">35%, 35%</span>" <span style="color:red">size</span><span style="color:blue">=</span>"<span style="color:blue">10%,10%</span>"<span style="color:blue">&gt;
+    &lt;</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+      &lt;</span><span style="color:#a31515">Text </span><span style="color:red">font</span><span style="color:blue">=</span>"<span style="color:blue">Fonts\Common.spritefont</span>" <span style="color:red">VAlign</span><span style="color:blue">=</span>"<span style="color:blue">Middle</span>" <span style="color:red">Align</span><span style="color:blue">=</span>"<span style="color:blue">Center</span>" <span style="color:red">Text</span><span style="color:blue">=</span>"<span style="color:blue">{VALUE}</span>" <span style="color:red">color</span><span style="color:blue">=</span>"<span style="color:blue">255,255,255,255</span>" <span style="color:blue">/&gt;
+    &lt;/</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+  &lt;/</span><span style="color:#a31515">Label</span><span style="color:blue">&gt;
+  &lt;</span><span style="color:#a31515">Button </span><span style="color:red">name</span><span style="color:blue">=</span>"<span style="color:blue">sfxup</span>" <span style="color:red">location</span><span style="color:blue">=</span>"<span style="color:blue">45%, 35%</span>" <span style="color:red">size</span><span style="color:blue">=</span>"<span style="color:blue">35,10%</span>"<span style="color:blue">&gt;
+    &lt;</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+      &lt;</span><span style="color:#a31515">Image </span><span style="color:red">src</span><span style="color:blue">=</span>"<span style="color:blue">Textures\Buttons\next.png</span>" <span style="color:red">VAlign</span><span style="color:blue">=</span>"<span style="color:blue">Middle</span>" <span style="color:red">size</span><span style="color:blue">=</span>"<span style="color:blue">35,35</span>" <span style="color:blue">/&gt;
+    &lt;/</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+  &lt;/</span><span style="color:#a31515">Button</span><span style="color:blue">&gt;
+  &lt;</span><span style="color:#a31515">Button </span><span style="color:red">name</span><span style="color:blue">=</span>"<span style="color:blue">musicdown</span>" <span style="color:red">location</span><span style="color:blue">=</span>"<span style="color:blue">30%, 45%</span>" <span style="color:red">size</span><span style="color:blue">=</span>"<span style="color:blue">35,10%</span>"<span style="color:blue">&gt;
+    &lt;</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+      &lt;</span><span style="color:#a31515">Image </span><span style="color:red">src</span><span style="color:blue">=</span>"<span style="color:blue">Textures\Buttons\back-previous.png</span>" <span style="color:red">VAlign</span><span style="color:blue">=</span>"<span style="color:blue">Middle</span>" <span style="color:red">size</span><span style="color:blue">=</span>"<span style="color:blue">35,35</span>" <span style="color:blue">/&gt;
+    &lt;/</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+  &lt;/</span><span style="color:#a31515">Button</span><span style="color:blue">&gt;
+  &lt;</span><span style="color:#a31515">Label </span><span style="color:red">name</span><span style="color:blue">=</span>"<span style="color:blue">musicval</span>" <span style="color:red">location</span><span style="color:blue">=</span>"<span style="color:blue">35%, 45%</span>" <span style="color:red">size</span><span style="color:blue">=</span>"<span style="color:blue">10%,10%</span>"<span style="color:blue">&gt;
+    &lt;</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+      &lt;</span><span style="color:#a31515">Text </span><span style="color:red">font</span><span style="color:blue">=</span>"<span style="color:blue">Fonts\Common.spritefont</span>" <span style="color:red">VAlign</span><span style="color:blue">=</span>"<span style="color:blue">Middle</span>" <span style="color:red">Align</span><span style="color:blue">=</span>"<span style="color:blue">Center</span>" <span style="color:red">Text</span><span style="color:blue">=</span>"<span style="color:blue">{VALUE}</span>" <span style="color:red">color</span><span style="color:blue">=</span>"<span style="color:blue">255,255,255,255</span>" <span style="color:blue">/&gt;
+    &lt;/</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+  &lt;/</span><span style="color:#a31515">Label</span><span style="color:blue">&gt;
+  &lt;</span><span style="color:#a31515">Button </span><span style="color:red">name</span><span style="color:blue">=</span>"<span style="color:blue">musicup</span>" <span style="color:red">location</span><span style="color:blue">=</span>"<span style="color:blue">45%, 45%</span>" <span style="color:red">size</span><span style="color:blue">=</span>"<span style="color:blue">35,10%</span>"<span style="color:blue">&gt;
+    &lt;</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+      &lt;</span><span style="color:#a31515">Image </span><span style="color:red">src</span><span style="color:blue">=</span>"<span style="color:blue">Textures\Buttons\next.png</span>" <span style="color:red">VAlign</span><span style="color:blue">=</span>"<span style="color:blue">Middle</span>" <span style="color:red">size</span><span style="color:blue">=</span>"<span style="color:blue">35,35</span>" <span style="color:blue">/&gt;
+    &lt;/</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+  &lt;/</span><span style="color:#a31515">Button</span><span style="color:blue">&gt;
+&lt;/</span><span style="color:#a31515">Window</span><span style="color:blue">&gt;
+</span></pre>
+<a href="http://11011.net/software/vspaste"></a></td>
+</tr>
+<tr>
+<td valign="top" width="10%">
+<p><strong><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253576"><img title="File" alt="File" src="wikipage_files/download.jpg" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" width="23" align="left" border="0" height="30"></a></strong><strong>\Data\GUI\TowerMenu.xml</strong></p>
+<p><strong></strong></p>
+<p align="center"><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253623"><img title="TowerMenuXML" alt="TowerMenuXML" src="wikipage_files/download_004.jpg" style="border-width: 0px; border-style: none; border-color: -moz-use-text-color; display: block; float: none; margin-left: auto; margin-right: auto;" width="176" border="0" height="115"></a></p>
+<strong></strong></td>
+<td valign="top" width="90%">
+<p><strong>Tower Menu <br>
+</strong>This is the UI for the menu seen around a Tower when selecting 
+it in a game. It currently has two options; Sell and Upgrade. This is an
+ element that is common to all towers. The attack radius of the tower is
+ shown, this radius is defined in the tower’s
+ XML, in this case in Gun.XML. </p>
+<pre><span style="color:blue">&lt;</span><span style="color:#a31515">Window </span><span style="color:red">size</span><span style="color:blue">=</span>"<span style="color:blue">125,45</span>"<span style="color:blue">&gt;
+  &lt;</span><span style="color:#a31515">Button </span><span style="color:red">name</span><span style="color:blue">=</span>"<span style="color:blue">sell</span>" <span style="color:red">size</span><span style="color:blue">=</span>"<span style="color:blue">35,35</span>" <span style="color:red">location</span><span style="color:blue">=</span>"<span style="color:blue">5,5</span>"<span style="color:blue">&gt;
+    &lt;</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+      &lt;</span><span style="color:#a31515">Image </span><span style="color:red">src</span><span style="color:blue">=</span>"<span style="color:blue">Textures\Buttons\HUD-button-sell.png</span>" <span style="color:red">useparentsize</span><span style="color:blue">=</span>"<span style="color:blue">true</span>" <span style="color:blue">/&gt;
+    &lt;/</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+  &lt;/</span><span style="color:#a31515">Button</span><span style="color:blue">&gt;
+  &lt;</span><span style="color:#a31515">Button </span><span style="color:red">name</span><span style="color:blue">=</span>"<span style="color:blue">upgrade</span>" <span style="color:red">size</span><span style="color:blue">=</span>"<span style="color:blue">35,35</span>" <span style="color:red">location</span><span style="color:blue">=</span>"<span style="color:blue">85,5</span>"<span style="color:blue">&gt;
+    &lt;</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+      &lt;</span><span style="color:#a31515">Image </span><span style="color:red">src</span><span style="color:blue">=</span>"<span style="color:blue">Textures\Buttons\HUD-button-upgrade.png</span>" <span style="color:red">disabledtint</span><span style="color:blue">=</span>"<span style="color:blue">128,128,128,255</span>" <span style="color:red">useparentsize</span><span style="color:blue">=</span>"<span style="color:blue">true</span>" <span style="color:blue">/&gt;
+    &lt;/</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+  &lt;/</span><span style="color:#a31515">Button</span><span style="color:blue">&gt;
+&lt;/</span><span style="color:#a31515">Window</span><span style="color:blue">&gt;</span></pre>
+</td>
+</tr>
+<tr>
+<td valign="top" width="10%">
+<p><strong><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253576"><img title="File" alt="File" src="wikipage_files/download.jpg" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" width="23" align="left" border="0" height="30"></a></strong><strong>\Data\GUI\Victory.xml</strong></p>
+<p><strong></strong></p>
+<p align="center"><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253618"><img title="Victory" alt="Victory" src="wikipage_files/download_006.png" style="border-width: 0px; display: inline;" width="200" border="0" height="120"></a>
+<br>
+(Click to Enlarge)</p>
+</td>
+<td valign="top" width="90%">
+<p><strong>Victory Screen <br>
+</strong>Victory is the screen shown when a player wins the level.</p>
+<pre><span style="color:blue">&lt;</span><span style="color:#a31515">Window</span><span style="color:blue">&gt;
+  &lt;</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+    &lt;</span><span style="color:#a31515">Image </span><span style="color:red">src</span><span style="color:blue">=</span>"<span style="color:blue">Textures\Backgrounds\4-highscores.jpg</span>" <span style="color:red">useparentsize</span><span style="color:blue">=</span>"<span style="color:blue">true</span>" <span style="color:blue">/&gt;
+    &lt;</span><span style="color:#a31515">Text </span><span style="color:red">text</span><span style="color:blue">=</span>"<span style="color:blue">You Are Victorious</span>" <span style="color:red">align</span><span style="color:blue">=</span>"<span style="color:blue">Center</span>" <span style="color:red">location</span><span style="color:blue">=</span>"<span style="color:blue">0,25%</span>" <span style="color:red">size</span><span style="color:blue">=</span>"<span style="color:blue">800,0</span>" <br><span style="color:red">       allowparentresize</span><span style="color:blue">=</span>"<span style="color:blue">true</span>" <span style="color:red">color</span><span style="color:blue">=</span>"<span style="color:blue">255,255,255,255</span>" <span style="color:red">font</span><span style="color:blue">=</span>"<span style="color:blue">Fonts\Common.spritefont</span>" <span style="color:blue">/&gt;
+  &lt;/</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+  &lt;</span><span style="color:#a31515">Button </span><span style="color:red">name</span><span style="color:blue">=</span>"<span style="color:blue">continue</span>" <span style="color:red">size</span><span style="color:blue">=</span>"<span style="color:blue">800,480</span>" <span style="color:red">location</span><span style="color:blue">=</span>"<span style="color:blue">0,0</span>" <span style="color:red">text</span><span style="color:blue">=</span>"<span style="color:blue">Tap to Continue</span>"<span style="color:blue">&gt;
+    &lt;</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+      &lt;</span><span style="color:#a31515">Text </span><span style="color:red">align</span><span style="color:blue">=</span>"<span style="color:blue">Center</span>" <span style="color:red">color</span><span style="color:blue">=</span>"<span style="color:blue">255,255,255,255</span>" <span style="color:red">Font</span><span style="color:blue">=</span>"<span style="color:blue">Fonts\Common.spritefont</span>" <span style="color:red">Text</span><span style="color:blue">=</span>"<span style="color:blue">{TEXT}</span>" <span style="color:red">valign</span><span style="color:blue">=</span>"<span style="color:blue">Middle</span>" <span style="color:blue">/&gt;
+    &lt;/</span><span style="color:#a31515">Visual</span><span style="color:blue">&gt;
+  &lt;/</span><span style="color:#a31515">Button</span><span style="color:blue">&gt;
+&lt;/</span><span style="color:#a31515">Window</span><span style="color:blue">&gt;
+</span></pre>
+<p>The Visual element sets the background image and the victory message. The Button element triggers the tap to continue function.
+</p>
+<p></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="10%">
+<p><strong><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253574"><img title="folder" alt="folder" src="wikipage_files/download_002.jpg" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" width="30" align="left" border="0" height="32"></a></strong><strong>\Data\Maps\</strong></p>
+</td>
+<td valign="top" width="90%">
+<p>The Maps directory stores the files for each level in your Script TD game.</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="10%">
+<p><strong><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253576"><img title="File" alt="File" src="wikipage_files/download.jpg" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" width="23" align="left" border="0" height="30"></a></strong><strong>\Data\Maps\1.xml</strong></p>
+<p><strong></strong></p>
+<p align="center"><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253612"><img title="GamePlay" alt="GamePlay" src="wikipage_files/download_002.png" style="border-width: 0px; display: inline;" width="200" border="0" height="120"></a>
+<br>
+(Click to Enlarge)</p>
+</td>
+<td valign="top" width="90%">
+<p><strong>Typical Map XML </strong><br>
+1.xml is a typical Script TD level. If you're making a Script TD game, 
+this is where you will spend most of your time. In this file you will 
+define the level, place entrances and exits, set the background image 
+and define the waves of creeps for the entire
+ level.</p>
+<p><strong>Map </strong></p>
+<div style="background-color:white; color:black">
+<pre><span style="color:blue">&lt;</span><span style="color:#a31515">Map</span> 
+   <span style="color:red">MapStartSoundID</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">19_New_Map_Loads</span><span style="color:black">"</span> 
+   <span style="color:red">WaveStartSoundID</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">07_Wave_Begin</span><span style="color:black">"</span> 
+   <span style="color:red">DefeatSoundID</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">09_Defeat_Loses_Level</span><span style="color:black">"</span>
+   <span style="color:red">VictorySoundID</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">08_Victory</span><span style="color:black">"</span> 
+   <span style="color:red">FocusColor</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">128,128,128,255</span><span style="color:black">"</span> <span style="color:red">NumLives</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">10</span><span style="color:black">"</span> 
+   <span style="color:red">BackgroundTexture</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">Map5.jpg</span><span style="color:black">"</span> <span style="color:red">StartingCash</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">100</span><span style="color:black">"</span> 
+   <span style="color:red">FriendlyName</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">Mission 5</span><span style="color:black">"</span> 
+   <span style="color:red">MapID</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">mis05</span><span style="color:black">"</span><span style="color:blue">&gt;</span></pre>
+</div>
+<p>- <strong>MapStartSoundID</strong> – This is the name of the sound file in \Audio\SFX\ that plays when the level loads and starts.
+<br>
+- <strong>WaveStartSoundID</strong> – The sound that plays when a new wave is released.
+<br>
+- <strong>DefeatSoundID</strong> – The sound that plays if the player loses this level.
+<br>
+- <strong>VictorySoundID</strong> – The sound that plays if a player wins the level.
+<br>
+- <strong>NumLives</strong> – The number of lives left. This counts down for each creep that makes it off the map without being killed.
+<br>
+- <strong>BackgroundTexture</strong> – Background for the current map, references a file located in \Textures\Background.
+<br>
+- <strong>StartingCash</strong> – How much money you start with on this level. <br>
+- <strong>Friendly Name</strong> – The display title for this level or map. <br>
+- <strong>MapID</strong> – What Script TD knows this map as.</p>
+<br>
+<p><strong>Special Cells </strong></p>
+<div style="background-color:white; color:black">
+<pre><span style="color:blue">&lt;</span><span style="color:#a31515">SpecialCells</span><span style="color:blue">&gt;</span> 
+    <span style="color:blue">&lt;</span><span style="color:#a31515">Cell</span> <span style="color:red">Y</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">5</span><span style="color:black">"</span> <span style="color:red">X</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">0</span><span style="color:black">"</span> <span style="color:red">Type</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">Entrance</span><span style="color:black">"</span> <span style="color:red">CellID</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">spawn</span><span style="color:black">"</span><span style="color:blue">/&gt;</span>
+    <span style="color:blue">&lt;</span><span style="color:#a31515">Cell</span> <span style="color:red">Y</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">5</span><span style="color:black">"</span> <span style="color:red">X</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">18</span><span style="color:black">"</span> <span style="color:red">Type</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">Exit</span><span style="color:black">"</span> <span style="color:red">CellID</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">exit</span><span style="color:black">"</span><span style="color:blue">/&gt;</span> 
+<span style="color:blue">&lt;/</span><span style="color:#a31515">SpecialCells</span><span style="color:blue">&gt;</span></pre>
+</div>
+<p>Special Cells is a container for map features like walls or 
+unbuildable areas on a map. It is where you define the entrance(s) and 
+exit(s) of the creeps. They can be placed anywhere in the 11x19 grid 
+using the X and Y attributes.</p>
+<p>There are currently three types of special cells;</p>
+<p>-<span style="font:7pt 'Times New Roman'"> </span><strong>"Entrance"</strong>
+ – Each wave has an assigned entrance that uses the name defined in this
+ types CellID attribute. You can make multiple entrances and exits and 
+have waves come and go through
+ any combination. <br>
+-<span style="font:7pt 'Times New Roman'"> </span><strong>"Exit"</strong> – A named door that any given wave can be assigned to leave through.
+<br>
+-<span style="font:7pt 'Times New Roman'"> </span><strong>"Obstacle"</strong>
+ - Any cell on a map can be blocked by using the attribute "Obstacle". 
+In designing a map, you might use the Obstacle attribute to create a 
+wall that runs across
+ the middle of your map. The entrance and exit could be on either side 
+of the wall. The creeps would then take the shortest path to the exit. 
+Just make sure in the end the creeps have at least one clear path to go 
+to the exit through. Obstacles can also be
+ used to create Tower Defense maps where the creeps are "on rails" or 
+only follow one specific path from entrance to exit.</p>
+<p>While not implemented in the current embodiment, things like sand 
+that slows the creeps could be implemented in Special Cells. It is good 
+practice to have the features defined in Special Cells shown in the 
+background graphic for your map.</p>
+<p><strong>Allowed Towers <br>
+</strong>This element defines which towers are allowed in the map and 
+how far you are allowed to upgrade them. While a tower could have 10 
+upgrade levels defined in the tower XML, you might only allow the player
+ to upgrade to level 3 in an early map. The Tower
+ has two attributes;</p>
+<div style="background-color:white; color:black">
+<pre><span style="color:blue">&lt;</span><span style="color:#a31515">Tower</span> <span style="color:red">MaxLevel</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">3</span><span style="color:black">"</span> <span style="color:red">ID</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">gun</span><span style="color:black">"</span><span style="color:blue">/&gt;</span></pre>
+</div>
+<p>-<span style="font:7pt 'Times New Roman'"> </span><strong>"MaxLevel"
+</strong>– This is how many times this tower can be upgraded on this 
+map. The characteristics of tower upgrades are defined in the xml for 
+each tower.
+<br>
+-<span style="font:7pt 'Times New Roman'"> </span><strong>"ID" </strong>
+– This is the name of the tower, in our project we have 5; Gun, Rocket, Missile, Laser, and Earthquake.
+<strong>&nbsp;</strong></p>
+<p><strong>Waves <br>
+</strong>Waves are the timed groups of creeps that emerge throughout a 
+level. A map can have any number of waves. The Waves&gt;Wave attributes 
+change the properties of the creeps contained within. As the game 
+continues, players are making money and using it
+ to create mazes of upgraded towers. The two modifers in the 
+Waves&gt;Wave element allow you to control the hit points on waves and 
+the money the players receive.</p>
+<p>-<span style="font:7pt 'Times New Roman'"> </span>"<strong>HealthMod</strong>"
+ – This changes the amount of heath points of a creep. If a creep has 
+100 hit points and a HealthMod of 1, the creep has 100 hit points. If 
+your HealthMod is 2, they
+ have 200 hit points. You can use decimals to fine tune gameplay, making
+ a game that is hard enough to be fun yet still be able to win.
+<br>
+-<span style="font:7pt 'Times New Roman'"> </span>"<strong>WorthMod</strong>" – Worth mod works the same way as the HealthMod but with the amount of money a player makes by killing the creep.</p>
+<p><strong>Creep <br>
+</strong>This element includes lines of creeps that are contained in the
+ wave. You might have one line with 1 very powerful creep, as in a boss.
+ Or you might have multiple groups of creeps that pour out by the dozens
+ in the case of a final wave in a game. Typically
+ you'll have one line representing 10-20 creeps in a wave. Let's look at
+ one below.</p>
+<span style="color:#c00000">
+<div style="background-color:white; color:black">
+<pre><span style="color:blue">&lt;</span><span style="color:#a31515">Creep</span> <span style="color:red">TimeBetweenMs</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">1000</span><span style="color:black">"</span> <span style="color:red">Number</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">15</span><span style="color:black">"</span> <span style="color:red">Exit</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">exit</span><span style="color:black">"</span> <span style="color:red">Entrance</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">spawn</span><span style="color:black">"</span> <span style="color:red">CreepID</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">landFast</span><span style="color:black">"</span><span style="color:blue">/&gt;</span></pre>
+</div>
+</span>
+<p>In this case we will let out 15 "landFast" creeps that were defined 
+in \Data\Enemies\ directory. They will emerge 1 second apart. They will 
+enter through the entrance created in the &lt;SpecialCells&gt; element 
+above and will exit through the exit
+ you define. This line can easily be tweaked to send any number of any 
+creep type you have created out of any entrance, at any rate, heading 
+toward any exit.</p>
+<div style="background-color:white; color:black">
+<pre><span style="color:blue">&lt;</span><span style="color:#a31515">Wave</span> <span style="color:red">HealthMod</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">1</span><span style="color:black">"</span> <span style="color:red">WorthMod</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">5</span><span style="color:black">"</span><span style="color:blue">&gt;</span> 
+  <span style="color:blue">&lt;</span><span style="color:#a31515">Creep</span> <span style="color:red">TimeBetweenMs</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">1000</span><span style="color:black">"</span> <span style="color:red">Number</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">15</span><span style="color:black">"</span> <span style="color:red">Exit</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">exit</span><span style="color:black">"</span> <span style="color:red">Entrance</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">spawn</span><span style="color:black">"</span> <span style="color:red">CreepID</span><span style="color:blue">=</span><span style="color:black">"</span><span style="color:blue">landBasic</span><span style="color:black">"</span><span style="color:blue">/&gt;</span> 
+<span style="color:blue">&lt;/</span><span style="color:#a31515">Wave</span><span style="color:blue">&gt;</span></pre>
+</div>
+</td>
+</tr>
+<tr>
+<td valign="top" width="10%">
+<p><strong><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253574"><img title="folder" alt="folder" src="wikipage_files/download_002.jpg" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" width="30" align="left" border="0" height="32"></a></strong><strong>\Data\Towers\</strong></p>
+</td>
+<td valign="top" width="90%">
+<p>This directory will contain the definitions of the towers available in your Script TD game.</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="10%">
+<p><strong><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253576"><img title="File" alt="File" src="wikipage_files/download.jpg" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" width="23" align="left" border="0" height="30"></a></strong><strong>\Data\Towers\gun.xml
+<br>
+<br>
+</strong></p>
+</td>
+<td valign="top" width="90%">
+<p><strong>Tower Definition XML <br>
+</strong>A tower definition will define what type of weapon it is, what 
+sounds it makes, what it looks like, and the effect it has on an enemy. 
+Under the Tower element, the tower characteristics are defined by Level 
+nodes. In this example you can see a Gun
+ Tower with one complete level and a second level started. </p>
+<pre><span style="color:blue">&lt;</span><span style="color:#a31515">Tower </span><span style="color:red">Id</span><span style="color:blue">=</span>"<span style="color:blue">gun</span>" <span style="color:red">WeaponType</span><span style="color:blue">=</span>"<span style="color:blue">DumbProjectile</span>"<span style="color:blue">&gt;
+  &lt;</span><span style="color:#a31515">Level
+    </span><span style="color:red">Cost</span><span style="color:blue">=</span>"<span style="color:blue">7</span>"
+    <span style="color:red">TimeToBuildMs</span><span style="color:blue">=</span>"<span style="color:blue">3000</span>"
+    <span style="color:red">TimeToSellMs</span><span style="color:blue">=</span>"<span style="color:blue">0</span>"
+    <span style="color:red">Damage</span><span style="color:blue">=</span>"<span style="color:blue">15</span>"
+    <span style="color:red">ReloadTimeMs</span><span style="color:blue">=</span>"<span style="color:blue">1000</span>"
+    <span style="color:red">MinRange</span><span style="color:blue">=</span>"<span style="color:blue">0</span>"
+    <span style="color:red">MaxRange</span><span style="color:blue">=</span>"<span style="color:blue">3</span>"
+    <span style="color:red">Texture</span><span style="color:blue">=</span>"<span style="color:blue">tower-gun.png</span>"
+    <span style="color:red">ShotTexture</span><span style="color:blue">=</span>"<span style="color:blue">fx-small-round.png</span>"
+    <span style="color:red">ShotSpeed</span><span style="color:blue">=</span>"<span style="color:blue">3</span>"
+    <span style="color:red">CanShootFlying</span><span style="color:blue">=</span>"<span style="color:blue">false</span>"
+    <span style="color:red">CanShootLand</span><span style="color:blue">=</span>"<span style="color:blue">true</span>"
+    <span style="color:red">BuildSoundId</span><span style="color:blue">=</span>"<span style="color:blue">10_Construction_Tower</span>"
+    <span style="color:red">SellSoundId</span><span style="color:blue">=</span>"<span style="color:blue">11_Sell_Tower</span>"
+    <span style="color:red">UpgradeSoundId</span><span style="color:blue">=</span>"<span style="color:blue">12_Construction_Tower_Upgrade</span>"
+    <span style="color:red">ShotSoundId</span><span style="color:blue">=</span>"<span style="color:blue">01_Single_Machine_Gun_Cannon</span>"
+    <span style="color:blue">/&gt;<br> </span><span style="color:blue"> &lt;</span><span style="color:#a31515">Level...
+ </span>   <span style="color:blue">/&gt;</span></pre>
+<p><strong>WeaponType</strong> - defines what type of weapon this is. A 
+gun and a canon may have different graphics, costs, and damage, but they
+ are basically the same weapon – DumbProjectile. In Script TD there are 
+four weapon types; DumbProjectile, SmartProjectile,
+ Laser, and RadialShockwave. <br>
+<strong>ID </strong>- lets you name this type of tower. This is the name
+ that you'll use in the Creep elements in the map XML to call this creep
+ to release.
+<br>
+<strong>&lt;Level </strong>- This starts the first Level element. 
+Everything contained in this node will apply to this tower the moment it
+ is placed in use. Additional levels can follow that allow the placed 
+tower to be upgraded. Simply copy your first level
+ and decide how you want it to upgrade. You can have upgrades use 
+different images for projectiles, different sounds, and of course 
+different ranges and damage levels.
+<br>
+<strong>HitSoundID</strong> - This is the sound made when this tower hits a creep.
+<br>
+<strong>ShotSoundID</strong> – The sound made when this tower shoots. <br>
+<strong>UpgradeSoundID</strong> – The sound made when this tower is upgraded. <br>
+<strong>SellSoundID</strong> – The sound made if the player sells this tower. <br>
+<strong>BuildSoundID</strong> – The sound made when the player builds this tower.
+<br>
+<strong>HitAnimationFPS</strong> – The frames per second in the hit animation. <br>
+<strong>HitTexture</strong> – This is the image used on hit. <br>
+<strong>CanShootLand</strong> – Whether this tower can shoot a land creep or not.
+<br>
+<strong>CanShootFlying</strong> – Whether this can shoot air-based creeps. <br>
+<strong>ShotSpeed</strong> – The speed of the shot from this tower at this level.
+<br>
+<strong>ShotTexture</strong> – The image to use for the projectile at this level.
+<br>
+<strong>Texture</strong> – The image to use for this tower at this level. <br>
+<strong>MaxRange</strong> – The maximum range of the tower at this level. <br>
+<strong>MinRange</strong> – The minimum range of the tower at this 
+level. Some towers you might want to be able to hit creeps that are very
+ close, as in the case of artillery.
+<br>
+<strong>ReloadTimeMs</strong> – The amount of time it takes to reload the tower weapon at this level.
+<br>
+<strong>Damage</strong> – The amount of damage the tower causes at this level. <br>
+<strong>TimeToSellMs</strong> – How long it takes to sell a tower. 0 
+will sell the tower immediately, though you may want to take longer to 
+dissuade players from selling towers rapidly.
+<br>
+<strong>TimeToBuildMs</strong> – The amount of time to build a new 
+tower, or to upgrade if this is an upgraded level. The tower is inactive
+ during this upgrade time.
+<br>
+<strong>Cost</strong> – This is the overall cost of this tower to 
+initially place, or the cost to upgrade this tower for this level. 
+Typically upgrades get progressively more expensive.</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="10%">
+<p><strong><img title="folder" alt="folder" src="wikipage_files/download_002.jpg" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" width="30" align="left" border="0" height="32"></strong><strong>\Textures\</strong></p>
+</td>
+<td valign="top" width="90%">
+<p>This is the directory where you'll put all your images for backgrounds, buttons, creeps and towers used throughout the game.
+</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="10%">
+<p><strong><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253574"><img title="folder" alt="folder" src="wikipage_files/download_002.jpg" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" width="30" align="left" border="0" height="32"></a></strong><strong>\Textures\Backgrounds</strong></p>
+</td>
+<td valign="top" width="90%">
+<p>These are the backgrounds for the main menu, level select screen, 
+loading, and the bar at the top of the game play screen. The background 
+images used in our code sample are 800x480 pixels. The Playscreen.png, 
+or the bar that covers the top edge of the game
+ play screen, is 800x41. </p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="10%">
+<p><strong><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253574"><img title="folder" alt="folder" src="wikipage_files/download_002.jpg" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" width="30" align="left" border="0" height="32"></a></strong><strong>\Textures\Buttons</strong></p>
+</td>
+<td valign="top" width="90%">
+<p>These are the buttons used in the game. They include the play and 
+fast forward buttons, next wave, and options. most buttons are 55x55 
+pixels.
+</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="10%">
+<p><strong><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253574"><img title="folder" alt="folder" src="wikipage_files/download_002.jpg" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" width="30" align="left" border="0" height="32"></a></strong><strong>\Textures\Creeps</strong></p>
+</td>
+<td valign="top" width="90%">
+<p>This is where you'll put the images used as creeps in your Script TD 
+game. The creeps in our code sample are the same size as a game play 
+square; 35x35 pixels.
+</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="10%">
+<p><strong><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253574"><img title="folder" alt="folder" src="wikipage_files/download_002.jpg" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" width="30" align="left" border="0" height="32"></a></strong><strong>\Textures\Help</strong></p>
+</td>
+<td valign="top" width="90%">
+<p>This is where you place help screen images, you can create as many as
+ needed to teach players how to play your game. The images in our code 
+sample are 528x316.
+</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="10%">
+<p><strong><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253574"><img title="folder" alt="folder" src="wikipage_files/download_002.jpg" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" width="30" align="left" border="0" height="32"></a></strong><strong>\Textures\HitEffects</strong></p>
+</td>
+<td valign="top" width="90%">
+<p>The explosions for projectiles go in the HitEffects directory.</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="10%">
+<p><strong><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253574"><img title="folder" alt="folder" src="wikipage_files/download_002.jpg" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" width="30" align="left" border="0" height="32"></a></strong><strong>\Textures\Maps</strong></p>
+</td>
+<td valign="top" width="90%">
+<p>The Maps directory contains the backgrounds for all of your levels. 
+Maps in this sample are 800x463. The difference between the map size and
+ the background are accounting for the Playscreen.png that sits across 
+the top of the map.
+</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="10%">
+<p><strong><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253574"><img title="folder" alt="folder" src="wikipage_files/download_002.jpg" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" width="30" align="left" border="0" height="32"></a></strong><strong>\Textures\Towers</strong></p>
+</td>
+<td valign="top" width="90%">
+<p>The Towers directory contains the images for each Tower, including 
+images for each version of the upgraded tower. In this example you’ll 
+see there are 35x35 pixel images that are used for the towers in 
+gameplay, and then there are 65x65 pixels images of
+ the towers that are used in the tower select section at the bottom of 
+the screen. Each 65x65 pixel tower select icon has an alternate image to
+ use when the tower is unavailable on a map, or when the player doesn’t 
+have funds to buy a given tower.
+</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="10%">
+<p><strong><a href="http://download.codeplex.com/download?ProjectName=scripttd&amp;DownloadId=253574"><img title="folder" alt="folder" src="wikipage_files/download_002.jpg" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" width="30" align="left" border="0" height="32"></a></strong><strong>\Textures\Weapons</strong></p>
+</td>
+<td valign="top" width="90%">
+<p>The Weapons directory contains the images for each shot that comes from a tower.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div id="WikiInfo">
+<div id="editedInfoPanel"><span>&nbsp;</span></div>
+</div>
+</div><div class="ClearBoth"></div>
+            </div>
+        
+            <div id="WikiInfo" class="wikiSource WikiInfo">
+                
+                    <div id="editedInfoPanel">
+                        <span class="SubText">
+                            Last edited <span class="smartDate" localtimeticks="1309425137">Jun 30 at 2:12 AM</span>&nbsp;by&nbsp;<a id="wikiEditByLink" href="http://www.codeplex.com/site/users/view/larryla">larryla</a>, version 28
+                        </span>
+                    </div>
+                
+            </div>
+        
+            
+                <div id="Comments">
+                    
+
+<script type="text/javascript">
+    var commentCount = 0
+    function addComment() {
+        var input = $('#Comment');
+        input.val($.trim(input.val()));
+        if (MvcValidation_Validate('AddComment')) {
+            CodePlex.UpdateProgress.showWithCustomText(true, 'Working...');
+            $.post('http://scripttd.codeplex.com/wikipage/comment?title=Updating%20the%20Script%20XML', { Comment: input.val() }, function(data, textStatus) {
+                if (textStatus == 'success') {
+                    if(commentCount++ == 0)
+                        $('#wikiCommentsEmpty').empty();
+                    $('#wikiComments').append(data);
+                    input.val('');
+                }
+                CodePlex.UpdateProgress.hide();
+            });
+        }
+    }
+    function deleteComment(id) {
+        if (confirm('Are you sure you want to delete this comment?')) {
+            CodePlex.UpdateProgress.showWithCustomText(true, 'Removing...');
+            $.ajax({
+                type: 'DELETE',
+                url: 'http://scripttd.codeplex.com/wikipage/comment' + '/' + id,
+                success: function() {
+                    $('#comment' + id).empty();
+                    CodePlex.UpdateProgress.hide();
+                },
+                error: function() { CodePlex.UpdateProgress.hide(); }
+            });
+        }
+    }
+</script>
+
+<div id="CommentsAnchor" class="CommentsHeader">Comments</div>
+<div style="padding:.5em;">
+    <div id="content" style="display:inline">
+        <div id="wikiComments">
+            
+                <div id="wikiCommentsEmpty">No comments yet.<br><br></div>
+            
+        </div>
+        
+            <div id="saveComment">
+                <textarea class="commentTextBox" cols="20" id="Comment" name="Comment" rows="2" style="height: 5em; width: 99%;"></textarea>
+                <input id="addCommentButton" value="Add Comment" class="Button StandardMarginTop" onclick="addComment(); return false;" type="button">
+                <span id="MvcValidation_GeneralErrorMessages" class="ErrorMessage" style="display: none;"></span>
+<script><!--
+
+
+
+
+
+$(MvcValidation_Initialize);
+function MvcValidation_Initialize() {
+MvcValidation_ValidatonElements.push('Comment');
+MvcValidation_ValidationFunctions.push({ clientId: 'Comment', validationFunction: function() { return MvcValidation_Required('Comment', 'Comment is required'); }, validatorName: 'required', group: 'AddComment'});
+MvcValidation_ValidationFunctions.push({ clientId: 'Comment', validationFunction: function() { return MvcValidation_RequiresFormat('Comment', /^(.|\r|\n){0,10000}$/, false, 'Comment may not exceed 10,000 characters'); }, group: 'AddComment'});
+MvcValidation_HookupEvents();
+MvcValidation_FocusFirstError();
+}
+--></script>
+
+            </div>
+        
+    </div>
+</div>
+                </div>
+            
+    </div>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#deleteWikiHyperLink').click(function () {
+                OpenDialog('#DeleteWikiPagePanel', true, '30em', 'ClosePanel');
+            });
+            $('#DeleteButton').click(function () {
+                OpenDialog('#DeleteWikiPagePanel', false);
+                CodePlex.UpdateProgress.showWithCustomText(true, 'Deleting...');
+                $.ajax({
+                    type: 'DELETE',
+                    url: 'http://scripttd.codeplex.com/wikipage?title=Updating%20the%20Script%20XML',
+                    success: function (data) {
+                        CodePlex.UpdateProgress.hide();
+                        window.location = data;
+                    },
+                    error: function (data) {
+                        CodePlex.UpdateProgress.hide();
+                    }
+                });
+            });
+            $('#CancelButton').click(function () {
+                OpenDialog('#DeleteWikiPagePanel', false);
+            });
+        });
+    </script>
+
+                                        
+	</div>
+                                    </td>
+                                    <td id="ctl00_ctl00_MasterContent_RightSideBarCell" valign="top" width="15%">
+                                        <div id="ctl00_ctl00_MasterContent_RightSideBarPanel" class="StandardPadding SideBar RightSideBar GradientSideBar">
+		
+                                            
+    
+
+<script type="text/javascript">
+    var requirementsActionUri = 'http://scripttd.codeplex.com/documentation/requirements';
+    
+    
+
+    function LoadRequirements(json) {
+        var html = '';
+        if (json === undefined || !json.length) {
+            html = '<div id="NoRequirementsDefined">There are currently no defined requirements.</div>';
+        } else {
+            for (var i = 0; i < json.length; i++) {
+               var requirementType = json[i];
+                html += '<h3>' + requirementType.Caption + '</h3><ul>';
+                for (var j = 0; j < requirementType.Requirements.length; j++) {
+                    var requirement = requirementType.Requirements[j];
+                    html += '<li>' + requirement.DisplayTitle + '</li>';
+                }
+                html += '</ul>';
+            }
+        }
+        
+        $('#RequirementsBody').html(html);
+    }
+
+    $(document).ready(function() {
+        LoadRequirements();
+    });
+</script>
+
+<div id="RequirementsContainer" class="ContentPanelBox SideBarControl">
+    <div class="Header StandardPaddingBottom">
+        
+        <h2 style="float:left;padding:0;">System Requirements</h2>
+        
+        <div class="ClearBoth"></div>
+    </div>
+    <div id="RequirementsBody"><div id="NoRequirementsDefined">There are currently no defined requirements.</div></div>
+</div>
+
+
+                                        
+	</div>
+                                    </td>
+	
+                                </tr>
+                            </tbody></table>
+                        
+</div>
+                    </div>
+                </td>
+            </tr>
+        </tbody></table>
+    </div>
+
+                    </div>
+                </div>
+                <div style="left: 589px; top: 263px;" id="UpdateProgressPanel" class="UpdateProgress">
+                    <span id="UpdateProgressText" class="UpdateProgressText">Updating...</span>
+                </div>
+                <div id="Analytics" style="width: 70%">
+                    <script src="wikipage_files/broker.js" type="text/javascript"></script>
+                    <img id="ctl00_ctl00_BlankImage" onload="self.logoImageLoaded=true" src="wikipage_files/blank.png" style="height: 0px; width: 0px; border-width: 0px;">
+                    <script language="javascript" type="text/javascript">
+                        var date = new Date();
+                        var timezoneOffset = date.getTimezoneOffset() / 60 * -1;
+                        var timezoneOffsetCookie = getCookie("TimezoneOffset");
+                        var firstTimeSetTimezoneCookie = false;
+
+                        if (timezoneOffsetCookie == null || timezoneOffsetCookie != timezoneOffset) {
+                            firstTimeSetTimezoneCookie = true;
+                            document.cookie = "TimezoneOffset=" + timezoneOffset + '; domain=.codeplex.com';
+                        }
+                    </script>
+                    
+                    
+                        <noscript><a href="http://www.omniture.com" title="Web Analytics">
+                            <img src="http://msstonojstemp.112.2O7.net/b/ss/msstonojstemp/1/H.20.2--NS/0" height="1" width="1" border="0" alt="" />
+                        </a></noscript>
+                    
+       
+                </div>
+            </td>
+        </tr>
+        <tr valign="bottom">
+            <td>
+                <div id="CanvasFooter">
+                    © 2006-2011 Microsoft
+                    <span class="VerticalBar">|</span>
+                    <a href="http://www.codeplex.com/site/help">Get Help</a>
+                    <span class="VerticalBar">|</span>
+                    <a href="http://scripttd.codeplex.com/site/legal/privacy">Privacy Statement</a>
+                    <span class="VerticalBar">|</span>
+                    <a href="http://www.codeplex.com/site/legal/terms">Terms of Use</a>
+                    <span class="VerticalBar">|</span>
+                    <a href="http://www.codeplex.com/site/legal/conduct">Code of Conduct</a>
+                    <span class="VerticalBar">|</span>
+                    <a href="http://www.lakequincy.com/" target="_blank">Advertise With Us</a>
+                    <span class="VerticalBar">|</span>
+                    Version 2011.10.12.18301
+                </div>
+            </td>
+        </tr>
+    </tbody></table>
+     </form>
+
+<script src="wikipage_files/broker-config.js"></script></body></html>

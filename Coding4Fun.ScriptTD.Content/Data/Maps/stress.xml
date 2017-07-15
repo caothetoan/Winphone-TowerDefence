@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Map MapId="test02" FriendlyName="Stress Test" StartingCash="500" BackgroundTexture="wasteland.png" NumLives="3" FocusColor="128,128,128,255" VictorySoundId="08_Victory" DefeatSoundId="09_Defeat_Loses_Level" WaveStartSoundId="07_Wave_Begin" MapStartSoundId="19_New_Map_Loads">
+
+<SpecialCells>
+  <Cell CellId="spawn" Type="Entrance" X="0" Y="5" />
+  <Cell CellId="exit" Type="Exit" X="18" Y="5" />
+</SpecialCells>
+
+<AllowedTowers>
+  <Tower  Id="gun" MaxLevel="1" />
+</AllowedTowers>
+
+<Waves>
+  
+  <Wave WorthMod="3" HealthMod="1">
+  <Creep CreepId="landBasic" Entrance="spawn" Exit="exit" Number="50" TimeBetweenMs="500" />
+  </Wave>
+
+</Waves>
+
+</Map>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Window>
+  <Visual>
+    <Image name="bgImg" src="Textures\Backgrounds\1-main.jpg" />
+    <Text text="Loading" color="255,255,255,255" Align="Center" VAlign="Middle" font="Fonts\Common.spritefont" />
+  </Visual>
+</Window>
